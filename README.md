@@ -6,8 +6,11 @@
 # TODO:
 
 ### stage -1: feedback! (doar daca e constructiv)
-### stage 1: pui ce task-uri ai in tabel, completezi tabelele tale, daca e nevoie adaugi / modifici atribute + note / motivatii neaparat daca nu e ceva simplu. (incercati sa fiti consistenti)
-### stage 2: tbd
+### stage 0: iti iei taskul din github projects si il pui in coloana luat
+### stage 1: cand nu are NIMENI taskul in progres, il pui tu in acea coloana si:
+### assignment 1 - README: pui ce task-uri ai in tabel, completezi tabelele tale, daca e nevoie adaugi / modifici atribute + note / motivatii neaparat daca nu e ceva simplu. (incercati sa fiti consistenti)
+### assignment 2 - modeller: te conectezi pe data modeller cu git, pull + lucrezi doar in sub-viewul logic al taskului tau, nu uiti sa dai commit + push minim odata
+### stage 2: verifici daca e ok, ultimul commit sa aiba un nume sugestiv si sa fie atasat issueului (#no), pui issue-ul din projects in coloana review 
 ### vezi ca llm-urile baga vrajeala proasta uneori, nu strica munca daca nu esti sigur :/ (intreaba)
 
 
@@ -21,7 +24,7 @@
 7. Istoric dobanzi + Istoric plati abonamente + Rate conversie
 8. Portofele puncte + Optiuni rascumparare + Tranzactii puncte
 9. Campanii referral + Depozite
-10. Invitatii referral + Tranzactii Economii
+10. Invitatii referral + Tranzactii economii
 
 
 ## Componența echipei
@@ -402,7 +405,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | status           |              |                  |                      |
 | data_invitatie   |              |                  |                      |
 
-### 24. Tranzacții_Referral
+### 24. Tranzactii_Referral
 
 > Dacă invitația este `Completed`, intrarea în acest tabel este o referință către `Depozite`.
 
