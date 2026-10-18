@@ -18,7 +18,7 @@
 1. Clienti + Recompense referral
 2. Conturi curente + Conturi economii
 3. ~~Carduri + Tipuri carduri + Posibilitati carduri~~
-4. Transferuri externe + Valute
+4. ~~Transferuri externe + Valute~~
 5. Transferuri interne + Beneficii abonamente + Istoric referral
 6. ~~Plati + Abonamente~~
 7. Istoric dobanzi + Istoric plati abonamente + Rate conversie
@@ -35,7 +35,7 @@
 | **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            | [Carduri](#8-Carduri) + [Tipuri carduri](#6-Tipuri_Carduri) + [Posibilitati carduri](#7-Posibilitati_Carduri_NM) |
 | **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     |                                                  |
 | **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                                  |
-| **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   |                                                  |
+| **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   | [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                                |
 | **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |                                                  |
 | **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    |                                                  |
 | **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |                                                  |
