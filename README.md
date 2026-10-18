@@ -6,24 +6,38 @@
 # TODO:
 
 ### stage -1: feedback! (doar daca e constructiv)
-### stage 1: pui ce task-uri ai in tabel, completezi tabelele tale, daca e nevoie adaugi atribute + note / motivatii neaparat daca nu e ceva simplu. (incercati sa fiti consistenti)
+### stage 1: pui ce task-uri ai in tabel, completezi tabelele tale, daca e nevoie adaugi / modifici atribute + note / motivatii neaparat daca nu e ceva simplu. (incercati sa fiti consistenti)
 ### stage 2: tbd
 ### vezi ca llm-urile baga vrajeala proasta uneori, nu strica munca daca nu esti sigur :/ (intreaba)
 
+
+### task-uri:
+1. Clienti + Recompense referral
+2. Conturi curente + Conturi economii
+3. Carduri + Tipuri carduri + Posibilitati carduri
+4. Transferuri externe + Valute
+5. Transferuri interne + Beneficii abonamente + Istoric referral
+6. ~~Plati + Abonamente~~
+7. Istoric dobanzi + Istoric plati abonamente + Rate conversie
+8. Portofele puncte + Optiuni rascumparare + Tranzactii puncte
+9. Campanii referral + Depozite
+10. Invitatii referral + Tranzactii Economii
+
+
 ## Componența echipei
 
-| **Nume**                       | **Grupă** | **Email**                                    | Task-uri |
-|:-------------------------------|:---------:|:---------------------------------------------|:--------:|
-| **Adăscăliței Cristian-Mihai** |   1307A   | cristian-mihai.adascalitei@student.tuiasi.ro |          |
-| **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            |          |
-| **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     |          |
-| **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |          |
-| **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   |          |
-| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |          |
-| **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    |          |
-| **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |          |
-| **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |          |
-| **Sava Teofan**                |   1307A   | teofan.sava@student.tuiasi.ro                |          |
+| **Nume**                       | **Grupă** | **Email**                                    |                     Task-uri                     |
+|:-------------------------------|:---------:|:---------------------------------------------|:------------------------------------------------:|
+| **Adăscăliței Cristian-Mihai** |   1307A   | cristian-mihai.adascalitei@student.tuiasi.ro | [Abonamente](#1-Abonamente) + [Plati](#10-Plati) |
+| **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            |                                                  |
+| **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     |                                                  |
+| **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                                  |
+| **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   |                                                  |
+| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |                                                  |
+| **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    |                                                  |
+| **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |                                                  |
+| **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |                                                  |
+| **Sava Teofan**                |   1307A   | teofan.sava@student.tuiasi.ro                |                                                  |
 
 ---
 
@@ -38,9 +52,9 @@ deschis automat. Ratele de conversie se modifică zilnic, deci vom monitoriza co
 în RON, pot fi deschise conturi curente și în alte valute, care însă sunt unice pentru fiecare client (maxim un cont 
 curent per valută) și pot fi închise din motive justificate. Cardurile sunt atașate conturilor, având propriile date de 
 identificare (număr, data expirării, CVC și PIN) și pot fi multiple, dar abonamentul asociat clientului limitează 
-numărul și tipul lor (ex: un utilizator Standard nu poate folosi un card Metal). În cazul în care abonamentul este 
-retrogradat, sunt dezactivate cardurile de tipuri devenite inaccesibile și ultimele carduri create, până se ajunge la 
-limita permisă.
+numărul și tipul lor (ex: un utilizator Standard nu poate folosi un card Metal). Tipul de card limitează valoarea maximă
+a unei plăți. În cazul în care abonamentul este retrogradat, sunt dezactivate cardurile de tipuri devenite inaccesibile 
+și ultimele carduri create, până se ajunge la limita permisă.
 
 Plata abonamentelor este în RON, efectuată zilnic, fiind salvată într-un istoric. În cazul eșuării plății, clientul 
 redevine automat unul Standard. Depozitele sunt fictive, din surse externe, în contul curent activ asociat clientului, 
@@ -56,7 +70,6 @@ Analog contului curent, orice client poate avea un cont de economii (maxim unul 
 utilizatorul putând adăuga sau retrage fonduri oricând, iar dobânzile sunt calculate zilnic și reținute într-un istoric.
 Ratele de dobândă sunt stabilite în funcție de abonament și valută, iar tranzacțiile se fac doar între contul curent și 
 cel de economii de același tip, asociate aceluiași client.
-
 
 Sistemul atribuie puncte de loialitate fiecărui client, salvate într-un portofel unic. Punctele sunt acumulate la 
 fiecare plată, rata de conversie fiind dictată de valută și abonament. Tranzacțiile cu puncte sunt legate de o anumită 
@@ -79,6 +92,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**     | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:-------------|-------------:|:-----------------|:---------------------|
+| id           |              |                  |                      | 
 | denumire     |              |                  |                      | 
 | taxa_zilnica |              |                  |                      |
 
@@ -86,16 +100,16 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Gestionează identitatea clienților și reține care este abonamentul lor actual.
 
-| **Câmp**           | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:-------------------|-------------:|:-----------------|:---------------------|
-| id                 |              |                  |                      |
-| nume               |              |                  |                      |
-| prenume            |              |                  |                      |
-| cnp                |              |                  |                      |
-| telefon            |              |                  |                      |
-| email              |              |                  |                      |
-| denumire_abonament |              |                  |                      |
-| data_inregistrare  |              |                  |                      |
+| **Câmp**          | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
+|:------------------|-------------:|:-----------------|:---------------------|
+| id                |              |                  |                      |
+| nume              |              |                  |                      |
+| prenume           |              |                  |                      |
+| cnp               |              |                  |                      |
+| telefon           |              |                  |                      |
+| email             |              |                  |                      |
+| abonament_id      |              |                  |                      |
+| data_inregistrare |              |                  |                      |
 
 ### 3. Valute
 
@@ -103,6 +117,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp** | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:---------|-------------:|:-----------------|:---------------------|
+| id       |              |                  |                      |
 | cod      |              |                  |                      |
 | denumire |              |                  |                      | 
 
@@ -128,7 +143,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 |:----------------|-------------:|:-----------------|:---------------------|
 | id              |              |                  |                      |
 | client_id       |              |                  |                      |
-| valuta_cod      |              |                  |                      |
+| valuta_id       |              |                  |                      |
 | iban            |              |                  |                      |
 | sold            |              |                  |                      |
 | status          |              |                  |                      |
@@ -140,6 +155,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**          | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:------------------|-------------:|:-----------------|:---------------------|
+| id                |              |                  |                      |
 | denumire          |              |                  |                      |
 | limita_tranzactie |              |                  |                      |
 
@@ -149,10 +165,8 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**            | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:--------------------|-------------:|:-----------------|:---------------------|
-| abonament_denumire  |              |                  |                      |
-| tip_card_denumire   |              |                  |                      |
-| permite_plus        |              |                  |                      |
-| permite_metal       |              |                  |                      |
+| abonament_id        |              |                  |                      |
+| tip_card_id         |              |                  |                      |
 | max_carduri_permise |              |                  |                      |
 
 ### 8. Carduri
@@ -187,7 +201,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | status          |              |                  |                      |
 | motiv_esuare    |              |                  |                      |
 
-### 10. Plăți
+### 10. Plati
 
 > Sunt pur fictive și implică un card, aplică logica de *split-payment*.
 
@@ -195,7 +209,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 |:----------------|-------------:|:-----------------|:---------------------|
 | id              |              |                  |                      |
 | card_id         |              |                  |                      |
-| valuta_cod      |              |                  |                      |
+| valuta_id       |              |                  |                      |
 | suma_totala     |              |                  |                      |
 | nume_destinatie |              |                  |                      |
 | suma_valuta     |              |                  |                      |
@@ -212,8 +226,6 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | **Câmp**           | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:-------------------|-------------:|:-----------------|:---------------------|
 | id                 |              |                  |                      |
-| valuta_cod_trimisa |              |                  |                      |
-| valuta_cod_primita |              |                  |                      |
 | suma_trimisa       |              |                  |                      |
 | cont_sursa_id      |              |                  |                      |
 | cont_destinatie_id |              |                  |                      |
@@ -227,36 +239,34 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Plăți între clienți diferiți ai aplicației, aplică logica de *split-payment*.
 
-| **Câmp**                  | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:--------------------------|-------------:|:-----------------|:---------------------|
-| id                        |              |                  |                      |
-| valuta_cod                |              |                  |                      |
-| suma                      |              |                  |                      |
-| client_sursa_id           |              |                  |                      |
-| client_destinatie_id      |              |                  |                      |
-| cont_sursa_id             |              |                  |                      |
-| cont_destinatie_valuta_id |              |                  |                      |
-| cont_destinatie_RON_id    |              |                  |                      |
-| rata_conversie            |              |                  |                      |
-| suma_debitata_valuta      |              |                  |                      |
-| suma_debitata_RON         |              |                  |                      |
-| data_tranzactie           |              |                  |                      |
-| status                    |              |                  |                      |
-| motiv_esuare              |              |                  |                      |
+| **Câmp**               | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
+|:-----------------------|-------------:|:-----------------|:---------------------|
+| id                     |              |                  |                      |
+| client_sursa_valuta_id |              |                  |                      |
+| client_sursa_RON_id    |              |                  |                      |
+| cont_destinatie_id     |              |                  |                      |
+| suma_totala            |              |                  |                      |
+| suma_debitata_valuta   |              |                  |                      |
+| suma_debitata_RON      |              |                  |                      |
+| rata_conversie         |              |                  |                      |
+| data_tranzactie        |              |                  |                      |
+| status                 |              |                  |                      |
+| motiv_esuare           |              |                  |                      |
 
 ### 13. Istoric_Plati_Abonamente
 
 > Plată care se declanșează recurent și debitează doar contul de RON.
 
-| **Câmp**                  | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:--------------------------|-------------:|:-----------------|:---------------------|
-| id                        |              |                  |                      |
-| client_id                 |              |                  |                      |
-| abonament_id              |              |                  |                      |
-| suma                      |              |                  |                      |
-| data_tranzactie           |              |                  |                      |
-| status                    |              |                  |                      |
-| motiv_esuare              |              |                  |                      |
+| **Câmp**        | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
+|:----------------|-------------:|:-----------------|:---------------------|
+| id              |              |                  |                      |
+| client_id       |              |                  |                      |
+| cont_RON_id     |              |                  |                      |
+| abonament_id    |              |                  |                      |
+| suma            |              |                  |                      |
+| data_tranzactie |              |                  |                      |
+| status          |              |                  |                      |
+| motiv_esuare    |              |                  |                      |
 
 ---
 
@@ -281,7 +291,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 |:----------------|-------------:|:-----------------|:---------------------|
 | id              |              |                  |                      |
 | client_id       |              |                  |                      |
-| valuta_cod      |              |                  |                      |
+| valuta_id       |              |                  |                      |
 | sold            |              |                  |                      |
 | status          |              |                  |                      |
 | data_deschidere |              |                  |                      |
@@ -392,7 +402,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | status           |              |                  |                      |
 | data_invitatie   |              |                  |                      |
 
-### 24. Invitatii_Referral
+### 24. Tranzacții_Referral
 
 > Dacă invitația este `Completed`, intrarea în acest tabel este o referință către `Depozite`.
 
