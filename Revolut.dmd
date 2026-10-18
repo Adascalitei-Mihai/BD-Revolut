@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Revolut" id="2D70CFF7-9741-C1A9-9CB5-FD6F1F56C2E0" version="3.5">
+<createdBy>mihai</createdBy>
+<createdTime>2026-10-18 14:11:33 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2D70CFF7-9741-C1A9-9CB5-FD6F1F56C2E0</designId>
+</OSDM_Design>

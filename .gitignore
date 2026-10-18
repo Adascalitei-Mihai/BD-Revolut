@@ -1,1 +1,5 @@
 .idea
+**/*.localz
+**/*.local
+**/*.git
+**/*.DS_Store
