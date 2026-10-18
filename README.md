@@ -9,7 +9,7 @@
 ### stage 0: iti iei taskul din github projects si il pui in coloana luat
 ### stage 1: cand nu are NIMENI taskul in progres, il pui tu in acea coloana si:
 ### assignment 1 - README: pui ce task-uri ai in tabel, completezi tabelele tale, daca e nevoie adaugi / modifici atribute + note / motivatii neaparat daca nu e ceva simplu. (incercati sa fiti consistenti)
-### assignment 2 - modeller: te conectezi pe data modeller cu git, pull + lucrezi doar in sub-viewul logic al taskului tau, nu uiti sa dai commit + push minim odata
+### assignment 2 - modeler: te conectezi pe data modeler cu git, pull + lucrezi doar in sub-viewul logic al taskului tau, nu uiti sa dai commit + push minim odata
 ### stage 2: verifici daca e ok, ultimul commit sa aiba un nume sugestiv si sa fie atasat issueului (#no), pui issue-ul din projects in coloana review 
 ### vezi ca llm-urile baga vrajeala proasta uneori, nu strica munca daca nu esti sigur :/ (intreaba)
 
