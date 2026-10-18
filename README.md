@@ -8,7 +8,7 @@
 ### stage -1: feedback! (doar daca e constructiv)
 ### stage 0: iti iei taskul din github projects si il pui in coloana luat
 ### stage 1: cand nu are NIMENI taskul in progres, il pui tu in acea coloana si:
-### assignment 1 - README: pui ce task-uri ai in tabel, completezi tabelele tale, daca e nevoie adaugi / modifici atribute + note / motivatii neaparat daca nu e ceva simplu. (incercati sa fiti consistenti)
+### assignment 1 - README: pui ce task-uri ai in tabel, completezi tabelele tale, daca e nevoie adaugi / modifici atribute + note / motivatii neaparat daca nu e ceva simplu. (incercati sa fiti consistenti, atenti si la ceilalti care o completat deja anumite tipuri care tin de ale voastre)
 ### assignment 2 - modeler: te conectezi pe data modeler cu git, pull + lucrezi doar in sub-viewul logic al taskului tau, nu uiti sa dai commit + push minim odata
 ### stage 2: verifici daca e ok, ultimul commit sa aiba un nume sugestiv si sa fie atasat issueului (#no), pui issue-ul din projects in coloana review 
 ### vezi ca llm-urile baga vrajeala proasta uneori, nu strica munca daca nu esti sigur :/ (intreaba)
@@ -93,26 +93,26 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Stochează nivelurile de cont disponibile în aplicație (Standard, Plus, Metal) și costul zilnic al acestora.
 
-| **Câmp**     | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:-------------|-------------:|:-----------------|:---------------------|
-| id           |              |                  |                      | 
-| denumire     |              |                  |                      | 
-| taxa_zilnica |              |                  |                      |
+| **Câmp**     |   **Tip Date** | **Constrângeri**                   | **Notă / Motivație**          |
+|:-------------|---------------:|:-----------------------------------|:------------------------------|
+| id           |     NUMERIC(1) | PRIMARY KEY                        |                               | 
+| denumire     |    VARCHAR(20) | NOT NULL, UNIQUE                   |                               | 
+| taxa_zilnica | NUMERIC(10, 2) | NOT NULL, CHECK(taxa_zilnica >= 0) | nu putem avea o taxa negativă |
 
 ### 2. Clienti
 
 > Gestionează identitatea clienților și reține care este abonamentul lor actual.
 
-| **Câmp**          | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:------------------|-------------:|:-----------------|:---------------------|
-| id                |              |                  |                      |
-| nume              |              |                  |                      |
-| prenume           |              |                  |                      |
-| cnp               |              |                  |                      |
-| telefon           |              |                  |                      |
-| email             |              |                  |                      |
-| abonament_id      |              |                  |                      |
-| data_inregistrare |              |                  |                      |
+| **Câmp**          | **Tip Date** | **Constrângeri** | **Notă / Motivație**                 |
+|:------------------|-------------:|:-----------------|:-------------------------------------|
+| id                |              |                  | 7*10<sup>6</sup> utilizatori globali |
+| nume              |              |                  |                                      |
+| prenume           |              |                  |                                      |
+| cnp               |              |                  |                                      |
+| telefon           |              |                  |                                      |
+| email             |              |                  |                                      |
+| abonament_id      |              |                  |                                      |
+| data_inregistrare |              |                  |                                      |
 
 ### 3. Valute
 
@@ -120,7 +120,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp** | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:---------|-------------:|:-----------------|:---------------------|
-| id       |              |                  |                      |
+| id       |              |                  | RON, GBP, EUR, USD   |
 | cod      |              |                  |                      |
 | denumire |              |                  |                      | 
 
@@ -166,27 +166,27 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Aceasta este tabela de legătură care rezolvă logica de retrogradare și limitare.
 
-| **Câmp**            | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:--------------------|-------------:|:-----------------|:---------------------|
-| abonament_id        |              |                  |                      |
-| tip_card_id         |              |                  |                      |
-| max_carduri_permise |              |                  |                      |
+| **Câmp**            | **Tip Date** | **Constrângeri** | **Notă / Motivație**                               |
+|:--------------------|-------------:|:-----------------|:---------------------------------------------------|
+| abonament_id        |              |                  |                                                    |
+| tip_card_id         |              |                  |                                                    |
+| max_carduri_permise |              |                  | Mihai: vreau max 20 pentru cel mai scump abonament |
 
 ### 8. Carduri
 
 > Tabelul care stochează datele sensibile și starea cardului. Ele sunt direct atașate unui `Cont_Curent`.
 
-| **Câmp**      | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:--------------|-------------:|:-----------------|:---------------------|
-| id            |              |                  |                      |
-| cont_id       |              |                  |                      |
-| tip_card      |              |                  |                      |
-| numar_card    |              |                  |                      |
-| data_expirare |              |                  |                      |
-| cvv           |              |                  |                      |
-| pin           |              |                  |                      |
-| status        |              |                  |                      |
-| data_emitere  |              |                  |                      |
+| **Câmp**      | **Tip Date** | **Constrângeri** | **Notă / Motivație**                                  |
+|:--------------|-------------:|:-----------------|:------------------------------------------------------|
+| id            |              |                  | 7*10<sup>6</sup> utilizatori globali * 20 carduri max |
+| cont_id       |              |                  |                                                       |
+| tip_card      |              |                  |                                                       |
+| numar_card    |              |                  |                                                       |
+| data_expirare |              |                  |                                                       |
+| cvv           |              |                  |                                                       |
+| pin           |              |                  |                                                       |
+| status        |              |                  |                                                       |
+| data_emitere  |              |                  |                                                       |
 
 ---
 
@@ -208,19 +208,19 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Sunt pur fictive și implică un card, aplică logica de *split-payment*.
 
-| **Câmp**        | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:----------------|-------------:|:-----------------|:---------------------|
-| id              |              |                  |                      |
-| card_id         |              |                  |                      |
-| valuta_id       |              |                  |                      |
-| suma_totala     |              |                  |                      |
-| nume_destinatie |              |                  |                      |
-| suma_valuta     |              |                  |                      |
-| rata_conversie  |              |                  |                      |
-| suma_split_RON  |              |                  |                      |
-| data_tranzactie |              |                  |                      |
-| status          |              |                  |                      |
-| motiv_esuare    |              |                  |                      |
+| **Câmp**        |   **Tip Date** | **Constrângeri**                     | **Notă / Motivație**                                                                      |
+|:----------------|---------------:|:-------------------------------------|:------------------------------------------------------------------------------------------|
+| id              |    NUMERIC(10) | PRIMARY KEY                          | 7*10<sup>6</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi |
+| card_id         |     NUMERIC(8) | NOT NULL                             |                                                                                           |
+| valuta_id       |     NUMERIC(1) | NOT NULL                             |                                                                                           |
+| suma_totala     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_totala > 0)     | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant)                  |
+| nume_destinatie |   VARCHAR(100) | NOT NULL                             |                                                                                           |
+| suma_valuta     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_valuta >= 0)    |                                                                                           |
+| suma_split_RON  | NUMERIC(10, 2) | NOT NULL, CHECK(suma_split_RON >= 0) |                                                                                           |
+| rata_conversie  |  NUMERIC(10,6) | NULL                                 | `NULL` daca s-a făcut într-o singură valută                                               |
+| data_tranzactie |           DATE | NOT NULL                             |                                                                                           |
+| status          |     VARCHAR(8) | NOT NULL                             | `SUCCESS` \ `FAIL`                                                                        |
+| motiv_esuare    |    VARCHAR(64) | NULL                                 | `NULL` dacă tranzacția a reușit                                                           |
 
 ### 11. Transferuri_Interne
 

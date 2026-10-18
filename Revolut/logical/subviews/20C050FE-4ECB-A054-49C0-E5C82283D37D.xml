@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="Logical - SubView_Plati_Abonamente" id="20C050FE-4ECB-A054-49C0-E5C82283D37D">
+<createdBy>mihai</createdBy>
+<modifiedBy>mihai</modifiedBy>
+<createdTime>2026-10-18 14:19:39 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="0E4F4E5A-5A60-B43E-A46B-6D0407D5FD41" otype="Entity" vid="D035ADB1-DDC9-B2FC-A8AF-2EE242641087">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="47" y="47" width="192" height="79"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="3796A7B0-723B-EC6B-C198-4F8202139F81" otype="Entity" vid="64C3EA79-8DF6-E9C6-ED6F-A95DF45C40B6">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="322" y="49" width="194" height="186"/>
+</OView>
+</objectViews>
+</Diagram>
