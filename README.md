@@ -16,7 +16,7 @@
 
 ### task-uri:
 1. Clienti + Recompense referral
-2. Conturi curente + Conturi economii
+2. ~~Conturi curente + Conturi de economii~~
 3. ~~Carduri + Tipuri carduri + Posibilitati carduri~~
 4. ~~Transferuri externe + Valute~~
 5. Transferuri interne + Beneficii abonamente + Istoric referral
