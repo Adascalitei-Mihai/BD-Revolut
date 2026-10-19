@@ -33,7 +33,7 @@
 |:-------------------------------|:---------:|:---------------------------------------------|:------------------------------------------------:|
 | **Adăscăliței Cristian-Mihai** |   1307A   | cristian-mihai.adascalitei@student.tuiasi.ro | [Abonamente](#1-Abonamente) + [Plati](#10-Plati) |
 | **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            | [Carduri](#8-Carduri) + [Tipuri carduri](#6-Tipuri_Carduri) + [Posibilitati carduri](#7-Posibilitati_Carduri_NM) |
-| **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     |                                                  |
+| **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     | [Conturi curente](#conturi-curente) + [Conturi de economii](#conturi-de-economii)                                      |
 | **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                                  |
 | **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   | [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                                |
 | **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |                                                  |
