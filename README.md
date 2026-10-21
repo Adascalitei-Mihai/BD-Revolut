@@ -19,7 +19,7 @@
 2. ~~Conturi curente + Conturi de economii~~
 3. ~~Carduri + Tipuri carduri + Posibilitati carduri~~
 4. ~~Transferuri externe + Valute~~
-5. Transferuri interne + Beneficii abonamente + Istoric referral
+5. ~~Transferuri interne + Beneficii abonamente + Istoric referral~~
 6. ~~Plati + Abonamente~~
 7. Istoric dobanzi + Istoric plati abonamente + Rate conversie
 8. ~~Portofele puncte + Optiuni rascumparare + Tranzactii puncte~~
@@ -40,7 +40,7 @@
 | **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    | [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte)                                                 |
 | **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |                                                  |
 | **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |                                                  |
-| **Sava Teofan**                |   1307A   | teofan.sava@student.tuiasi.ro                |                                                  |
+| **Sava Teofan**                |   1307A   | teofan.sava@student.tuiasi.ro                | [Transferuri interne](#11-transferuri_interne) + [Beneficii abonamente](#14-beneficii_abonamente_nm) + [Istoric referral](#24-istorii_referral) |
 
 ---
 
@@ -97,7 +97,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 |:-------------|---------------:|:-----------------------------------|:------------------------------|
 | id           |     NUMERIC(1) | PRIMARY KEY                        |                               | 
 | denumire     |    VARCHAR(20) | NOT NULL, UNIQUE                   |                               | 
-| taxa_zilnica | NUMERIC(10, 2) | NOT NULL, CHECK(taxa_zilnica >= 0) | nu putem avea o taxa negativă |
+| taxa_zilnica | NUMERIC(10, 2) | NOT NULL, CHECK(taxa_zilnica >= 0) | nu putem avea o taxă negativă |
 
 ### 2. Clienti
 
@@ -217,7 +217,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | nume_destinatie |   VARCHAR(100) | NOT NULL                             |                                                                                           |
 | suma_valuta     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_valuta >= 0)    |                                                                                           |
 | suma_split_RON  | NUMERIC(10, 2) | NOT NULL, CHECK(suma_split_RON >= 0) |                                                                                           |
-| rata_conversie  |  NUMERIC(10,6) | NULL                                 | `NULL` daca s-a făcut într-o singură valută                                               |
+| rata_conversie  |  NUMERIC(10,6) | NULL                                 | `NULL` dacă s-a făcut într-o singură valută                                               |
 | data_tranzactie |           DATE | NOT NULL                             |                                                                                           |
 | status          |     VARCHAR(8) | NOT NULL                             | `SUCCESS` \ `FAIL`                                                                        |
 | motiv_esuare    |    VARCHAR(64) | NULL                                 | `NULL` dacă tranzacția a reușit                                                           |
@@ -226,17 +226,17 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Sunt operațiunile de schimb valutar pe care clientul le face între propriile conturi.
 
-| **Câmp**           | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:-------------------|-------------:|:-----------------|:---------------------|
-| id                 |              |                  |                      |
-| suma_trimisa       |              |                  |                      |
-| cont_sursa_id      |              |                  |                      |
-| cont_destinatie_id |              |                  |                      |
-| rata_conversie     |              |                  |                      |
-| suma_primita       |              |                  |                      |
-| data_tranzactie    |              |                  |                      |
-| status             |              |                  |                      |
-| motiv_esuare       |              |                  |                      |
+| **Câmp**           | **Tip Date**    | **Constrângeri**                                     | **Notă / Motivație**                                                     |
+|:-------------------|----------------:|:-----------------------------------------------------|:-------------------------------------------------------------------------|
+| id                 |     NUMERIC(9)  | PRIMARY KEY                                          | 4*10<sup>8</sup> tranzacții interne pe lună * 3 luni perioadă simulare   |
+| suma_trimisa       |  NUMERIC(10, 2) | NOT NULL, CHECK(suma_trimisa > 0)                    | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant) |
+| cont_sursa_id      |     NUMERIC(10) | NOT NULL                                             |                                                                          |
+| cont_destinatie_id |     NUMERIC(10) | NOT NULL, CHECK(cont_sursa_id <> cont_destinatie_id) |                                                                          |
+| rata_conversie     |  NUMERIC(10, 6) | NULL                                                 | `NULL` dacă s-a făcut într-o singură valută                              |
+| suma_primita       |  NUMERIC(10, 2) | NOT NULL, CHECK(suma_primita > 0)                    |                                                                          |
+| data_tranzactie    |            DATE | NOT NULL                                             |                                                                          |
+| status             |      VARCHAR(8) | NOT NULL                                             | `SUCCESS` \ `FAIL`                                                       |
+| motiv_esuare       |     VARCHAR(64) | NULL                                                 | `NULL` dacă tranzacția a reușit                                          |
 
 ### 12. Transferuri_Externe
 
@@ -277,12 +277,12 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Pentru fiecare combinație de `Abonament` + `Valută`, care este dobânda la economii și care este rata de generare a punctelor.
 
-| **Câmp**             | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:---------------------|-------------:|:-----------------|:---------------------|
-| abonament_id         |              |                  |                      |
-| valuta_id            |              |                  |                      |
-| rata_dobanda_anuala  |              |                  |                      |
-| multiplicator_puncte |              |                  |                      |
+| **Câmp**             | **Tip Date**    | **Constrângeri**                           | **Notă / Motivație**                               |
+|:---------------------|----------------:|:-------------------------------------------|:---------------------------------------------------|
+| abonament_id         |      NUMERIC(7) | PRIMARY KEY                                | 7*10<sup>6</sup> utilizatori globali * 1 abonament |
+| valuta_id            |      NUMERIC(1) | NOT NULL                                   | RON, GBP, EUR, USD                                 |
+| rata_dobanda_anuala  |   NUMERIC(5, 4) | NOT NULL, CHECK (rata_dobanda_anuala >= 0) |                                                    |
+| multiplicator_puncte |   NUMERIC(3, 2) | NOT NULL, DEFAULT 1.00                     |                                                    |
 
 ---
 
@@ -368,7 +368,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 ---
 
-### 21. Campani_Referral
+### 21. Campanii_Referral
 
 > Definește regulile temporale și financiare ale promoției.
 
@@ -405,14 +405,14 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | status           |              |                  |                      |
 | data_invitatie   |              |                  |                      |
 
-### 24. Tranzactii_Referral
+### 24. Istoric_Referral
 
 > Dacă invitația este `Completed`, intrarea în acest tabel este o referință către `Depozite`.
 
-| **Câmp**             | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:---------------------|-------------:|:-----------------|:---------------------|
-| id                   |              |                  |                      |
-| invitatie_id         |              |                  |                      |
-| suma                 |              |                  |                      |
-| depozit_referinta_id |              |                  |                      |
-| data_tranzactie      |              |                  |                      |
+| **Câmp**             | **Tip Date**   | **Constrângeri**          | **Notă / Motivație**                               |
+|:---------------------|---------------:|:--------------------------|:---------------------------------------------------|
+| id                   |     NUMERIC(7) | PRIMARY KEY               |                                                    |
+| invitatie_id         |     NUMERIC(7) | NOT NULL, UNIQUE          | 10<sup>6</sup> invitatii                           |
+| suma                 | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0) | Revolut oferă diferite sume în funcție de promoții |
+| depozit_referinta_id |     NUMERIC(7) | NOT NULL                  |                                                    |
+| data_tranzactie      |           DATE | NOT NULL                  |                                                    |
