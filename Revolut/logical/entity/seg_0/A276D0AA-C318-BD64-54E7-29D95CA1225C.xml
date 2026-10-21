@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A276D0AA-C318-BD64-54E7-29D95CA1225C" name="Beneficii_Abonament_NM">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 19:50:46 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="abonament_id" id="6F7E31C3-8A0A-5968-3ED9-1B1BEEA01AA9">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 19:51:52 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valuta_id" id="F3C78759-CD9E-2428-896B-83C8A96F3D60">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 19:52:18 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rata_dobanda_anuala" id="6AF225EB-2FBC-DE74-BDD8-C81811061897">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 19:52:38 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>Beneficii_Abonament_NM_rata_dobanda_anuala_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="rata_dobanda &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,4</ownDataTypeParameters>
+</Attribute>
+<Attribute name="multiplicator_puncte" id="BD694A0C-2DEB-498E-6616-CC94FD71DA64">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 19:55:39 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67BC53B4-6B6B-424A-89C1-617493D04ED5" name="Beneficii_Abonament_NM PK">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 19:52:15 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F7E31C3-8A0A-5968-3ED9-1B1BEEA01AA9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

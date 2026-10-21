@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6740B62-78D3-3402-C914-5D3848C69DE6" name="Istoric_Referral">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 20:01:49 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="ACD08C38-B675-3052-6E8E-9D9906E82E85">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 20:03:28 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="invitatie_id" id="28193BD7-DFF4-721F-D25F-6195A4E31F23">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 20:03:46 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="suma" id="017B74E1-DFE4-474B-C167-4E585AC9EBA7">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 20:05:35 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>Istoric_Referral_suma_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="suma &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="depozit_referinta_id" id="E751F5C8-ECF3-7189-CED6-1DCB6232163E">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 20:06:06 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_tranzactie" id="8B51F9DE-ABFE-B8C0-BB32-1D55485873AB">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 20:08:38 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DF37CBDA-C5B9-8716-57AB-3AD860946667" name="Istoric_Referral PK">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 20:03:44 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ACD08C38-B675-3052-6E8E-9D9906E82E85</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BC55EB0B-585D-A69A-45BA-BBFDD488EAA3" name="Istoric_Referral_invitatie_id_uk">
+<createdBy>teofan</createdBy>
+<createdTime>2026-10-21 20:11:32 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<newElementsIDs>28193BD7-DFF4-721F-D25F-6195A4E31F23</newElementsIDs>
+<usedAttributes>
+<attributeRef>28193BD7-DFF4-721F-D25F-6195A4E31F23</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -230,8 +230,8 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 |:-------------------|----------------:|:-----------------------------------------------------|:-------------------------------------------------------------------------|
 | id                 |     NUMERIC(9)  | PRIMARY KEY                                          | 4*10<sup>8</sup> tranzacții interne pe lună * 3 luni perioadă simulare   |
 | suma_trimisa       |  NUMERIC(10, 2) | NOT NULL, CHECK(suma_trimisa > 0)                    | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant) |
-| cont_sursa_id      |     NUMERIC(10) | NOT NULL                                             |                                                                          |
-| cont_destinatie_id |     NUMERIC(10) | NOT NULL, CHECK(cont_sursa_id <> cont_destinatie_id) |                                                                          |
+| cont_sursa_id      |      NUMERIC(9) | NOT NULL                                             |                                                                          |
+| cont_destinatie_id |      NUMERIC(9) | NOT NULL, CHECK(cont_sursa_id <> cont_destinatie_id) |                                                                          |
 | rata_conversie     |  NUMERIC(10, 6) | NULL                                                 | `NULL` dacă s-a făcut într-o singură valută                              |
 | suma_primita       |  NUMERIC(10, 2) | NOT NULL, CHECK(suma_primita > 0)                    |                                                                          |
 | data_tranzactie    |            DATE | NOT NULL                                             |                                                                          |
