@@ -18,9 +18,17 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="50" y="50" width="170" height="110"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="17FE0BFE-D883-0108-D371-08E3DA2413D7" otype="Entity" vid="A1D17B32-82EE-90A6-93E2-5DF235BC888C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="93" y="278" width="171" height="112"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="3796A7B0-723B-EC6B-C198-4F8202139F81" otype="Entity" vid="8A549920-50A5-0119-F359-9D61664DC8F1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="90" y="130" width="169" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="56E98E36-F354-2DD4-01C0-A63750558A1B" otype="Entity" vid="94027722-56A3-9AB9-70AD-1AF3B7DAA706">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="319" y="278" width="167" height="111"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="86D8AFF9-69F9-16D8-6145-4231B8D71F93" otype="Entity" vid="C1E9F3D9-2076-55CF-2747-60256115F055">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -29,6 +37,10 @@
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="A276D0AA-C318-BD64-54E7-29D95CA1225C" otype="Entity" vid="7A13CA83-11C3-4976-6490-45B3E082D214">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="648" y="89" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D3CB72AF-1798-F8F9-29CA-34130420B626" otype="Entity" vid="47BA9FDA-CCA0-C917-09C1-F100CB2771A4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="519" y="278" width="175" height="117"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="F6740B62-78D3-3402-C914-5D3848C69DE6" otype="Entity" vid="990D79FF-4D3A-B5DF-E0BA-5739FF202EA8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

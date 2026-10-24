@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="17FE0BFE-D883-0108-D371-08E3DA2413D7" name="Portofele_Puncte">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 10:27:16 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="3666951E-C608-0722-23FC-A5622A66D6A6">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 10:27:29 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_id" id="25B94244-3B74-27C6-3B4F-973D7D4B37ED">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 10:27:52 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sold" id="C3A20CB5-EB1A-9A99-6015-34A9BA33EBC6">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 10:28:10 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>Portofele_Puncte_sold_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="sold &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_creare" id="0460EE1C-0B09-C2AC-DAE6-EAD1766A2016">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 10:28:25 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="065CE950-D486-C1C5-02D3-83FA58792F26" name="Portofele_Puncte PK">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 10:27:51 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3666951E-C608-0722-23FC-A5622A66D6A6</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FF88B778-F7E7-DAE4-E9CE-CC989952E2C3" name="Portofele_Puncte_client_id_uk">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 10:29:08 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<newElementsIDs>25B94244-3B74-27C6-3B4F-973D7D4B37ED</newElementsIDs>
+</identifier>
+</identifiers>
+</Entity>

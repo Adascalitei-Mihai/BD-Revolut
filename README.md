@@ -335,10 +335,10 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**    | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:------------|-------------:|:-----------------|:---------------------|
-| id          |              |                  |                      |
-| client_id   |              |                  |                      |
-| sold        |              |                  |                      |
-| data_creare |              |                  |                      |
+| id          |   NUMERIC(10) |      PRIMARY KEY | 7*10<sup>6</sup> utilizatori globali * 1 portofel |
+| client_id   |   NUMERIC(10) | NOT NULL, UNIQUE | Un singur portofel per client |
+| sold        |   NUMERIC(10) | NOT NULL, CHECK (sold>=0) |                      |
+| data_creare |         DATE |         NOT NULL |                      |
 
 ### 19. Optiuni_Rascumparare
 
@@ -346,11 +346,11 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**        | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:----------------|-------------:|:-----------------|:---------------------|
-| id              |              |                  |                      |
-| denumire        |              |                  |                      |
-| descriere       |              |                  |                      |
-| cost            |              |                  |                      |
-| stoc_disponibil |              |                  |                      |
+| id              |   NUMERIC(10) |    PRIMARY KEY |                      |
+| denumire        | VARCHAR(100) | NOT NULL, UNIQUE |                      |
+| descriere       | VARCHAR(500) |                  | NULL dacă opțiunea nu are descriere |
+| cost            |   NUMERIC(10) | NOT NULL, CHECK (cost > 0) |                      |
+| stoc_disponibil |   NUMERIC(10) | NOT NULL, CHECK (stoc_disponibil >= 0) |                      |
 
 ### 20. Tranzactii_Puncte
 
@@ -358,13 +358,15 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**                | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:------------------------|-------------:|:-----------------|:---------------------|
-| id                      |              |                  |                      |
-| portofel_id             |              |                  |                      |
-| suma                    |              |                  |                      |
-| tip_operatiune          |              |                  |                      |
-| plata_referinta_id      |              |                  |                      |
-| optiune_rascumparare_id |              |                  |                      |
-| data_tranzactie         |              |                  |                      |
+| id                      |   NUMERIC(10) |      PRIMARY KEY | 7*10<sup>6</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi (1 tranzacție de câștig / plată) |
+| portofel_id             |   NUMERIC(10) |         NOT NULL |                      |
+| suma                    |   NUMERIC(10) | NOT NULL, CHECK (suma <> 0) | număr de puncte, nenul |
+| tip_operatiune          | VARCHAR(20) | NOT NULL, CHECK (tip_operatiune IN ('CASTIGARE', 'RASCUMPARARE')) | CASTIGARE \ RASCUMPARARE |
+| plata_referinta_id      |   NUMERIC(10) |                  | NULL dacă tranzacția este o răscumpărare |
+| optiune_rascumparare_id |   NUMERIC(10) |                  | NULL dacă tranzacția este un câștig |
+| data_tranzactie         |         DATE |         NOT NULL |                      |
+
+> **Constrângere la nivel de tabel:** `CHECK ((tip_operatiune = 'CASTIGARE' AND plata_referinta_id IS NOT NULL AND optiune_rascumparare_id IS NULL) OR (tip_operatiune = 'RASCUMPARARE' AND optiune_rascumparare_id IS NOT NULL AND plata_referinta_id IS NULL))`
 
 ---
 

@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56E98E36-F354-2DD4-01C0-A63750558A1B" name="Optiuni_Rascumparare">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 09:56:13 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="A9C6299B-7CE7-91E1-B7A0-97A50D47E036">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 09:56:29 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire" id="8C47FCD1-54B5-729B-3C69-4BDEE7DE3C46">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 09:56:44 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriere" id="8ED44BF8-7475-D8E6-4338-CBDB9E7F2F5E">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 09:57:53 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cost" id="C484E162-7EED-66EC-8F9E-EAEC32914686">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 09:58:12 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>Optiuni_Rascumparare_cost_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cost &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stoc_disponibil" id="E7F138BF-1D93-75DF-4A94-30A4DEF3AB1E">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 09:58:28 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>Optiuni_Rascumparare_stoc_disponibil_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stoc_disponibil &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9B7E36A4-4AA2-AE3E-9C03-C846B5442107" name="Optiuni_Rascumparare PK">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 09:56:43 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A9C6299B-7CE7-91E1-B7A0-97A50D47E036</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BB5F7666-8460-ABC4-8DC9-93B336137C68" name="Optiuni_Rascumparare_denumire_uk">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-10-24 10:00:51 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<newElementsIDs>8C47FCD1-54B5-729B-3C69-4BDEE7DE3C46</newElementsIDs>
+<usedAttributes>
+<attributeRef>8C47FCD1-54B5-729B-3C69-4BDEE7DE3C46</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
