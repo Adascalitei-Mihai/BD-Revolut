@@ -120,9 +120,9 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp** | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:---------|-------------:|:-----------------|:---------------------|
-| id       |              |                  | RON, GBP, EUR, USD   |
-| cod      |              |                  |                      |
-| denumire |              |                  |                      | 
+| id       |   NUMERIC(1)           |    PRIMARY KEY              | RON, GBP, EUR, USD   |
+| cod      |   VARCHAR(3)           |       NOT NULL,UNIQUE           |                      |
+| denumire |      VARCHAR(30)        |      NOT NULL            |                      | 
 
 ### 4. Rate_Conversie
 
@@ -244,17 +244,17 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**               | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:-----------------------|-------------:|:-----------------|:---------------------|
-| id                     |              |                  |                      |
-| client_sursa_valuta_id |              |                  |                      |
-| client_sursa_RON_id    |              |                  |                      |
-| cont_destinatie_id     |              |                  |                      |
-| suma_totala            |              |                  |                      |
-| suma_debitata_valuta   |              |                  |                      |
-| suma_debitata_RON      |              |                  |                      |
-| rata_conversie         |              |                  |                      |
-| data_tranzactie        |              |                  |                      |
-| status                 |              |                  |                      |
-| motiv_esuare           |              |                  |                      |
+| id                     |   NUMERIC(10)           |   PRIMARY KEY                             |                      |
+| client_sursa_valuta_id |   NUMERIC(9)            |    NOT NULL                               |                      |
+| client_sursa_RON_id    |   NUMERIC(9)            |    NOT NULL                               |                      |
+| cont_destinatie_id     |   NUMERIC(9)            |    NOT NULL                               |                      |
+| suma_totala            |   NUMERIC(10,2)         |    NOT NULL,CHECK(suma_totala>0)          |                      |
+| suma_debitata_valuta   |   NUMERIC(10,2)         |    NOT NULL,CHECK(suma_debitata_valuta>=0)|   Poate fi 0 dacǎ totul se ia din RON|
+| suma_debitata_RON      |   NUMERIC(10,2)         |    NOT NULL,CHECK(suma_debitata_RON>=0)   |                      |
+| rata_conversie         |   NUMERIC(10,6)         |    NULL                                   |  `NULL` dacǎ s-a făcut direct în RON sau dacǎ nu a fost nevoie de conversie                |
+| data_tranzactie        |   DATE                  |    NOT NULL                               |                      |
+| status                 |   VARCHAR(8)            |    NOT NULL                               | SUCCES/FAIL          |
+| motiv_esuare           |   VARCHAR(64)           |    NULL                                   |`NULL` daca tranzacția  a reușit |
 
 ### 13. Istoric_Plati_Abonamente
 
