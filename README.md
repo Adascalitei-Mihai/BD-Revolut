@@ -23,8 +23,8 @@
 6. ~~Plati + Abonamente~~
 7. Istoric dobanzi + Istoric plati abonamente + Rate conversie
 8. ~~Portofele puncte + Optiuni rascumparare + Tranzactii puncte~~
-9. Campanii referral + Depozite
-10. Invitatii referral + Tranzactii economii
+9. ~~Campanii referral + Depozite~~
+10.~~Invitatii referral + Tranzactii economii~~
 
 
 ## Componența echipei
@@ -37,9 +37,9 @@
 | **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                                  |
 | **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   | [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                                |
 | **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |                                                  |
-| **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    | [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte)                                                 |
-| **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |    [Invitatii referral](#23-Invitatii_Referral) + [Tranzactii economii](#16-Tranzactii_Economii)|                                             
-| **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |                                                  |
+| **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    | [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte) |
+| **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |  [Invitatii referral](#23-Invitatii_Referral) + [Tranzactii economii](#16-Tranzactii_Economii)|                                             
+| **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |  [Campanii referral](#21-campanii_referral) + [Depozite](#9-depozite)|
 | **Sava Teofan**                |   1307A   | teofan.sava@student.tuiasi.ro                | [Transferuri interne](#11-transferuri_interne) + [Beneficii abonamente](#14-beneficii_abonamente_nm) + [Istoric referral](#24-istorii_referral) |
 
 ---
