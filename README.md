@@ -194,15 +194,17 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Sunt intrările de fonduri din exterior. Aici ne interesează doar contul în care intră banii (fără să implice un card).
 
-| **Câmp**        | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:----------------|-------------:|:-----------------|:---------------------|
-| id              |              |                  |                      |
-| cont_id         |              |                  |                      |
-| suma            |              |                  |                      |
-| nume_sursa      |              |                  |                      |
-| data_tranzactie |              |                  |                      |
-| status          |              |                  |                      |
-| motiv_esuare    |              |                  |                      |
+| **Câmp**        |   **Tip Date** | **Constrângeri**                               | **Notă / Motivație**                                                                     |
+|:----------------|---------------:|:-----------------------------------------------|:-----------------------------------------------------------------------------------------|
+| id              |     NUMERIC(9) | PRIMARY KEY                                    | 7*10<sup>6</sup> utilizatori globali * 3 luni perioadă simulare * 10 depozite / lună     |
+| cont_id         |     NUMERIC(9) | NOT NULL                                       | contul curent în care intră banii; valuta depozitului este cea a contului                |
+| suma            | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0)                      | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant); mereu pozitivă |
+| nume_sursa      |   VARCHAR(100) | NOT NULL, CHECK(length(nume_sursa) > 1)        | banca / expeditorul extern; bonusurile referral au sursa `Revolut Referral`              |
+| data_tranzactie |           DATE | NOT NULL                                       |                                                                                          |
+| status          |     VARCHAR(8) | NOT NULL, CHECK(status IN ('SUCCESS', 'FAIL')) | `SUCCESS` \ `FAIL`                                                                       |
+| motiv_esuare    |    VARCHAR(64) | NULL                                           | `NULL` dacă tranzacția a reușit                                                          |
+
+> **Constrângere la nivel de tabel:** `CHECK ((status = 'SUCCESS' AND motiv_esuare IS NULL) OR (status = 'FAIL' AND motiv_esuare IS NOT NULL))`
 
 ### 10. Plati
 
@@ -374,16 +376,18 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Definește regulile temporale și financiare ale promoției.
 
-| **Câmp**       | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:---------------|-------------:|:-----------------|:---------------------|
-| id             |              |                  |                      |
-| denumire       |              |                  |                      |
-| data_inceput   |              |                  |                      |
-| data_sfarsit   |              |                  |                      |
-| min_tranzactii |              |                  |                      |
-| min_suma_ron   |              |                  |                      |
-| status         |              |                  |                      |
+| **Câmp**       | **Tip Date** | **Constrângeri**                                                                             | **Notă / Motivație**                                                                 |
+|:---------------|-------------:|:---------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
+| id             |   NUMERIC(3) | PRIMARY KEY                                                                                  | o campanie pe lună; 999 este suficient                                               |
+| denumire       | VARCHAR(100) | NOT NULL, CHECK(length(denumire) > 1)                                                        | aceeași campanie se repetă lunar ,adica campania poate avea accelasi nume in fiecare luna dar trebuie sa difere prin data_inceput si alte cerinte(nu neaparat)                                                  |
+| data_inceput   |         DATE | NOT NULL                                                                                     |                                                                                      |
+| data_sfarsit   |         DATE | NOT NULL, CHECK(data_sfarsit > data_inceput AND data_sfarsit <= ADD_MONTHS(data_inceput, 1)) | campania durează cel mult o lună; termenul până la care invitatul face plățile        |
+| min_tranzactii |   NUMERIC(1) | NOT NULL, CHECK(min_tranzactii > 0)                                                          | numărul minim de plăți ale invitatului; între 1 și 9                                 |
+| min_suma_ron   |   NUMERIC(2) | NOT NULL, CHECK(min_suma_ron BETWEEN 30 AND 50)                                              | prag întreg între 30 și 50 RON per plată; proiectul simulează doar piața din România |
+| status         |   VARCHAR(8) | NOT NULL, CHECK(status IN ('ACTIVE', 'INACTIVE'))                                            | `ACTIVE` \ `INACTIVE`                                                                |
 
+> **Constrângere la nivel de tabel:** `UNIQUE (denumire, data_inceput)` – aceeași campanie se repetă lunar, dar nu poate exista de două ori pentru aceeași dată de început
+> 
 ### 22. Recompense_Referral_NM
 
 > Unifică tipul de abonament cu campania.
