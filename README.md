@@ -305,13 +305,13 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**         | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:-----------------|-------------:|:-----------------|:---------------------|
-| id               |              |                  |                      |
-| cont_curent_id   |              |                  |                      |
-| cont_economii_id |              |                  |                      |
-| suma             |              |                  |                      |
-| tip_operatiune   |              |                  |                      |
-| status           |              |                  |                      |
-| data_tranzactie  |              |                  |                      |
+| id               | NUMERIC(10)| PRIMARY KEY                 |                      |
+| cont_curent_id   | NUMERIC(9)  | NOT NULL                 |                      |
+| cont_economii_id | NUMERIC(9)  | NOT NULL                 |                      |
+| suma             | NUMERIC(10,2) | NOT NULL, CHECK(suma > 0) | mereu pozitiva                     |
+| tip_operatiune   |  VARCHAR(10)  |NOT NULL,CHECK(tip_operatiune IN ('DEPUNERE', 'RETRAGERE'))|  `DEPUNERE` \ `RETRAGERE`                     |
+| status           |   VARCHAR(8)           |NOT NULL,CHECK(status IN ('SUCCESS', 'FAIL'))|`SUCCESS` \ `FAIL`                      |
+| data_tranzactie  |   DATE           |NOT NULL                  |                      |
 
 ### 17. Istoric_Dobanzi
 
@@ -400,12 +400,12 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**         | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:-----------------|-------------:|:-----------------|:---------------------|
-| id               |              |                  |                      |
-| client_invita_id |              |                  |                      |
-| client_nou_id    |              |                  |                      |
-| campanie_id      |              |                  |                      |
-| status           |              |                  |                      |
-| data_invitatie   |              |                  |                      |
+| id               |NUMERIC(7)    | PRIMARY KEY                 |10<sup>6</sup> invitații                      |
+| client_invita_id |NUMERIC(7)    | NOT NULL,                 |  7*10<sup>6</sup> utilizatori globali                    |
+| client_nou_id    |NUMERIC(7)    | NOT NULL,CHECK(client_invita_id <> client_nou_id)|Un client nu se poate invita pe sine                      |
+| campanie_id      |NUMERIC(7)    | NOT NULL,                |                      |
+| status           |VARCHAR(10)   | NOT NULL, CHECK(status IN ('PENDING', 'COMPLETED', 'EXPIRED'))|  `PENDING` \ `COMPLETED` \ `EXPIRED`                     |
+| data_invitatie   |   DATE       | NOT NULL,                 |                      |
 
 ### 24. Istoric_Referral
 
