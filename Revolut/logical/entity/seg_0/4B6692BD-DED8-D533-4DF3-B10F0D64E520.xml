@@ -74,11 +74,15 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<constraintName>transferuri_externe_suma_totala_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Suma_totala &gt; 0"/>
+</checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Suma_debitata_valuta" id="4FDCD026-C192-D528-6C04-FF40C5208709">
@@ -88,11 +92,15 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<constraintName>transferuri_externe_suma_debitata_v_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Suma_debitata_valuta &gt;= 0"/>
+</checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Suma_debitata_RON" id="6494C21F-3CD0-7CA8-E044-5C363BCF0667">
@@ -102,12 +110,15 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<constraintName>transferuri_externe_suma_debitataR_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Suma_debitata_RON &gt;= 0"/>
+</checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Rata_converise" id="E6A28D77-CEBD-E68A-FDBA-D89E8F8F48EC">
