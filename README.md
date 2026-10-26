@@ -156,37 +156,37 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Definește formele pe care le pot lua cardurile.
 
-| **Câmp**          | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:------------------|-------------:|:-----------------|:---------------------|
-| id                |              |                  |                      |
-| denumire          |              |                  |                      |
-| limita_tranzactie |              |                  |                      |
+| **Câmp**          |   **Tip Date** | **Constrângeri**                       | **Notă / Motivație**             |
+|:------------------|---------------:|:---------------------------------------|:---------------------------------|
+| id                |     NUMERIC(1) | PRIMARY KEY                            |                                  |
+| denumire          |    VARCHAR(20) | NOT NULL, UNIQUE                       |                                  |
+| limita_tranzactie | NUMERIC(10, 2) | NOT NULL, CHECK(limita_tranzactie > 0) | în RON, pentru o singură plată   |
 
 ### 7. Posibilitati_Carduri_NM
 
 > Aceasta este tabela de legătură care rezolvă logica de retrogradare și limitare.
 
-| **Câmp**            | **Tip Date** | **Constrângeri** | **Notă / Motivație**                               |
-|:--------------------|-------------:|:-----------------|:---------------------------------------------------|
-| abonament_id        |              |                  |                                                    |
-| tip_card_id         |              |                  |                                                    |
-| max_carduri_permise |              |                  | Mihai: vreau max 20 pentru cel mai scump abonament |
+| **Câmp**            | **Tip Date** | **Constrângeri**                                      | **Notă / Motivație**                               |
+|:--------------------|-------------:|:------------------------------------------------------|:---------------------------------------------------|
+| abonament_id        |   NUMERIC(1) | NOT NULL                                              |                                                    |
+| tip_card_id         |   NUMERIC(1) | NOT NULL                                              |                                                    |
+| max_carduri_permise |   NUMERIC(2) | NOT NULL, CHECK(max_carduri_permise BETWEEN 1 AND 20) | Mihai: vreau max 20 pentru cel mai scump abonament |
 
 ### 8. Carduri
 
 > Tabelul care stochează datele sensibile și starea cardului. Ele sunt direct atașate unui `Cont_Curent`.
 
-| **Câmp**      | **Tip Date** | **Constrângeri** | **Notă / Motivație**                                  |
-|:--------------|-------------:|:-----------------|:------------------------------------------------------|
-| id            |              |                  | 7*10<sup>6</sup> utilizatori globali * 20 carduri max |
-| cont_id       |              |                  |                                                       |
-| tip_card      |              |                  |                                                       |
-| numar_card    |              |                  |                                                       |
-| data_expirare |              |                  |                                                       |
-| cvv           |              |                  |                                                       |
-| pin           |              |                  |                                                       |
-| status        |              |                  |                                                       |
-| data_emitere  |              |                  |                                                       |
+| **Câmp**      | **Tip Date** | **Constrângeri**                                                | **Notă / Motivație**                                          |
+|:--------------|-------------:|:----------------------------------------------------------------|:--------------------------------------------------------------|
+| id            |   NUMERIC(9) | PRIMARY KEY                                                     | 7*10<sup>6</sup> utilizatori globali * 20 carduri max         |
+| cont_id       |   NUMERIC(9) | NOT NULL                                                        |                                                               |
+| tip_card_id   |   NUMERIC(1) | NOT NULL                                                        |                                                               |
+| numar_card    |     CHAR(16) | NOT NULL, UNIQUE, CHECK(REGEXP_LIKE(numar_card, '^[0-9]{16}$')) | exact 16 cifre; text, nu facem calcule pe el                  |
+| data_expirare |         DATE | NOT NULL, CHECK(data_expirare > data_emitere)                   | cardul nu poate expira înainte să fie emis                    |
+| cvv           |      CHAR(3) | NOT NULL, CHECK(REGEXP_LIKE(cvv, '^[0-9]{3}$'))                 | exact 3 cifre; text ca să păstrăm zerourile din față (`047`)  |
+| pin           |      CHAR(4) | NOT NULL, CHECK(REGEXP_LIKE(pin, '^[0-9]{4}$'))                 | exact 4 cifre; text ca să păstrăm zerourile din față (`0815`) |
+| status        |   VARCHAR(8) | NOT NULL, CHECK(status IN ('ACTIVE', 'INACTIVE'))               | `ACTIVE` \ `INACTIVE`                                         |
+| data_emitere  |         DATE | NOT NULL                                                        |                                                               |
 
 ---
 
