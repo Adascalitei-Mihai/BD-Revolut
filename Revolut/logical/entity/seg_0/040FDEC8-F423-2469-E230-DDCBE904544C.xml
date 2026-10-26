@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="040FDEC8-F423-2469-E230-DDCBE904544C" name="Campanii_Referral">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:36:36 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="AB70A229-476C-E740-072B-8F466F3E4DC1">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:44:51 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire" id="E39458AF-A3C7-2143-F2D0-45A4821EA6D4">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:45:28 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_inceput" id="3BDB2A6F-D369-D4C1-6968-FB1C80C2BF3D">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:46:00 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_sfarsit" id="DD05AE86-43AE-741E-4452-6A695C77A7DD">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:46:24 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>campanii_refl_data_sfarsit_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_sfarsit &gt; data_inceput AND data_sfarsit &lt;= ADD_MONTHS(data_inceput, 1)"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="min_tranzactii" id="0E5DD5F8-0B9C-9EC5-B02D-2E3893581F80">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:46:44 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>campanii_ref_min_tranzactii_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="min_tranzactii &gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="min_suma_ron" id="98878E0A-9FEB-DE83-34AB-AE055060055D">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:51:01 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>campanii_refl_min_suma_ron_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="min_suma_ron BETWEEN 30 AND 50"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="2167F068-19B3-088E-30E0-2CE3EB0385DF">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:54:07 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<constraintName>campanii_referral_status_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="ACTIVE" description=""/>
+<valueDef value="INACTIVE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D8262CB-7117-683D-E7C3-E7904CCF6387" name="Campanii_Referral PK">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 15:45:19 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AB70A229-476C-E740-072B-8F466F3E4DC1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F5E04DD0-D314-6410-11AD-3ECA0B3ADAF2" name="campanii_ref_den_data_uk">
+<createdBy>Roby</createdBy>
+<createdTime>2026-10-26 16:18:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<newElementsIDs>E39458AF-A3C7-2143-F2D0-45A4821EA6D4,3BDB2A6F-D369-D4C1-6968-FB1C80C2BF3D</newElementsIDs>
+<usedAttributes>
+<attributeRef>E39458AF-A3C7-2143-F2D0-45A4821EA6D4</attributeRef>
+<attributeRef>3BDB2A6F-D369-D4C1-6968-FB1C80C2BF3D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

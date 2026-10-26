@@ -68,8 +68,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="suma&gt;0
-"/>
+<implementationDef dbType="Generic Constraint" definition="suma&gt;0 "/>
 </checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
@@ -80,7 +79,7 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
-<constraintName>tranzactii_economii_tip_operaiune_ck</constraintName>
+<constraintName>tranzactii_economii_tip_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

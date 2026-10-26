@@ -14,6 +14,10 @@
 <display>false</display>
 <notation>1</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="040FDEC8-F423-2469-E230-DDCBE904544C" otype="Entity" vid="0FC75147-FAF9-B513-1ED0-AB479D6FB880">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="60" y="70" width="170" height="110"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="0E4F4E5A-5A60-B43E-A46B-6D0407D5FD41" otype="Entity" vid="DCEEDEFF-C5CF-2572-EFF3-9CDB2ED15EB8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="50" y="50" width="170" height="110"/>
@@ -21,6 +25,10 @@
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="17FE0BFE-D883-0108-D371-08E3DA2413D7" otype="Entity" vid="A1D17B32-82EE-90A6-93E2-5DF235BC888C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="93" y="278" width="171" height="112"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2CEE9C12-8818-0824-4E63-4A9928E4DC44" otype="Entity" vid="0EF8BCB6-1E7A-D5A5-0646-9ADE2D54387F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="50" width="170" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="3796A7B0-723B-EC6B-C198-4F8202139F81" otype="Entity" vid="8A549920-50A5-0119-F359-9D61664DC8F1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -64,7 +72,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="C5A2298B-426D-1C9B-0303-FE7908F49970" otype="Entity" vid="A4426460-9A19-5536-FE03-F72AAE45A78D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="50" y="50" width="170" height="110"/>
+<bounds x="54" y="42" width="170" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D3CB72AF-1798-F8F9-29CA-34130420B626" otype="Entity" vid="47BA9FDA-CCA0-C917-09C1-F100CB2771A4">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
