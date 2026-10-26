@@ -403,7 +403,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | id               |NUMERIC(7)    | PRIMARY KEY                 |10<sup>6</sup> invitații                      |
 | client_invita_id |NUMERIC(7)    | NOT NULL,                 |  7*10<sup>6</sup> utilizatori globali                    |
 | client_nou_id    |NUMERIC(7)    | NOT NULL,CHECK(client_invita_id <> client_nou_id)|Un client nu se poate invita pe sine                      |
-| campanie_id      |NUMERIC(7)    | NOT NULL,                |                      |
+| campanie_id      |NUMERIC(3)    | NOT NULL,                |                      |
 | status           |VARCHAR(10)   | NOT NULL, CHECK(status IN ('PENDING', 'COMPLETED', 'EXPIRED'))|  `PENDING` \ `COMPLETED` \ `EXPIRED`                     |
 | data_invitatie   |   DATE       | NOT NULL,                 |                      |
 
