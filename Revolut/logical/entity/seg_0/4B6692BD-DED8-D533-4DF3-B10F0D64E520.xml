@@ -74,7 +74,7 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
-<constraintName>transferuri_externe_suma_totala_ck</constraintName>
+<constraintName>tr_ext_suma_t_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -92,7 +92,7 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
-<constraintName>transferuri_externe_suma_debitata_v_ck</constraintName>
+<constraintName>tr_ext_suma_d_v_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -110,7 +110,7 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
-<constraintName>transferuri_externe_suma_debitataR_ck</constraintName>
+<constraintName>tr_ext_suma_R_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
