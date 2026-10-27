@@ -21,7 +21,7 @@
 4. ~~Transferuri externe + Valute~~
 5. ~~Transferuri interne + Beneficii abonamente + Istoric referral~~
 6. ~~Plati + Abonamente~~
-7. Istoric dobanzi + Istoric plati abonamente + Rate conversie
+7. ~~Istoric dobanzi + Istoric plati abonamente + Rate conversie~~
 8. ~~Portofele puncte + Optiuni rascumparare + Tranzactii puncte~~
 9. ~~Campanii referral + Depozite~~
 10.~~Invitatii referral + Tranzactii economii~~
@@ -36,7 +36,7 @@
 | **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     | [Conturi curente](#conturi-curente) + [Conturi de economii](#conturi-de-economii)                                      |
 | **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                                  |
 | **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   | [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                                |
-| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |                                                  |
+| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |     [Istoric dobanzi](#17-istoric_dobanzi) + [Istoric plati abonamente](#13-istoric-plati-abonamente) + [Rate conversie](#4-rate-conversie)                                           |
 | **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    | [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte) |
 | **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |  [Invitatii referral](#23-Invitatii_Referral) + [Tranzactii economii](#16-Tranzactii_Economii)|                                             
 | **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |  [Campanii referral](#21-campanii_referral) + [Depozite](#9-depozite)|
