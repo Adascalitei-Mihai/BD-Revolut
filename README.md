@@ -36,7 +36,7 @@
 | **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     | [Conturi curente](#conturi-curente) + [Conturi de economii](#conturi-de-economii)                                      |
 | **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                                  |
 | **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   | [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                                |
-| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |     [Istoric dobanzi](#17-istoric_dobanzi) + [Istoric plati abonamente](#13-istoric-plati-abonamente) + [Rate conversie](#4-rate-conversie)                                           |
+| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |     [Istoric dobanzi](#17-istoric_dobanzi) + [Istoric plati abonamente](#13-istoric_plati_abonamente) + [Rate conversie](#4-rate_conversie)                                           |
 | **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    | [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte) |
 | **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |  [Invitatii referral](#23-Invitatii_Referral) + [Tranzactii economii](#16-Tranzactii_Economii)|                                             
 | **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |  [Campanii referral](#21-campanii_referral) + [Depozite](#9-depozite)|
@@ -128,13 +128,13 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Monitorizează modificările zilnice ale cursurilor de schimb.
 
-| **Câmp**              | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:----------------------|-------------:|:-----------------|:---------------------|
-| id                    |              |                  |                      |
-| valuta_sursa_cod      |              |                  |                      |
-| valuta_destinatie_cod |              |                  |                      |
-| rata_schimb           |              |                  |                      |
-| data_actualizare      |              |                  |                      |
+| **Câmp**              | **Tip Date** |      **Constrângeri**          | **Notă / Motivație** |
+|:----------------------|-------------:|:-------------------------------|:---------------------|
+| id                    |   NUMERIC(9) | PRIMARY KEY                    |                      |
+| valuta_sursa_id       |  NUMERIC(1)  | NOT NULL                       |                      |
+| valuta_destinatie_id  |  NUMERIC(1)  | NOT NULL                       |                      |
+| rata_schimb           |NUMERIC(15, 6)| NOT NULL,CHECK (rata_schimb>0) |                      |
+| data_actualizare      |   DATE       | NOT NULL, DEFAULT SYSDATE      |                      |
 
 ---
 
@@ -262,16 +262,16 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Plată care se declanșează recurent și debitează doar contul de RON.
 
-| **Câmp**        | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:----------------|-------------:|:-----------------|:---------------------|
-| id              |              |                  |                      |
-| client_id       |              |                  |                      |
-| cont_RON_id     |              |                  |                      |
-| abonament_id    |              |                  |                      |
-| suma            |              |                  |                      |
-| data_tranzactie |              |                  |                      |
-| status          |              |                  |                      |
-| motiv_esuare    |              |                  |                      |
+| **Câmp**        | **Tip Date** | **Constrângeri**                                          | **Notă / Motivație**                    |
+|:----------------|-------------:|:----------------------------------------------------------|:----------------------------------------|
+| id              |  NUMERIC(10) |   PRIMARY KEY                                             |                                         |
+| client_id       |  NUMERIC(8)  |   NOT NULL                                                |                                         |
+| cont_RON_id     |  NUMERIC(9)  |   NOT NULL                                                |                                         |
+| abonament_id    |  NUMERIC(1)  |   NOT NULL                                                |                                         |
+| suma            |NUMERIC(10, 2)|   NOT NULL, CHECK(suma > 0)                               |                                         |
+| data_tranzactie |   DATE       |   NOT NULL                                                |                                         |
+| status          | VARCHAR(10)  |   NOT NULL, CHECK status IN 'SUCCESS', 'FAILED', 'PENDING'|                                         |
+| motiv_esuare    | VARCHAR(64)  |   NULL                                                    |                                         |
 
 ---
 
@@ -319,15 +319,15 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Intrări zilnice pentru acordări de dobânzi.
 
-| **Câmp**             | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:---------------------|-------------:|:-----------------|:---------------------|
-| id                   |              |                  |                      |
-| cont_economii_id     |              |                  |                      |
-| sold_initial         |              |                  |                      |
-| rata_dobanda_zilnica |              |                  |                      |
-| suma_generata        |              |                  |                      |
-| status               |              |                  |                      |
-| data_acordare        |              |                  |                      |
+| **Câmp**             | **Tip Date** | **Constrângeri**                                              | **Notă / Motivație** |
+|:---------------------|-------------:|:--------------------------------------------------------------|:---------------------|
+| id                   | NUMERIC(10)  | PRIMARY KEY                                                   |                      |
+| cont_economii_id     | NUMERIC(9)   | NOT NULL                                                      |                      |
+| sold_initial         |NUMERIC(15, 2)| NOT NULL, CHECK(sold_initial >= 0)                            |                      |
+| rata_dobanda_zilnica |NUMERIC(7, 6) | NOT NULL, CHECK(rata_dobanda_zilnica >= 0)                    |                      |
+| suma_generata        |NUMERIC(10, 2)| NOT NULL, CHECK(suma_generata >= 0)                           |                      |
+| status               |VARCHAR(10)   | NOT NULL, CHECK(status IN ('SUCCES', 'PENDING', 'FAILED'))    |                      |
+| data_acordare        | DATE         | NOT NULL                                                      |                      |
 
 ---
 

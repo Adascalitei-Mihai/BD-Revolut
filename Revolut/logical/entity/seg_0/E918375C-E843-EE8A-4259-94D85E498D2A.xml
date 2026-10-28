@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E918375C-E843-EE8A-4259-94D85E498D2A" name="istoric_dobanzi">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 17:59:18 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="32965C80-E625-534F-67D2-48464155105D">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 17:59:42 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cont_economii_od" id="719F2799-F7B7-1010-9483-168B458F6506">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 18:00:01 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sold_initial" id="0C08E02E-9C8E-D054-7E45-0691A65B1F9B">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 18:00:30 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<description>sold_initial&gt;=0</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="rata_dobanda_zilnica" id="B9ECD369-11B0-5E52-F003-5C95EB5F2DB9">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 18:01:39 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,7,6</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<description>rata_dobanda_zilnica&gt;=0</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="suma_generata" id="7B9D0341-376C-93D8-A9C0-9D01F6BBCAE5">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 18:03:14 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<description>suma_generata&gt;=0</description>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="status" id="ECFB0E0A-71EF-460E-F33B-42B7713187E8">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 18:04:08 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="" description=""/>
+<valueDef value="FAILED" description=""/>
+<valueDef value="PENDING" description=""/>
+<valueDef value="SUCCES" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_acordare" id="F6F3E351-7C95-53FE-7760-082C423E4F4E">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 18:05:39 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4747E138-9359-8816-EAE9-D07789127151" name="istoric_dobanzi PK">
+<createdBy>bianc</createdBy>
+<createdTime>2026-10-28 17:59:58 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>32965C80-E625-534F-67D2-48464155105D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
