@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4422AB30-5EE7-0559-184B-8B1F393BA063" name="Clienti">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:18:01 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_client" id="E9F686E8-16FE-70A0-B59C-3D8099D69C35">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:18:35 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_abonament" id="26F33FE7-DF0C-DC40-33DA-B47C2B35BE2D">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:20:53 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="7002E0F4-CAC2-05C5-F3F0-FCAE595DF159">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:41:18 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="36B65546-A1AF-219C-E05A-C38EA6AB6B69">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:41:51 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cnp" id="F6C1842B-0468-4C0D-081C-EE97443B9CCB">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:42:38 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13 CHAR</dataTypeSize>
+<ownDataTypeParameters>13 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="3B405C6C-2CFA-8013-6D94-03990495F0F1">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:42:49 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="44EB3837-AD7E-DAC6-6113-E8126957B51A">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:47:07 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 CHAR</dataTypeSize>
+<ownDataTypeParameters>254 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_inregistrare" id="20EF7F67-DE14-D736-24A7-595328EE7EA2">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:48:55 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6B5527DE-7B69-F6B9-AA61-E83C8C1BCFE0" name="Clienti PK">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:19:21 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E9F686E8-16FE-70A0-B59C-3D8099D69C35</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8145B792-384D-C1BC-B1DF-AA1CB184AB5A" name="cnp_UK">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:44:55 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<newElementsIDs>F6C1842B-0468-4C0D-081C-EE97443B9CCB</newElementsIDs>
+<usedAttributes>
+<attributeRef>F6C1842B-0468-4C0D-081C-EE97443B9CCB</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="41FB8A07-44EF-4077-5A80-552369420A92" name="telefon_UK">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:45:28 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<newElementsIDs>3B405C6C-2CFA-8013-6D94-03990495F0F1</newElementsIDs>
+<usedAttributes>
+<attributeRef>3B405C6C-2CFA-8013-6D94-03990495F0F1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0807921D-0E50-A146-F361-3F70B313CB30" name="email_UK">
+<createdBy>kali</createdBy>
+<createdTime>2026-10-29 11:48:04 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<newElementsIDs>44EB3837-AD7E-DAC6-6113-E8126957B51A</newElementsIDs>
+<usedAttributes>
+<attributeRef>44EB3837-AD7E-DAC6-6113-E8126957B51A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
