@@ -15,7 +15,7 @@
 
 
 ### task-uri:
-1. Clienti + Recompense referral
+1. ~~Clienti + Recompense referral~~
 2. ~~Conturi curente + Conturi de economii~~
 3. ~~Carduri + Tipuri carduri + Posibilitati carduri~~
 4. ~~Transferuri externe + Valute~~
@@ -34,7 +34,7 @@
 | **Adăscăliței Cristian-Mihai** |   1307A   | cristian-mihai.adascalitei@student.tuiasi.ro | [Abonamente](#1-Abonamente) + [Plati](#10-Plati) |
 | **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            | [Carduri](#8-Carduri) + [Tipuri carduri](#6-Tipuri_Carduri) + [Posibilitati carduri](#7-Posibilitati_Carduri_NM) |
 | **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     | [Conturi curente](#conturi-curente) + [Conturi de economii](#conturi-de-economii)                                      |
-| **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                                  |
+| **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        | [Clienti](#2-clienti) + [Recompense_referral](#22-recompense_referral_nm)                                                 |
 | **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   | [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                                |
 | **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |     [Istoric dobanzi](#17-istoric_dobanzi) + [Istoric plati abonamente](#13-istoric_plati_abonamente) + [Rate conversie](#4-rate_conversie)                                           |
 | **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    | [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte) |
@@ -105,14 +105,14 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**          | **Tip Date** | **Constrângeri** | **Notă / Motivație**                 |
 |:------------------|-------------:|:-----------------|:-------------------------------------|
-| id                |              |                  | 7*10<sup>6</sup> utilizatori globali |
-| nume              |              |                  |                                      |
-| prenume           |              |                  |                                      |
-| cnp               |              |                  |                                      |
-| telefon           |              |                  |                                      |
-| email             |              |                  |                                      |
-| abonament_id      |              |                  |                                      |
-| data_inregistrare |              |                  |                                      |
+| id                | NUMERIC(8)             |   PRIMARY KEY               | 8*10<sup>7</sup> utilizatori globali |
+| nume              | VARCHAR(30)             |  NOT NULL                |                                      |
+| prenume           | VARCHAR(100)             |  NOT NULL                |                                      |
+| cnp               | CHAR(13)             |  NOT NULL, UNIQUE                |                                      |
+| telefon           | VARCHAR(16)             | NOT NULL , UNIQUE                 |                                      |
+| email             | VARCHAR(254)             | NOT NULL , UNIQUE                 |                                      |
+| id_abonament      | NUMERIC(1)             |  FOREIGN KEY                |                                      |
+| data_inregistrare | DATE             |   NOT NULL               |                                      |
 
 ### 3. Valute
 
@@ -394,9 +394,10 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**       | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:---------------|-------------:|:-----------------|:---------------------|
-| abonament_id   |              |                  |                      |
-| campanie_id    |              |                  |                      |
-| suma           |              |                  |                      |
+| id_recompensa  | NUMERIC(9)             |  PRIMARY KEY                |                      |
+| id_abonament   | NUMERIC(1)             |  FOREIGN KEY                | o recompensa apartine unui singur tip de abonament , dar un tip de abonament poate avea mai multe recompense                     |
+| id_campanie    | NUMERIC(3)             |  FOREIGN KEY                | o recompensa apartine unei singure campanii , dar o campanie poate avea mai multe recompense                     |
+| suma           | NUMERIC(4)             |  NOT NULL , CHECK(suma>0)                | o recompensa nu poate avea o suma de bani negativa                     |
 
 ### 23. Invitatii_Referral
 
