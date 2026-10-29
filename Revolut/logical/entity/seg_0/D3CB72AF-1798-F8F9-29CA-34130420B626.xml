@@ -25,8 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="portofel_id" id="81622E45-287A-0752-2222-B05DCB32BE7B">
 <createdBy>Costin-Daniel</createdBy>
@@ -38,8 +38,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="suma" id="8943D2F4-EFF8-317F-2D17-6B371B50181E">
 <createdBy>Costin-Daniel</createdBy>
@@ -86,8 +86,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="optiune_rascumparare_id" id="B3EDE69A-1420-4172-EB34-E5007ECA0EB9">
 <createdBy>Costin-Daniel</createdBy>

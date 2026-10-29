@@ -69,8 +69,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data_tranzactie" id="8B51F9DE-ABFE-B8C0-BB32-1D55485873AB">
 <createdBy>teofan</createdBy>

@@ -3,43 +3,19 @@
 
 ---
 
-# TODO:
-
-### stage -1: feedback! (doar daca e constructiv)
-### stage 0: iti iei taskul din github projects si il pui in coloana luat
-### stage 1: cand nu are NIMENI taskul in progres, il pui tu in acea coloana si:
-### assignment 1 - README: pui ce task-uri ai in tabel, completezi tabelele tale, daca e nevoie adaugi / modifici atribute + note / motivatii neaparat daca nu e ceva simplu. (incercati sa fiti consistenti, atenti si la ceilalti care o completat deja anumite tipuri care tin de ale voastre)
-### assignment 2 - modeler: te conectezi pe data modeler cu git, pull + lucrezi doar in sub-viewul logic al taskului tau, nu uiti sa dai commit + push minim odata
-### stage 2: verifici daca e ok, ultimul commit sa aiba un nume sugestiv si sa fie atasat issueului (#no), pui issue-ul din projects in coloana review 
-### vezi ca llm-urile baga vrajeala proasta uneori, nu strica munca daca nu esti sigur :/ (intreaba)
-
-
-### task-uri:
-1. ~~Clienti + Recompense referral~~
-2. ~~Conturi curente + Conturi de economii~~
-3. ~~Carduri + Tipuri carduri + Posibilitati carduri~~
-4. ~~Transferuri externe + Valute~~
-5. ~~Transferuri interne + Beneficii abonamente + Istoric referral~~
-6. ~~Plati + Abonamente~~
-7. ~~Istoric dobanzi + Istoric plati abonamente + Rate conversie~~
-8. ~~Portofele puncte + Optiuni rascumparare + Tranzactii puncte~~
-9. ~~Campanii referral + Depozite~~
-10.~~Invitatii referral + Tranzactii economii~~
-
-
 ## Componența echipei
 
-| **Nume**                       | **Grupă** | **Email**                                    |                     Task-uri                     |
-|:-------------------------------|:---------:|:---------------------------------------------|:------------------------------------------------:|
-| **Adăscăliței Cristian-Mihai** |   1307A   | cristian-mihai.adascalitei@student.tuiasi.ro | [Abonamente](#1-Abonamente) + [Plati](#10-Plati) |
-| **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            | [Carduri](#8-Carduri) + [Tipuri carduri](#6-Tipuri_Carduri) + [Posibilitati carduri](#7-Posibilitati_Carduri_NM) |
-| **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     | [Conturi curente](#conturi-curente) + [Conturi de economii](#conturi-de-economii)                                      |
-| **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        | [Clienti](#2-clienti) + [Recompense_referral](#22-recompense_referral_nm)                                                 |
-| **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   | [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                                |
-| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |     [Istoric dobanzi](#17-istoric_dobanzi) + [Istoric plati abonamente](#13-istoric_plati_abonamente) + [Rate conversie](#4-rate_conversie)                                           |
-| **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    | [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte) |
-| **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |  [Invitatii referral](#23-Invitatii_Referral) + [Tranzactii economii](#16-Tranzactii_Economii)|                                             
-| **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |  [Campanii referral](#21-campanii_referral) + [Depozite](#9-depozite)|
+| **Nume**                       | **Grupă** | **Email**                                    |                                                                    Task-uri                                                                     |
+|:-------------------------------|:---------:|:---------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------:|
+| **Adăscăliței Cristian-Mihai** |   1307A   | cristian-mihai.adascalitei@student.tuiasi.ro |                                                [Abonamente](#1-Abonamente) + [Plati](#10-Plati)                                                 |
+| **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            |                [Carduri](#8-Carduri) + [Tipuri carduri](#6-Tipuri_Carduri) + [Posibilitati carduri](#7-Posibilitati_Carduri_NM)                 |
+| **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     |                                [Conturi curente](#conturi-curente) + [Conturi de economii](#conturi-de-economii)                                |
+| **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                    [Clienti](#2-clienti) + [Recompense_referral](#22-recompense_referral_nm)                                    |
+| **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   |                                      [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                       |
+| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |     [Istoric dobanzi](#17-istoric_dobanzi) + [Istoric plati abonamente](#13-istoric_plati_abonamente) + [Rate conversie](#4-rate_conversie)     |
+| **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    |    [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte)     |
+| **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |                          [Invitatii referral](#23-Invitatii_Referral) + [Tranzactii economii](#16-Tranzactii_Economii)                          |                                             
+| **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |                                      [Campanii referral](#21-campanii_referral) + [Depozite](#9-depozite)                                       |
 | **Sava Teofan**                |   1307A   | teofan.sava@student.tuiasi.ro                | [Transferuri interne](#11-transferuri_interne) + [Beneficii abonamente](#14-beneficii_abonamente_nm) + [Istoric referral](#24-istorii_referral) |
 
 ---
@@ -103,38 +79,38 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Gestionează identitatea clienților și reține care este abonamentul lor actual.
 
-| **Câmp**          | **Tip Date** | **Constrângeri** | **Notă / Motivație**                 |
-|:------------------|-------------:|:-----------------|:-------------------------------------|
-| id                | NUMERIC(8)             |   PRIMARY KEY               | 8*10<sup>7</sup> utilizatori globali |
-| nume              | VARCHAR(30)             |  NOT NULL                |                                      |
-| prenume           | VARCHAR(100)             |  NOT NULL                |                                      |
-| cnp               | CHAR(13)             |  NOT NULL, UNIQUE                |                                      |
-| telefon           | VARCHAR(16)             | NOT NULL , UNIQUE                 |                                      |
-| email             | VARCHAR(254)             | NOT NULL , UNIQUE                 |                                      |
-| id_abonament      | NUMERIC(1)             |  FOREIGN KEY                |                                      |
-| data_inregistrare | DATE             |   NOT NULL               |                                      |
+| **Câmp**          |            **Tip Date** | **Constrângeri** | **Notă / Motivație**                 |
+|:------------------|------------------------:|:-----------------|:-------------------------------------|
+| id                |              NUMERIC(8) | PRIMARY KEY      | 7*10<sup>7</sup> utilizatori globali |
+| nume              |             VARCHAR(30) | NOT NULL         |                                      |
+| prenume           |            VARCHAR(100) | NOT NULL         |                                      |
+| cnp               |                CHAR(13) | NOT NULL, UNIQUE |                                      |
+| telefon           |             VARCHAR(16) | NOT NULL, UNIQUE |                                      |
+| email             |            VARCHAR(254) | NOT NULL, UNIQUE |                                      |
+| id_abonament      |              NUMERIC(1) | FOREIGN KEY      |                                      |
+| data_inregistrare |                    DATE | NOT NULL         |                                      |
 
 ### 3. Valute
 
 > Nomenclatorul monedelor cu care sistemul poate lucra. Baza este RON.
 
 | **Câmp** | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:---------|-------------:|:-----------------|:---------------------|
-| id       |   NUMERIC(1)           |    PRIMARY KEY              | RON, GBP, EUR, USD   |
-| cod      |   VARCHAR(3)           |       NOT NULL,UNIQUE           |                      |
-| denumire |      VARCHAR(30)        |      NOT NULL            |                      | 
+|:---------|-------------:|:----------------|:---------------------|
+| id       |   NUMERIC(1) | PRIMARY KEY     | RON, GBP, EUR, USD   |
+| cod      |   VARCHAR(3) | NOT NULL,UNIQUE |                      |
+| denumire |  VARCHAR(30) | NOT NULL        |                      | 
 
 ### 4. Rate_Conversie
 
 > Monitorizează modificările zilnice ale cursurilor de schimb.
 
-| **Câmp**              | **Tip Date** |      **Constrângeri**          | **Notă / Motivație** |
-|:----------------------|-------------:|:-------------------------------|:---------------------|
-| id                    |   NUMERIC(9) | PRIMARY KEY                    |                      |
-| valuta_sursa_id       |  NUMERIC(1)  | NOT NULL                       |                      |
-| valuta_destinatie_id  |  NUMERIC(1)  | NOT NULL                       |                      |
-| rata_schimb           |NUMERIC(15, 6)| NOT NULL,CHECK (rata_schimb>0) |                      |
-| data_actualizare      |   DATE       | NOT NULL, DEFAULT SYSDATE      |                      |
+| **Câmp**              |   **Tip Date** |      **Constrângeri**          | **Notă / Motivație** |
+|:----------------------|---------------:|:-------------------------------|:---------------------|
+| id                    |     NUMERIC(9) | PRIMARY KEY                    |                      |
+| valuta_sursa_id       |     NUMERIC(1) | NOT NULL                       |                      |
+| valuta_destinatie_id  |     NUMERIC(1) | NOT NULL                       |                      |
+| rata_schimb           | NUMERIC(15, 6) | NOT NULL,CHECK (rata_schimb>0) |                      |
+| data_actualizare      |           DATE | NOT NULL, DEFAULT SYSDATE      |                      |
 
 ---
 
@@ -166,11 +142,11 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Aceasta este tabela de legătură care rezolvă logica de retrogradare și limitare.
 
-| **Câmp**            | **Tip Date** | **Constrângeri**                                      | **Notă / Motivație**                               |
-|:--------------------|-------------:|:------------------------------------------------------|:---------------------------------------------------|
-| abonament_id        |   NUMERIC(1) | NOT NULL                                              |                                                    |
-| tip_card_id         |   NUMERIC(1) | NOT NULL                                              |                                                    |
-| max_carduri_permise |   NUMERIC(2) | NOT NULL, CHECK(max_carduri_permise BETWEEN 1 AND 20) | Mihai: vreau max 20 pentru cel mai scump abonament |
+| **Câmp**            | **Tip Date** | **Constrângeri**                                      | **Notă / Motivație**                  |
+|:--------------------|-------------:|:------------------------------------------------------|:--------------------------------------|
+| abonament_id        |   NUMERIC(1) | NOT NULL                                              |                                       |
+| tip_card_id         |   NUMERIC(1) | NOT NULL                                              |                                       |
+| max_carduri_permise |   NUMERIC(2) | NOT NULL, CHECK(max_carduri_permise BETWEEN 1 AND 20) | max 20 pentru cel mai scump abonament |
 
 ### 8. Carduri
 
@@ -178,7 +154,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**      | **Tip Date** | **Constrângeri**                                                | **Notă / Motivație**                                          |
 |:--------------|-------------:|:----------------------------------------------------------------|:--------------------------------------------------------------|
-| id            |   NUMERIC(9) | PRIMARY KEY                                                     | 7*10<sup>6</sup> utilizatori globali * 20 carduri max         |
+| id            |  NUMERIC(10) | PRIMARY KEY                                                     | 7*10<sup>7</sup> utilizatori globali * 20 carduri max         |
 | cont_id       |   NUMERIC(9) | NOT NULL                                                        |                                                               |
 | tip_card_id   |   NUMERIC(1) | NOT NULL                                                        |                                                               |
 | numar_card    |     CHAR(16) | NOT NULL, UNIQUE, CHECK(REGEXP_LIKE(numar_card, '^[0-9]{16}$')) | exact 16 cifre; text, nu facem calcule pe el                  |
@@ -196,7 +172,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**        |   **Tip Date** | **Constrângeri**                               | **Notă / Motivație**                                                                     |
 |:----------------|---------------:|:-----------------------------------------------|:-----------------------------------------------------------------------------------------|
-| id              |     NUMERIC(9) | PRIMARY KEY                                    | 7*10<sup>6</sup> utilizatori globali * 3 luni perioadă simulare * 10 depozite / lună     |
+| id              |    NUMERIC(10) | PRIMARY KEY                                    | 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 10 depozite / lună     |
 | cont_id         |     NUMERIC(9) | NOT NULL                                       | contul curent în care intră banii; valuta depozitului este cea a contului                |
 | suma            | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0)                      | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant); mereu pozitivă |
 | nume_sursa      |   VARCHAR(100) | NOT NULL, CHECK(length(nume_sursa) > 1)        | banca / expeditorul extern; bonusurile referral au sursa `Revolut Referral`              |
@@ -212,8 +188,8 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**        |   **Tip Date** | **Constrângeri**                     | **Notă / Motivație**                                                                      |
 |:----------------|---------------:|:-------------------------------------|:------------------------------------------------------------------------------------------|
-| id              |    NUMERIC(10) | PRIMARY KEY                          | 7*10<sup>6</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi |
-| card_id         |     NUMERIC(8) | NOT NULL                             |                                                                                           |
+| id              |    NUMERIC(11) | PRIMARY KEY                          | 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi |
+| card_id         |    NUMERIC(10) | NOT NULL                             |                                                                                           |
 | valuta_id       |     NUMERIC(1) | NOT NULL                             |                                                                                           |
 | suma_totala     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_totala > 0)     | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant)                  |
 | nume_destinatie |   VARCHAR(100) | NOT NULL                             |                                                                                           |
@@ -228,9 +204,9 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Sunt operațiunile de schimb valutar pe care clientul le face între propriile conturi.
 
-| **Câmp**           | **Tip Date**    | **Constrângeri**                                     | **Notă / Motivație**                                                     |
+| **Câmp**           |    **Tip Date** | **Constrângeri**                                     | **Notă / Motivație**                                                     |
 |:-------------------|----------------:|:-----------------------------------------------------|:-------------------------------------------------------------------------|
-| id                 |     NUMERIC(9)  | PRIMARY KEY                                          | 4*10<sup>8</sup> tranzacții interne pe lună * 3 luni perioadă simulare   |
+| id                 |      NUMERIC(9) | PRIMARY KEY                                          | 4*10<sup>8</sup> tranzacții interne pe lună * 3 luni perioadă simulare   |
 | suma_trimisa       |  NUMERIC(10, 2) | NOT NULL, CHECK(suma_trimisa > 0)                    | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant) |
 | cont_sursa_id      |      NUMERIC(9) | NOT NULL                                             |                                                                          |
 | cont_destinatie_id |      NUMERIC(9) | NOT NULL, CHECK(cont_sursa_id <> cont_destinatie_id) |                                                                          |
@@ -244,34 +220,34 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Plăți între clienți diferiți ai aplicației, aplică logica de *split-payment*.
 
-| **Câmp**               | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:-----------------------|-------------:|:-----------------|:---------------------|
-| id                     |   NUMERIC(10)           |   PRIMARY KEY                             |                      |
-| client_sursa_valuta_id |   NUMERIC(9)            |    NOT NULL                               |                      |
-| client_sursa_RON_id    |   NUMERIC(9)            |    NOT NULL                               |                      |
-| cont_destinatie_id     |   NUMERIC(9)            |    NOT NULL                               |                      |
-| suma_totala            |   NUMERIC(10,2)         |    NOT NULL,CHECK(suma_totala>0)          |                      |
-| suma_debitata_valuta   |   NUMERIC(10,2)         |    NOT NULL,CHECK(suma_debitata_valuta>=0)|   Poate fi 0 dacǎ totul se ia din RON|
-| suma_debitata_RON      |   NUMERIC(10,2)         |    NOT NULL,CHECK(suma_debitata_RON>=0)   |                      |
-| rata_conversie         |   NUMERIC(10,6)         |    NULL                                   |  `NULL` dacǎ s-a făcut direct în RON sau dacǎ nu a fost nevoie de conversie                |
-| data_tranzactie        |   DATE                  |    NOT NULL                               |                      |
-| status                 |   VARCHAR(8)            |    NOT NULL                               | SUCCES/FAIL          |
-| motiv_esuare           |   VARCHAR(64)           |    NULL                                   |`NULL` daca tranzacția  a reușit |
+| **Câmp**               |           **Tip Date** | **Constrângeri**                          | **Notă / Motivație**                                                       |
+|:-----------------------|-----------------------:|:------------------------------------------|:---------------------------------------------------------------------------|
+| id                     |            NUMERIC(10) | PRIMARY KEY                               |                                                                            |
+| client_sursa_valuta_id |             NUMERIC(9) | NOT NULL                                  |                                                                            |
+| client_sursa_RON_id    |             NUMERIC(9) | NOT NULL                                  |                                                                            |
+| cont_destinatie_id     |             NUMERIC(9) | NOT NULL                                  |                                                                            |
+| suma_totala            |          NUMERIC(10,2) | NOT NULL,CHECK(suma_totala>0)             |                                                                            |
+| suma_debitata_valuta   |          NUMERIC(10,2) | NOT NULL,CHECK(suma_debitata_valuta>=0)   | Poate fi 0 dacǎ totul se ia din RON                                        |
+| suma_debitata_RON      |          NUMERIC(10,2) | NOT NULL,CHECK(suma_debitata_RON>=0)      |                                                                            |
+| rata_conversie         |          NUMERIC(10,6) | NULL                                      | `NULL` dacǎ s-a făcut direct în RON sau dacǎ nu a fost nevoie de conversie |
+| data_tranzactie        |                   DATE | NOT NULL                                  |                                                                            |
+| status                 |             VARCHAR(8) | NOT NULL                                  | SUCCES/FAIL                                                                |
+| motiv_esuare           |            VARCHAR(64) | NULL                                      | `NULL` daca tranzacția  a reușit                                           |
 
 ### 13. Istoric_Plati_Abonamente
 
 > Plată care se declanșează recurent și debitează doar contul de RON.
 
-| **Câmp**        | **Tip Date** | **Constrângeri**                                          | **Notă / Motivație**                    |
-|:----------------|-------------:|:----------------------------------------------------------|:----------------------------------------|
-| id              |  NUMERIC(10) |   PRIMARY KEY                                             |                                         |
-| client_id       |  NUMERIC(8)  |   NOT NULL                                                |                                         |
-| cont_RON_id     |  NUMERIC(9)  |   NOT NULL                                                |                                         |
-| abonament_id    |  NUMERIC(1)  |   NOT NULL                                                |                                         |
-| suma            |NUMERIC(10, 2)|   NOT NULL, CHECK(suma > 0)                               |                                         |
-| data_tranzactie |   DATE       |   NOT NULL                                                |                                         |
-| status          | VARCHAR(10)  |   NOT NULL, CHECK status IN 'SUCCESS', 'FAILED', 'PENDING'|                                         |
-| motiv_esuare    | VARCHAR(64)  |   NULL                                                    |                                         |
+| **Câmp**        |   **Tip Date** | **Constrângeri**                                          | **Notă / Motivație**                    |
+|:----------------|---------------:|:----------------------------------------------------------|:----------------------------------------|
+| id              |    NUMERIC(10) | PRIMARY KEY                                               |                                         |
+| client_id       |     NUMERIC(8) | NOT NULL                                                  |                                         |
+| cont_RON_id     |     NUMERIC(9) | NOT NULL                                                  |                                         |
+| abonament_id    |     NUMERIC(1) | NOT NULL                                                  |                                         |
+| suma            | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0)                                 |                                         |
+| data_tranzactie |           DATE | NOT NULL                                                  |                                         |
+| status          |    VARCHAR(10) | NOT NULL, CHECK status IN 'SUCCESS', 'FAILED', 'PENDING'  |                                         |
+| motiv_esuare    |    VARCHAR(64) | NULL                                                      |                                         |
 
 ---
 
@@ -279,12 +255,12 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Pentru fiecare combinație de `Abonament` + `Valută`, care este dobânda la economii și care este rata de generare a punctelor.
 
-| **Câmp**             | **Tip Date**    | **Constrângeri**                           | **Notă / Motivație**                               |
-|:---------------------|----------------:|:-------------------------------------------|:---------------------------------------------------|
-| abonament_id         |      NUMERIC(7) | PRIMARY KEY                                | 7*10<sup>6</sup> utilizatori globali * 1 abonament |
-| valuta_id            |      NUMERIC(1) | NOT NULL                                   | RON, GBP, EUR, USD                                 |
-| rata_dobanda_anuala  |   NUMERIC(5, 4) | NOT NULL, CHECK (rata_dobanda_anuala >= 0) |                                                    |
-| multiplicator_puncte |   NUMERIC(3, 2) | NOT NULL, DEFAULT 1.00                     |                                                    |
+| **Câmp**             |  **Tip Date** | **Constrângeri**                           | **Notă / Motivație**                               |
+|:---------------------|--------------:|:-------------------------------------------|:---------------------------------------------------|
+| abonament_id         |    NUMERIC(8) | PRIMARY KEY                                | 7*10<sup>7</sup> utilizatori globali * 1 abonament |
+| valuta_id            |    NUMERIC(1) | NOT NULL                                   | RON, GBP, EUR, USD                                 |
+| rata_dobanda_anuala  | NUMERIC(5, 4) | NOT NULL, CHECK (rata_dobanda_anuala >= 0) |                                                    |
+| multiplicator_puncte | NUMERIC(3, 2) | NOT NULL, DEFAULT 1.00                     |                                                    |
 
 ---
 
@@ -305,29 +281,29 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Aici înregistrăm mișcările de bani făcute de client, depuneri sau retrageri.
 
-| **Câmp**         | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:-----------------|-------------:|:-----------------|:---------------------|
-| id               | NUMERIC(10)| PRIMARY KEY                 |                      |
-| cont_curent_id   | NUMERIC(9)  | NOT NULL                 |                      |
-| cont_economii_id | NUMERIC(9)  | NOT NULL                 |                      |
-| suma             | NUMERIC(10,2) | NOT NULL, CHECK(suma > 0) | mereu pozitiva                     |
-| tip_operatiune   |  VARCHAR(10)  |NOT NULL,CHECK(tip_operatiune IN ('DEPUNERE', 'RETRAGERE'))|  `DEPUNERE` \ `RETRAGERE`                     |
-| status           |   VARCHAR(8)           |NOT NULL,CHECK(status IN ('SUCCESS', 'FAIL'))|`SUCCESS` \ `FAIL`                      |
-| data_tranzactie  |   DATE           |NOT NULL                  |                      |
+| **Câmp**         |  **Tip Date** | **Constrângeri**                                            | **Notă / Motivație**                         |
+|:-----------------|--------------:|:------------------------------------------------------------|:---------------------------------------------|
+| id               |   NUMERIC(10) | PRIMARY KEY                                                 |                                              |
+| cont_curent_id   |    NUMERIC(9) | NOT NULL                                                    |                                              |
+| cont_economii_id |    NUMERIC(9) | NOT NULL                                                    |                                              |
+| suma             | NUMERIC(10,2) | NOT NULL, CHECK(suma > 0)                                   | mereu pozitiva                               |
+| tip_operatiune   |   VARCHAR(10) | NOT NULL,CHECK(tip_operatiune IN ('DEPUNERE', 'RETRAGERE')) | `DEPUNERE` \ `RETRAGERE`                     |
+| status           |    VARCHAR(8) | NOT NULL,CHECK(status IN ('SUCCESS', 'FAIL'))               | `SUCCESS` \ `FAIL`                           |
+| data_tranzactie  |          DATE | NOT NULL                                                    |                                              |
 
 ### 17. Istoric_Dobanzi
 
 > Intrări zilnice pentru acordări de dobânzi.
 
-| **Câmp**             | **Tip Date** | **Constrângeri**                                              | **Notă / Motivație** |
-|:---------------------|-------------:|:--------------------------------------------------------------|:---------------------|
-| id                   | NUMERIC(10)  | PRIMARY KEY                                                   |                      |
-| cont_economii_id     | NUMERIC(9)   | NOT NULL                                                      |                      |
-| sold_initial         |NUMERIC(15, 2)| NOT NULL, CHECK(sold_initial >= 0)                            |                      |
-| rata_dobanda_zilnica |NUMERIC(7, 6) | NOT NULL, CHECK(rata_dobanda_zilnica >= 0)                    |                      |
-| suma_generata        |NUMERIC(10, 2)| NOT NULL, CHECK(suma_generata >= 0)                           |                      |
-| status               |VARCHAR(10)   | NOT NULL, CHECK(status IN ('SUCCES', 'PENDING', 'FAILED'))    |                      |
-| data_acordare        | DATE         | NOT NULL                                                      |                      |
+| **Câmp**             |   **Tip Date** | **Constrângeri**                                              | **Notă / Motivație** |
+|:---------------------|---------------:|:--------------------------------------------------------------|:---------------------|
+| id                   |    NUMERIC(10) | PRIMARY KEY                                                   |                      |
+| cont_economii_id     |     NUMERIC(9) | NOT NULL                                                      |                      |
+| sold_initial         | NUMERIC(15, 2) | NOT NULL, CHECK(sold_initial >= 0)                            |                      |
+| rata_dobanda_zilnica |  NUMERIC(7, 6) | NOT NULL, CHECK(rata_dobanda_zilnica >= 0)                    |                      |
+| suma_generata        | NUMERIC(10, 2) | NOT NULL, CHECK(suma_generata >= 0)                           |                      |
+| status               |    VARCHAR(10) | NOT NULL, CHECK(status IN ('SUCCES', 'PENDING', 'FAILED'))    |                      |
+| data_acordare        |           DATE | NOT NULL                                                      |                      |
 
 ---
 
@@ -335,38 +311,38 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Fiecare client are exact un singur portofel de puncte.
 
-| **Câmp**    | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:------------|-------------:|:-----------------|:---------------------|
-| id          |   NUMERIC(10) |      PRIMARY KEY | 7*10<sup>6</sup> utilizatori globali * 1 portofel |
-| client_id   |   NUMERIC(10) | NOT NULL, UNIQUE | Un singur portofel per client |
-| sold        |   NUMERIC(10) | NOT NULL, CHECK (sold>=0) |                      |
-| data_creare |         DATE |         NOT NULL |                      |
+| **Câmp**    | **Tip Date** | **Constrângeri**          | **Notă / Motivație**                              |
+|:------------|-------------:|:--------------------------|:--------------------------------------------------|
+| id          |   NUMERIC(8) | PRIMARY KEY               | 7*10<sup>7</sup> utilizatori globali * 1 portofel |
+| client_id   |  NUMERIC(10) | NOT NULL, UNIQUE          | Un singur portofel per client                     |
+| sold        |  NUMERIC(10) | NOT NULL, CHECK (sold>=0) |                                                   |
+| data_creare |         DATE | NOT NULL                  |                                                   |
 
 ### 19. Optiuni_Rascumparare
 
 > Este "magazinul" de unde clienții își pot cheltui punctele.
 
-| **Câmp**        | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:----------------|-------------:|:-----------------|:---------------------|
-| id              |   NUMERIC(10) |    PRIMARY KEY |                      |
-| denumire        | VARCHAR(100) | NOT NULL, UNIQUE |                      |
-| descriere       | VARCHAR(500) |                  | NULL dacă opțiunea nu are descriere |
-| cost            |   NUMERIC(10) | NOT NULL, CHECK (cost > 0) |                      |
-| stoc_disponibil |   NUMERIC(10) | NOT NULL, CHECK (stoc_disponibil >= 0) |                      |
+| **Câmp**        |  **Tip Date** | **Constrângeri**                       | **Notă / Motivație**                |
+|:----------------|--------------:|:---------------------------------------|:------------------------------------|
+| id              |   NUMERIC(10) | PRIMARY KEY                            |                                     |
+| denumire        |  VARCHAR(100) | NOT NULL, UNIQUE                       |                                     |
+| descriere       |  VARCHAR(500) |                                        | NULL dacă opțiunea nu are descriere |
+| cost            |   NUMERIC(10) | NOT NULL, CHECK (cost > 0)             |                                     |
+| stoc_disponibil |   NUMERIC(10) | NOT NULL, CHECK (stoc_disponibil >= 0) |                                     |
 
 ### 20. Tranzactii_Puncte
 
 > Intrările sunt trimiteri către `Plati` sau `Optiuni_Rascumparare`.
 
-| **Câmp**                | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:------------------------|-------------:|:-----------------|:---------------------|
-| id                      |   NUMERIC(10) |      PRIMARY KEY | 7*10<sup>6</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi (1 tranzacție de câștig / plată) |
-| portofel_id             |   NUMERIC(10) |         NOT NULL |                      |
-| suma                    |   NUMERIC(10) | NOT NULL, CHECK (suma <> 0) | număr de puncte, nenul |
-| tip_operatiune          | VARCHAR(20) | NOT NULL, CHECK (tip_operatiune IN ('CASTIGARE', 'RASCUMPARARE')) | CASTIGARE \ RASCUMPARARE |
-| plata_referinta_id      |   NUMERIC(10) |                  | NULL dacă tranzacția este o răscumpărare |
-| optiune_rascumparare_id |   NUMERIC(10) |                  | NULL dacă tranzacția este un câștig |
-| data_tranzactie         |         DATE |         NOT NULL |                      |
+| **Câmp**                | **Tip Date** | **Constrângeri**                                                  | **Notă / Motivație**                                                                                                       |
+|:------------------------|-------------:|:------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
+| id                      |  NUMERIC(11) | PRIMARY KEY                                                       | 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi (1 tranzacție de câștig / plată) |
+| portofel_id             |   NUMERIC(8) | NOT NULL                                                          |                                                                                                                            |
+| suma                    |  NUMERIC(10) | NOT NULL, CHECK (suma <> 0)                                       | număr de puncte, nenul                                                                                                     |
+| tip_operatiune          |  VARCHAR(20) | NOT NULL, CHECK (tip_operatiune IN ('CASTIGARE', 'RASCUMPARARE')) | CASTIGARE \ RASCUMPARARE                                                                                                   |
+| plata_referinta_id      |  NUMERIC(11) |                                                                   | NULL dacă tranzacția este o răscumpărare                                                                                   |
+| optiune_rascumparare_id |  NUMERIC(10) |                                                                   | NULL dacă tranzacția este un câștig                                                                                        |
+| data_tranzactie         |         DATE | NOT NULL                                                          |                                                                                                                            |
 
 > **Constrângere la nivel de tabel:** `CHECK ((tip_operatiune = 'CASTIGARE' AND plata_referinta_id IS NOT NULL AND optiune_rascumparare_id IS NULL) OR (tip_operatiune = 'RASCUMPARARE' AND optiune_rascumparare_id IS NOT NULL AND plata_referinta_id IS NULL))`
 
@@ -376,15 +352,15 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Definește regulile temporale și financiare ale promoției.
 
-| **Câmp**       | **Tip Date** | **Constrângeri**                                                                             | **Notă / Motivație**                                                                 |
-|:---------------|-------------:|:---------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| id             |   NUMERIC(3) | PRIMARY KEY                                                                                  | o campanie pe lună; 999 este suficient                                               |
-| denumire       | VARCHAR(100) | NOT NULL, UNIQUE(denumire, data_inceput), CHECK(length(denumire) > 1)                                                     | aceeași campanie se repetă lunar ,adica campania poate avea accelasi nume in fiecare luna dar trebuie sa difere prin data_inceput si alte cerinte(nu neaparat)                                                  |
-| data_inceput   |         DATE | NOT NULL, UNIQUE(denumire, data_inceput)                                                                                    |                                                                                      |
-| data_sfarsit   |         DATE | NOT NULL, CHECK(data_sfarsit > data_inceput AND data_sfarsit <= ADD_MONTHS(data_inceput, 1)) | campania durează cel mult o lună; termenul până la care invitatul face plățile        |
-| min_tranzactii |   NUMERIC(1) | NOT NULL, CHECK(min_tranzactii > 0)                                                          | numărul minim de plăți ale invitatului; între 1 și 9                                 |
-| min_suma_ron   |   NUMERIC(2) | NOT NULL, CHECK(min_suma_ron BETWEEN 30 AND 50)                                              | prag întreg între 30 și 50 RON per plată; proiectul simulează doar piața din România |
-| status         |   VARCHAR(8) | NOT NULL, CHECK(status IN ('ACTIVE', 'INACTIVE'))                                            | `ACTIVE` \ `INACTIVE`                                                                |
+| **Câmp**       | **Tip Date** | **Constrângeri**                                                                              | **Notă / Motivație**                                                                                                                                           |
+|:---------------|-------------:|:----------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id             |   NUMERIC(3) | PRIMARY KEY                                                                                   | o campanie pe lună; 999 este suficient                                                                                                                         |
+| denumire       | VARCHAR(100) | NOT NULL, UNIQUE(denumire, data_inceput), CHECK(length(denumire) > 1)                         | aceeași campanie se repetă lunar ,adica campania poate avea accelasi nume in fiecare luna dar trebuie sa difere prin data_inceput si alte cerinte(nu neaparat) |
+| data_inceput   |         DATE | NOT NULL, UNIQUE(denumire, data_inceput)                                                      |                                                                                                                                                                |
+| data_sfarsit   |         DATE | NOT NULL, CHECK(data_sfarsit > data_inceput AND data_sfarsit <= ADD_MONTHS(data_inceput, 1))  | campania durează cel mult o lună; termenul până la care invitatul face plățile                                                                                 |
+| min_tranzactii |   NUMERIC(1) | NOT NULL, CHECK(min_tranzactii > 0)                                                           | numărul minim de plăți ale invitatului; între 1 și 9                                                                                                           |
+| min_suma_ron   |   NUMERIC(2) | NOT NULL, CHECK(min_suma_ron BETWEEN 30 AND 50)                                               | prag întreg între 30 și 50 RON per plată; proiectul simulează doar piața din România                                                                           |
+| status         |   VARCHAR(8) | NOT NULL, CHECK(status IN ('ACTIVE', 'INACTIVE'))                                             | `ACTIVE` \ `INACTIVE`                                                                                                                                          |
 
 > **Constrângere la nivel de tabel:** `UNIQUE (denumire, data_inceput)` – aceeași campanie se repetă lunar, dar nu poate exista de două ori pentru aceeași dată de început
 > 
@@ -392,34 +368,34 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Unifică tipul de abonament cu campania.
 
-| **Câmp**       | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:---------------|-------------:|:-----------------|:---------------------|
-| id_recompensa  | NUMERIC(9)             |  PRIMARY KEY                |                      |
-| id_abonament   | NUMERIC(1)             |  FOREIGN KEY                | o recompensa apartine unui singur tip de abonament , dar un tip de abonament poate avea mai multe recompense                     |
-| id_campanie    | NUMERIC(3)             |  FOREIGN KEY                | o recompensa apartine unei singure campanii , dar o campanie poate avea mai multe recompense                     |
-| suma           | NUMERIC(4)             |  NOT NULL , CHECK(suma>0)                | o recompensa nu poate avea o suma de bani negativa                     |
+| **Câmp**       |          **Tip Date** | **Constrângeri**        | **Notă / Motivație**                                                                                         |
+|:---------------|----------------------:|:------------------------|:-------------------------------------------------------------------------------------------------------------|
+| id_recompensa  |            NUMERIC(9) | PRIMARY KEY             |                                                                                                              |
+| id_abonament   |            NUMERIC(1) | FOREIGN KEY             | o recompensa apartine unui singur tip de abonament , dar un tip de abonament poate avea mai multe recompense |
+| id_campanie    |            NUMERIC(3) | FOREIGN KEY             | o recompensa apartine unei singure campanii , dar o campanie poate avea mai multe recompense                 |
+| suma           |            NUMERIC(4) | NOT NULL, CHECK(suma>0) | o recompensa nu poate avea o suma de bani negativa                                                           |
 
 ### 23. Invitatii_Referral
 
 > Urmărește exact cine pe cine a invitat și în ce stadiu de completare este.
 
-| **Câmp**         | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:-----------------|-------------:|:-----------------|:---------------------|
-| id               |NUMERIC(7)    | PRIMARY KEY                 |10<sup>6</sup> invitații                      |
-| client_invita_id |NUMERIC(7)    | NOT NULL,                 |  7*10<sup>6</sup> utilizatori globali                    |
-| client_nou_id    |NUMERIC(7)    | NOT NULL,CHECK(client_invita_id <> client_nou_id)|Un client nu se poate invita pe sine                      |
-| campanie_id      |NUMERIC(3)    | NOT NULL,                |                      |
-| status           |VARCHAR(10)   | NOT NULL, CHECK(status IN ('PENDING', 'COMPLETED', 'EXPIRED'))|  `PENDING` \ `COMPLETED` \ `EXPIRED`                     |
-| data_invitatie   |   DATE       | NOT NULL,                 |                      |
+| **Câmp**         | **Tip Date** | **Constrângeri**                                                | **Notă / Motivație**                 |
+|:-----------------|-------------:|:----------------------------------------------------------------|:-------------------------------------|
+| id               |   NUMERIC(7) | PRIMARY KEY                                                     | 10<sup>7</sup> invitații             |
+| client_invita_id |   NUMERIC(8) | NOT NULL,                                                       | 7*10<sup>7</sup> utilizatori globali |
+| client_nou_id    |   NUMERIC(8) | NOT NULL,CHECK(client_invita_id <> client_nou_id)               | Un client nu se poate invita pe sine |
+| campanie_id      |   NUMERIC(3) | NOT NULL,                                                       |                                      |
+| status           |  VARCHAR(10) | NOT NULL, CHECK(status IN ('PENDING', 'COMPLETED', 'EXPIRED'))  | `PENDING` \ `COMPLETED` \ `EXPIRED`  |
+| data_invitatie   |         DATE | NOT NULL,                                                       |                                      |
 
 ### 24. Istoric_Referral
 
 > Dacă invitația este `Completed`, intrarea în acest tabel este o referință către `Depozite`.
 
-| **Câmp**             | **Tip Date**   | **Constrângeri**          | **Notă / Motivație**                               |
+| **Câmp**             |   **Tip Date** | **Constrângeri**          | **Notă / Motivație**                               |
 |:---------------------|---------------:|:--------------------------|:---------------------------------------------------|
 | id                   |     NUMERIC(7) | PRIMARY KEY               |                                                    |
-| invitatie_id         |     NUMERIC(7) | NOT NULL, UNIQUE          | 10<sup>6</sup> invitatii                           |
+| invitatie_id         |     NUMERIC(7) | NOT NULL, UNIQUE          | 10<sup>7</sup> invitatii                           |
 | suma                 | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0) | Revolut oferă diferite sume în funcție de promoții |
-| depozit_referinta_id |     NUMERIC(7) | NOT NULL                  |                                                    |
+| depozit_referinta_id |    NUMERIC(10) | NOT NULL                  |                                                    |
 | data_tranzactie      |           DATE | NOT NULL                  |                                                    |

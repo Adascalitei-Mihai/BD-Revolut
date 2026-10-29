@@ -25,8 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="client_id" id="25B94244-3B74-27C6-3B4F-973D7D4B37ED">
 <createdBy>Costin-Daniel</createdBy>
@@ -92,6 +92,9 @@
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
 <newElementsIDs>25B94244-3B74-27C6-3B4F-973D7D4B37ED</newElementsIDs>
+<usedAttributes>
+<attributeRef>25B94244-3B74-27C6-3B4F-973D7D4B37ED</attributeRef>
+</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

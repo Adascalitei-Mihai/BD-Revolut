@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="Logical - SubView_Clienti_Recompense_referral" id="EA78EFBA-F2D3-B9C7-ACF8-FD59743B84B0">
+<createdBy>mihai</createdBy>
+<modifiedBy>mihai</modifiedBy>
+<createdTime>2026-10-29 14:01:13 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="4422AB30-5EE7-0559-184B-8B1F393BA063" otype="Entity" vid="27C1553B-8500-61BD-37B3-E6ABC8AFC62C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="78" y="53" width="176" height="156"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="C01921EB-621D-215D-B65A-50F637E3F73A" otype="Entity" vid="89DBB0EA-7C15-DAD0-F1CB-F3590B37FE05">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="298" y="51" width="184" height="133"/>
+</OView>
+</objectViews>
+</Diagram>

@@ -25,8 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cont_id" id="93861F06-0BA2-3F64-DC74-C6843BEE15C5">
 <createdBy>bruma</createdBy>

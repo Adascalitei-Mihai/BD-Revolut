@@ -38,8 +38,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="client_nou_id" id="A2B8418D-CE17-B6C5-C5B1-F8457C2B2E1A">
 <createdBy>Luiza Paslaru</createdBy>
@@ -52,11 +52,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
+<dataTypePrecision>8</dataTypePrecision>
 <checkConstraint>
 <implementationDef dbType="Generic Constraint" definition="client_invita_id &lt;&gt; client_nou_id"/>
 </checkConstraint>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="campanie_id" id="0808B1CE-0E5E-8D69-2C66-BEBF111ABAF9">
 <createdBy>Luiza Paslaru</createdBy>

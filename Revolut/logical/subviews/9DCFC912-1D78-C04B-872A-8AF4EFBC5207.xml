@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="Logical - SubView_Portofele_puncte_Optiuni_rascumparare_Tranzactii_puncte" id="9DCFC912-1D78-C04B-872A-8AF4EFBC5207">
+<createdBy>mihai</createdBy>
+<modifiedBy>mihai</modifiedBy>
+<createdTime>2026-10-29 13:58:01 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="17FE0BFE-D883-0108-D371-08E3DA2413D7" otype="Entity" vid="1E8F2C69-D673-316E-A5FA-108F2115F779">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="55" y="47" width="171" height="112"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="56E98E36-F354-2DD4-01C0-A63750558A1B" otype="Entity" vid="A0826FF1-3C5D-73FD-80ED-921F4D8ED09A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="281" y="47" width="167" height="111"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D3CB72AF-1798-F8F9-29CA-34130420B626" otype="Entity" vid="CE30BBFF-F9E8-DFE7-0330-5D1B0A368B08">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="481" y="47" width="175" height="117"/>
+</OView>
+</objectViews>
+</Diagram>

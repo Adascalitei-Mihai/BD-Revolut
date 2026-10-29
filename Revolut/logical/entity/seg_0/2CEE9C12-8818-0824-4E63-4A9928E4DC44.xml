@@ -25,8 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="suma" id="8B796A75-22E5-FD30-2109-234835995888">
 <createdBy>Roby</createdBy>
