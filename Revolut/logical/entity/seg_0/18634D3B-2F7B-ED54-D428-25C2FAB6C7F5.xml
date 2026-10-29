@@ -100,7 +100,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ststus" id="044529C0-B00F-565C-FB48-BBB7C2938F3E">
+<Attribute name="status" id="044529C0-B00F-565C-FB48-BBB7C2938F3E">
 <createdBy>bianc</createdBy>
 <createdTime>2026-10-28 17:54:03 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>

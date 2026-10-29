@@ -17,14 +17,23 @@
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="86D8AFF9-69F9-16D8-6145-4231B8D71F93" otype="Entity" vid="15A06E8F-FB7D-6184-9299-78562FA2B701">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="58" y="38" width="171" height="148"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-103</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="A276D0AA-C318-BD64-54E7-29D95CA1225C" otype="Entity" vid="85F669E8-756D-5251-B1DF-C7C0FAC98D40">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="235" y="75" width="170" height="110"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-10027060</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="F6740B62-78D3-3402-C914-5D3848C69DE6" otype="Entity" vid="6F545E12-0773-78DC-AA03-4786BCFD2830">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="427" y="75" width="170" height="110"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-39169</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 </OView>
 </objectViews>
 </Diagram>

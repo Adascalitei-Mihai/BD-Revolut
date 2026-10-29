@@ -17,10 +17,16 @@
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="4422AB30-5EE7-0559-184B-8B1F393BA063" otype="Entity" vid="27C1553B-8500-61BD-37B3-E6ABC8AFC62C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="78" y="53" width="176" height="156"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6684775</backgroundColor>
+<foregroundColor>-13421773</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="C01921EB-621D-215D-B65A-50F637E3F73A" otype="Entity" vid="89DBB0EA-7C15-DAD0-F1CB-F3590B37FE05">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="298" y="51" width="184" height="133"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-39169</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
 </OView>
 </objectViews>
 </Diagram>
