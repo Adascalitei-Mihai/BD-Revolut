@@ -118,15 +118,19 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Fiecare client primește un cont curent în RON, cu posibilitatea de a deschide în alte valute.
 
-| **Câmp**        | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:----------------|-------------:|:-----------------|:---------------------|
-| id              |              |                  |                      |
-| client_id       |              |                  |                      |
-| valuta_id       |              |                  |                      |
-| iban            |              |                  |                      |
-| sold            |              |                  |                      |
-| status          |              |                  |                      |
-| data_deschidere |              |                  |                      |
+### 5. Conturi_Curente
+
+> Fiecare client primește un cont curent în RON, cu posibilitatea de a deschide conturi în alte valute.
+
+| Camp            | Tip de date  | Constrangeri                                                        |
+|-----------------|--------------|---------------------------------------------------------------------|
+| id              | NUMBER(9)    | PRIMARY KEY                                                         |
+| client_id       | NUMBER(8)    | NOT NULL, FOREIGN KEY                                               |
+| valuta_id       | NUMBER(1)    | NOT NULL, FOREIGN KEY                                               |
+| iban            | VARCHAR2(34) | NOT NULL, UNIQUE                                                    |
+| sold            | NUMBER(15,2) | NOT NULL, DEFAULT 0, CHECK (sold >= 0)                               |
+| status          | VARCHAR2(8)  | NOT NULL, DEFAULT 'ACTIVE', CHECK (status IN ('ACTIVE', 'INACTIVE'))  |
+| data_deschidere | DATE         | NOT NULL, DEFAULT SYSDATE                                           |
 
 ### 6. Tipuri_Carduri
 
@@ -268,14 +272,16 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Similar cu un cont curent, fiecare client are dreptul la maxim un cont de economii per valută.
 
-| **Câmp**        | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
-|:----------------|-------------:|:-----------------|:---------------------|
-| id              |              |                  |                      |
-| client_id       |              |                  |                      |
-| valuta_id       |              |                  |                      |
-| sold            |              |                  |                      |
-| status          |              |                  |                      |
-| data_deschidere |              |                  |                      |
+### 15. Conturi_Economii
+
+| Camp            | Tip de date  | Constrangeri                                                        |
+|-----------------|--------------|---------------------------------------------------------------------|
+| id              | NUMBER(9)    | PRIMARY KEY                                                         |
+| client_id       | NUMBER(8)    | NOT NULL, FOREIGN KEY                                               |
+| valuta_id       | NUMBER(1)    | NOT NULL, FOREIGN KEY                                               |
+| sold            | NUMBER(15,2) | NOT NULL, DEFAULT 0, CHECK (sold >= 0)                               |
+| status          | VARCHAR2(8)  | NOT NULL, DEFAULT 'ACTIVE', CHECK (status IN ('ACTIVE', 'INACTIVE'))  |
+| data_deschidere | DATE         | NOT NULL, DEFAULT SYSDATE                                           |
 
 ### 16. Tranzactii_Economii
 
