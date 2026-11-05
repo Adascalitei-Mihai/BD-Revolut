@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9124E6C-5F41-AA0D-917B-4257ECFFD54F" name="Conturi_Curente">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>FD7E03B9-A372-9AB9-E039-11E89B3533C4</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0025B8DB-7023-ADCC-3E4B-348A833BD749">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>A94B71B6-CE43-317C-FC88-50718120FF2D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clienti_id_client" id="22138F91-126C-4BB1-2AAA-68C35E2F3C0B">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>23A5DB25-BF13-C9AF-3BCE-0B621DC58755</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71A5388F-9787-B440-8ABD-2AAE776506E0" referredColumn="A4C594F1-480D-9775-2A3A-BCF7F39C20AB"/>
+</associations>
+</Column>
+<Column name="Valute_Id" id="8EBE5CBD-5240-964E-02C5-9738B35825D1">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>895BF970-85A2-09FC-C132-ABD59DA1C114</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6EDCBFA-52CC-13DE-697B-E4CE6D631877" referredColumn="20AC7C8C-2DD9-BC43-4B6D-67754E7A0B54"/>
+</associations>
+</Column>
+<Column name="iban" id="3903C36E-061C-6C28-76D8-029F226B8194">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>0AB8FB28-50CE-3805-D932-96377487FF88</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>34</dataTypeSize>
+<ownDataTypeParameters>34,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sold" id="70F6F325-535C-6899-D6F6-4AA5221FDB41">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>627F44B5-4B26-5477-5FC2-029F711496FA</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_deschidere" id="AAA38B39-3C8C-9E3B-F460-0FBD6F0BAF4E">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>EA1FD12A-C2EC-666B-B7F8-9250169D6102</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="AABBDE07-7602-EE81-6191-AF55756E81FB">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>6E8904E7-F0EB-23E7-CE29-0CEE6F55BDD6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35AA106D-C7B0-BD14-DE9E-A3E34F82EC77" name="Conturi_Curente_PK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>25F9CF8D-22E8-9B06-7B1F-CA3255B26ED4</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0025B8DB-7023-ADCC-3E4B-348A833BD749"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD1BE6C6-473A-CBEB-3EEB-2732BBC189F1" name="Conturi_Curente_Clienti_FK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>3D2DF484-C013-84F0-6453-11D08E8537A0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22138F91-126C-4BB1-2AAA-68C35E2F3C0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDEE3E4B-3DAC-C8AF-CC28-E31FE8705F5E" name="Conturi_Curente_Valute_FK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>FA1FBEE5-A79F-62D4-091B-F515E6F9CA5C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EBE5CBD-5240-964E-02C5-9738B35825D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

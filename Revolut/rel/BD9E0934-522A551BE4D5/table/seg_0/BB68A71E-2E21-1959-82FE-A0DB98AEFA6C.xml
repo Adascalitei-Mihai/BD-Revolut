@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB68A71E-2E21-1959-82FE-A0DB98AEFA6C" name="Posibilitati_Carduri_NM">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>567CF8F7-2231-8BA0-343F-78904FAB2DA6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="abonament_id" id="9A41E880-3AB5-FC3F-3CF7-B0674747EE48">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>0FFC1E02-D71D-A42A-26FD-9C48DC648137</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_card_id" id="D7D8548D-A967-32E0-3EA0-E516599B0850">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>1BF0DADC-AC21-AA44-C34F-32832E5C5BAD</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_carduri_permise" id="269B13D2-D727-BAD3-FAD9-1952CE0CC0B9">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>9BC44D43-4E5F-3FDA-5C70-0FF315255C6C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Posibilitati_Carduri_NM_max_carduri_permise_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>20</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E7625EA-504A-A0DC-7D57-2E0F9C2DE620" name="Posibilitati_Carduri_NM_PK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>C945F57B-7C1F-9100-90BD-20F0648984BC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A41E880-3AB5-FC3F-3CF7-B0674747EE48"/>
+<colUsage columnID="D7D8548D-A967-32E0-3EA0-E516599B0850"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

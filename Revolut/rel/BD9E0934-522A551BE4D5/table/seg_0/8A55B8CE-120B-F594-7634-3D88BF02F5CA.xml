@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8A55B8CE-120B-F594-7634-3D88BF02F5CA" name="Istoric_Referral">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>F6740B62-78D3-3402-C914-5D3848C69DE6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6F8E3D6F-6305-608B-A148-821EF11A8072">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>ACD08C38-B675-3052-6E8E-9D9906E82E85</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="invitatie_id" id="F401B975-AB9E-D86C-1590-C91126592A9C">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>28193BD7-DFF4-721F-D25F-6195A4E31F23</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="suma" id="2B60F8A3-EEA0-1D4B-3432-92681275BF9A">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>017B74E1-DFE4-474B-C167-4E585AC9EBA7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Istoric_Referral_suma_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="suma &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="depozit_referinta_id" id="DC1C6A92-F226-4723-24D9-B1832ADE04EE">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>E751F5C8-ECF3-7189-CED6-1DCB6232163E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_tranzactie" id="51C39588-6FA8-03F8-8B67-395A6610EFAB">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>8B51F9DE-ABFE-B8C0-BB32-1D55485873AB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD4D9443-8CD9-39FD-BAEC-D0244FA391F3" name="Istoric_Referral_PK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>DF37CBDA-C5B9-8716-57AB-3AD860946667</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F8E3D6F-6305-608B-A148-821EF11A8072"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3969BAA-5E12-7E7C-9D43-2BFFF43163E0" name="Istoric_Referral_invitatie_id_UN">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>BC55EB0B-585D-A69A-45BA-BBFDD488EAA3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F401B975-AB9E-D86C-1590-C91126592A9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Transferuri_interne_Beneficii_Abonament_Istoric_Referral" id="FC411000-18B7-5607-A6D2-7E1D600DFD7F">
+<createdBy>Innovation</createdBy>
+<modifiedBy>Innovation</modifiedBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>C2D127FF-D390-76B5-D97F-8BA65C8A1095</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="23AF6651-374A-BF70-7894-46CF9235D491" otype="Table" vid="A7481370-7E29-2678-D737-5818C681A713">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="58" y="38" width="171" height="148"/>
+<generatorID>15A06E8F-FB7D-6184-9299-78562FA2B701</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-103</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8A55B8CE-120B-F594-7634-3D88BF02F5CA" otype="Table" vid="B2522054-9D55-1F8B-8574-B02E9608FD1D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="427" y="75" width="170" height="110"/>
+<generatorID>6F545E12-0773-78DC-AA03-4786BCFD2830</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-39169</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AD882FE2-89D7-4501-307C-37CFD04B4161" otype="Table" vid="70BAB963-9229-AB78-2AB2-06CF794D202B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="235" y="75" width="170" height="110"/>
+<generatorID>85F669E8-756D-5251-B1DF-C7C0FAC98D40</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-10027060</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+</objectViews>
+</Diagram>

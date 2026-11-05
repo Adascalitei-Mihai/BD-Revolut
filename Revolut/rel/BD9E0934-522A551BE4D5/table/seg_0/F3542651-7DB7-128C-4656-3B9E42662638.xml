@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F3542651-7DB7-128C-4656-3B9E42662638" name="Optiuni_Rascumparare">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>56E98E36-F354-2DD4-01C0-A63750558A1B</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="69AB80D5-8686-AC7B-2B5E-15EA8EC33AA0">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>A9C6299B-7CE7-91E1-B7A0-97A50D47E036</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire" id="6E764951-4878-6438-2E78-89838F165D89">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>8C47FCD1-54B5-729B-3C69-4BDEE7DE3C46</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriere" id="6D3C64C1-7629-0D09-8C4F-F31EFBA4358A">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>8ED44BF8-7475-D8E6-4338-CBDB9E7F2F5E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cost" id="EF0F3C49-5334-D081-CB26-7CC1528A1739">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>C484E162-7EED-66EC-8F9E-EAEC32914686</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Optiuni_Rascumparare_cost_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cost &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stoc_disponibil" id="6007BD0E-DF4E-32F2-EB66-582067EC7BB8">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>E7F138BF-1D93-75DF-4A94-30A4DEF3AB1E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Optiuni_Rascumparare_stoc_disponibil_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stoc_disponibil &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FAF75757-7224-8AB7-C053-BCAD11992CF5" name="Optiuni_Rascumparare_PK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>9B7E36A4-4AA2-AE3E-9C03-C846B5442107</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69AB80D5-8686-AC7B-2B5E-15EA8EC33AA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA6306A3-AE58-69E3-8715-666894125C19" name="Optiuni_Rascumparare_denumire_UN">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<generatorID>BB5F7666-8460-ABC4-8DC9-93B336137C68</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E764951-4878-6438-2E78-89838F165D89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

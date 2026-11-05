@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Istoric_dobanzi_Istoric_plati_abonamente_Rate_conversie" id="3FB8BAE2-BEAD-595A-341E-A43AD9538690">
+<createdBy>Innovation</createdBy>
+<modifiedBy>Innovation</modifiedBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>E8B31674-BADF-5682-A992-CC5DCB75DD4D</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="27D440D8-367F-AAFE-50A9-754F2377FC24" otype="Table" vid="3C1DBAFB-5327-32B5-7F3F-C31C77114304">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="697" y="51" width="225" height="163"/>
+<generatorID>36A257FD-BBEF-D10A-3019-B08A3AB84BFC</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6710785</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="477548A1-4E20-22FF-58BD-9A6A09B36B48" otype="Table" vid="D4097994-B3E0-1C95-FDC3-640646C4695D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="117" y="50" width="191" height="152"/>
+<generatorID>94054A26-AD61-666C-E903-61AE778DCAA9</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-10027060</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7E5F934F-EC65-51A5-572B-37E4BA824B29" otype="Table" vid="37F68D8D-4A5A-7E5F-2D57-1DF76B588DA9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="372" y="53" width="269" height="216"/>
+<generatorID>D7F4E31E-D157-738E-A09C-E26273BB9C0D</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-52</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+</objectViews>
+</Diagram>

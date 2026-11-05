@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Carduri_Tipuri_carduri_Posibilitati_carduri" id="B94C1533-9E19-3E7C-E9CF-112FEEA1B3CA">
+<createdBy>Innovation</createdBy>
+<modifiedBy>Innovation</modifiedBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>D3A52DB5-123E-CCAA-0442-F308FD67CB66</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2099D392-76EE-2E1A-BE6E-4945289CC836" otype="Table" vid="BBC29D87-1321-9F7B-A698-FEFA006EB71B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="486" y="52" width="176" height="109"/>
+<generatorID>0B76524C-7DA4-F6AC-BBEC-C42CFDB40B3C</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-26215</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="58CFCABE-8C15-E8B8-C9F9-E1FA18C5967F" otype="Table" vid="3916B20A-2A52-F7A9-C27C-EDF567DD4FE6">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="59" y="54" width="167" height="152"/>
+<generatorID>28DB0BE0-D27A-FBFE-41A9-BC38E87F01B9</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-26215</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BB68A71E-2E21-1959-82FE-A0DB98AEFA6C" otype="Table" vid="8FCBF3D3-5693-13CF-065C-BD687339D961">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="281" y="56" width="172" height="106"/>
+<generatorID>B4F95473-9DB4-84BC-910A-00A52E0CCB4A</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-26215</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+</objectViews>
+</Diagram>

@@ -3,6 +3,6 @@
 <createdBy>mihai</createdBy>
 <createdTime>2026-10-18 14:11:39 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
+<shouldBeOpen>true</shouldBeOpen>
 <selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
 </relationalModel>

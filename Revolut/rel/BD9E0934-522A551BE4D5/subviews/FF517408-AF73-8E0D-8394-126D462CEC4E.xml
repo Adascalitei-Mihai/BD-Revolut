@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Transferuri_externe_Valute" id="FF517408-AF73-8E0D-8394-126D462CEC4E">
+<createdBy>Innovation</createdBy>
+<modifiedBy>Innovation</modifiedBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>5473032F-5069-4CBD-6F5C-E06BBE5BCBC8</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="47D21FA3-EF9C-5285-ED57-589FE42C0DE7" otype="Table" vid="9005213A-A3DB-30C0-BF5F-8EFDFC2B9EE3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="51" y="65" width="170" height="110"/>
+<generatorID>80679D11-BB4D-5940-9A19-DCB226F6EF53</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-10027060</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DB3B7CE3-98CE-872D-1566-52FCA50362AF" otype="Table" vid="34DFC489-F888-121B-4989-BA7342F5BDC2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="327" y="73" width="170" height="187"/>
+<generatorID>5E99B11C-6B5D-B9DC-63F3-C0C08434868F</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-103</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+</objectViews>
+</Diagram>

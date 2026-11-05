@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Campanii_referral_Depozite" id="EB9F65B8-2B4F-C3AA-E7DE-C3A560836C30">
+<createdBy>Innovation</createdBy>
+<modifiedBy>Innovation</modifiedBy>
+<createdTime>2026-11-05 22:31:31 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>556E6AB6-EB4B-21F3-813B-A4A60A4A5102</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4A289E34-77D5-950C-19DC-6EB42CE15DD8" otype="Table" vid="A528B8EF-B8E2-C39B-5758-8E83CFC112E1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="240" y="30" width="156" height="128"/>
+<generatorID>A1EC2808-3864-6F06-FC1F-4A490657CB01</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-39169</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4DB788B7-9527-9727-3448-7D567F0D6060" otype="Table" vid="5352E86F-DD8E-6559-A125-2F1F78F2B270">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="36" y="38" width="174" height="108"/>
+<generatorID>5FC18A57-5A66-EF43-E703-F9C4DE704E9C</generatorID>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-103</backgroundColor>
+<foregroundColor>-13421773</foregroundColor>
+</OView>
+</objectViews>
+</Diagram>
