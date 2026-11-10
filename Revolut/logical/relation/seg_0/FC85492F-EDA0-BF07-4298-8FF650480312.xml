@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="campanii_recompense_fk" directorySegmentName="seg_0" id="FC85492F-EDA0-BF07-4298-8FF650480312">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:34:12 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>2D8262CB-7117-683D-E7C3-E7904CCF6387</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contine </nameOnSource>
+<nameOnTarget>apartine unei</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>040FDEC8-F423-2469-E230-DDCBE904544C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C01921EB-621D-215D-B65A-50F637E3F73A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

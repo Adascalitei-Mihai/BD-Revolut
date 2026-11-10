@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C15A8216-D811-86E7-524C-BD75B9885BDA" name="Tipuri_Carduri">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>4B72957D-56B6-C33A-7069-B5AD12789EAB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="E73BF320-50B5-A8BB-295A-8BA1E1CB4221">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>92D251D2-8B3B-2AC2-0EB1-53E9DF8C116D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire" id="59BD21EE-0A09-919F-1346-C276A2DAA19F">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>BA400710-D389-F4D0-0DAD-F4D0F91B71AC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="limita_tranzactie" id="A77DC9EE-3B96-207E-7D4E-C9EE687AC011">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>02CD2AA0-D27A-41F1-2801-9B8EC1A5262D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Tipuri_Carduri_limita_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="limita_tranzactie &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C85065B3-8DDA-FED9-4734-D93072554CA5" name="Tipuri_Carduri_PK">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>09293290-7006-A6FF-3518-C49702AC99E8</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E73BF320-50B5-A8BB-295A-8BA1E1CB4221"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16394DFB-0F53-7CD0-5A43-1CF2DF52D468" name="Tipuri_Carduri_denumire_UK">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>960A8F5A-50B4-AD58-E647-D944F8AF3229</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59BD21EE-0A09-919F-1346-C276A2DAA19F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

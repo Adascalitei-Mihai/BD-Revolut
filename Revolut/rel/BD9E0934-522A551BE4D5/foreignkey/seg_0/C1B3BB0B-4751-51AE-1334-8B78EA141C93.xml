@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1B3BB0B-4751-51AE-1334-8B78EA141C93" containerWithKeyObject="5D6E0FBF-F13D-5823-C164-39A696CCE1CB" localFKIndex="25AF96C6-104B-9405-D14E-A0A60D789FD5" name="depozite_cont_id_fk">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>58E716BA-7200-B013-CF8D-AE6BC131CE53</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Conturi_Curente</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>42BCC425-8AEF-6EDA-B6BF-3A43CF96F5C7</referredTableID>
+<keyObject>EB4644BA-0BA7-A107-0AD1-785ADB5607D4</keyObject>
+<referredKeyID>EB4644BA-0BA7-A107-0AD1-785ADB5607D4</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

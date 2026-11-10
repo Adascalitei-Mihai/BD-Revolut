@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F0FF6CA-0F90-4764-3F0B-9E08EC753485" name="Transferuri_externe">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>4B6692BD-DED8-D533-4DF3-B10F0D64E520</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="F04D59BE-960D-E598-2774-D5E65A40883A">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>D7BD02F0-C070-9D30-C9BE-4C40F68A5861</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Client_sursa_valuta_id" id="ABA00C37-6735-2A8B-5D83-4C22DED37AC7">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>D84734D4-ECB6-AD67-BD16-FF8D69B5EA6B</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Client_sursa_RON_id" id="DD6935B9-9117-3511-18C7-63C222D60F2F">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>5ACB8B95-C744-D0DE-305F-78E6DF6A7A6C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cont_destinatie" id="FCD01FDD-9310-721F-44A1-B0A60A3FC498">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>6C9AA4BA-F112-85F2-C213-04C8C12F64F2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Suma_totala" id="4F37CBFF-06D7-1D4C-427F-1757DD221F0D">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>9BB5D127-B845-9FE0-0018-2564AE2ED5F0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>tr_ext_suma_t_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Suma_totala &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Suma_debitata_valuta" id="3264C383-CCBE-190B-4AC1-27936CEC5D8A">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>4FDCD026-C192-D528-6C04-FF40C5208709</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>tr_ext_suma_d_v_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Suma_debitata_valuta &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Suma_debitata_RON" id="3F178C6F-022E-F14F-5695-7ECCA83470B5">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>6494C21F-3CD0-7CA8-E044-5C363BCF0667</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>tr_ext_suma_R_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Suma_debitata_RON &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rata_converise" id="9340D364-3333-6F5B-803A-9B78AF761D60">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>E6A28D77-CEBD-E68A-FDBA-D89E8F8F48EC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_tranzactie" id="32CFF88A-97AB-8B11-0C36-599EE9627AAC">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>612A527F-1AB5-E021-1A24-33A210FAC65F</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Status" id="FF584399-EAEA-671A-3D69-989456B7128C">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>C01CD693-C200-C888-546F-E7AF1EC067F2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Motiv_esuare" id="39625AAA-7449-8834-04CB-15473327E88C">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>E1CE8754-C5A0-E585-4FBC-E8C750F7F406</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65E57F63-23C0-ED2D-B7DF-35439917D926" name="Transferuri_externe_PK">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>2F7EF180-CA59-AF85-A2CC-FF4EF238747E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F04D59BE-960D-E598-2774-D5E65A40883A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Portofele_puncte_Optiuni_rascumparare_Tranzactii_puncte" id="C4035E58-CB09-CEC7-021D-FA1ADC3FCEB1">
+<createdBy>kali</createdBy>
+<modifiedBy>kali</modifiedBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>9DCFC912-1D78-C04B-872A-8AF4EFBC5207</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4C25A05F-DBD3-B43C-9379-4951941E1D7C" otype="Table" vid="2265B6B1-F230-A1B6-0E98-80C06ED388C4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="310" y="540" width="170" height="110"/>
+<generatorID>CE30BBFF-F9E8-DFE7-0330-5D1B0A368B08</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7E871FBD-12F6-1C35-A803-EE50BA584447" otype="Table" vid="08124D7F-968B-D1A4-7739-B691F8E522D8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="230" y="380" width="170" height="110"/>
+<generatorID>1E8F2C69-D673-316E-A5FA-108F2115F779</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A7BD559B-A174-D528-1DFF-9EF72FB0FFCE" otype="Table" vid="9DE7CD14-AF39-C136-A5BE-4D30BC1DA555">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="210" y="340" width="170" height="110"/>
+<generatorID>A0826FF1-3C5D-73FD-80ED-921F4D8ED09A</generatorID>
+</OView>
+</objectViews>
+</Diagram>

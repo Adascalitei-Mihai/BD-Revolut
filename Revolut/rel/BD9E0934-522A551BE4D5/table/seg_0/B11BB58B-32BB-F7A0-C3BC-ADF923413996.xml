@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B11BB58B-32BB-F7A0-C3BC-ADF923413996" name="rate_conversie">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>B9809B68-FBB9-EAC1-2E0A-309A6F331761</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A42C5EC0-89F9-5003-22E5-78FFC67C4575">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>25990ED3-6BB1-2416-C12A-3766DDF687A2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valuta_sursa_id" id="15F15701-450B-23F0-4CEA-48179E7E8B21">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>448DAFD0-496D-ACFD-2248-2E2A953AFC34</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valuta_destinatie_id" id="654B993A-815A-D423-C8F9-C1385D6B0A28">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>641180DB-54ED-AE41-E1F9-908BF7A411EB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rata_schimb" id="72EE2BE5-4207-5827-72CB-DCDA3556171A">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>193C7394-FBC5-FF54-78C4-6305228A8795</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,15,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<description>rata_schimb&gt;0</description>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="data_actualizare" id="F686F79A-ED3A-9FA2-C128-3F7D6A00664B">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>844EE7E3-5253-DB6A-FF64-F0591967C5EC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3F9B5FD-54E5-4BFC-8035-12FA5CCE5854" name="Istoric_dobanzi_PKv1">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>565DA5FE-456E-03FF-5670-1AA679D80DE5</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A42C5EC0-89F9-5003-22E5-78FFC67C4575"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

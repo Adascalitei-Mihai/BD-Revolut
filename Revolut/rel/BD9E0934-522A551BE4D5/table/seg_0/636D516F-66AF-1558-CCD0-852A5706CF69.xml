@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="636D516F-66AF-1558-CCD0-852A5706CF69" name="Campanii_Referral">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>040FDEC8-F423-2469-E230-DDCBE904544C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="188CB7F2-77F2-0DC0-C5FE-2389CD46543E">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>AB70A229-476C-E740-072B-8F466F3E4DC1</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire" id="595EA6BA-48F5-F9F8-61AF-85889890E8A2">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>E39458AF-A3C7-2143-F2D0-45A4821EA6D4</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire) &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_inceput" id="2B4C31DB-5AD3-F04E-BF27-7B87CFCF4CC3">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>3BDB2A6F-D369-D4C1-6968-FB1C80C2BF3D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_sfarsit" id="65103A0B-4816-EF1C-49F1-8A75B2807830">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>DD05AE86-43AE-741E-4452-6A695C77A7DD</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>campanii_refl_data_sfarsit_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_sfarsit &gt; data_inceput AND data_sfarsit &lt;= ADD_MONTHS(data_inceput, 1)"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="min_tranzactii" id="47844ADC-3CEE-CD0E-1E54-CBCEB002E5F8">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>0E5DD5F8-0B9C-9EC5-B02D-2E3893581F80</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>campanii_ref_min_tranzactii_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="min_tranzactii &gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="min_suma_ron" id="1CA49050-6B14-CD31-D344-F1543CDA8E6E">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>98878E0A-9FEB-DE83-34AB-AE055060055D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>campanii_refl_min_suma_ron_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="min_suma_ron BETWEEN 30 AND 50"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="2F47FD7C-782E-01BB-AE63-DF46A1DF261F">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>2167F068-19B3-088E-30E0-2CE3EB0385DF</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>campanii_referral_status_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="ACTIVE" description=""/>
+<valueDef value="INACTIVE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75AD9933-567A-54B5-2544-3D282A377E55" name="Campanii_Referral_PK">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>2D8262CB-7117-683D-E7C3-E7904CCF6387</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="188CB7F2-77F2-0DC0-C5FE-2389CD46543E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CB6B94D-2051-EFD9-A048-F9CB8D075D79" name="campanii_ref_den_data_uk">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<generatorID>F5E04DD0-D314-6410-11AD-3ECA0B3ADAF2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="595EA6BA-48F5-F9F8-61AF-85889890E8A2"/>
+<colUsage columnID="2B4C31DB-5AD3-F04E-BF27-7B87CFCF4CC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

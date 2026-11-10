@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Carduri_Tipuri_carduri_Posibilitati_carduri" id="E81EC9A8-8B20-FE87-191D-D7BA89CFA043">
+<createdBy>kali</createdBy>
+<modifiedBy>kali</modifiedBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>D3A52DB5-123E-CCAA-0442-F308FD67CB66</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="09DA3BD2-2057-0885-6B85-3F57D078CC60" otype="Table" vid="FB8663E2-8C2F-0BFC-F988-B228A97CF63C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="110" y="140" width="170" height="110"/>
+<generatorID>28DB0BE0-D27A-FBFE-41A9-BC38E87F01B9</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B8880046-06CE-F587-F394-23801EE26F3A" otype="Table" vid="877EDF13-D0B2-6646-FCEE-FB3715A65A33">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="240" y="400" width="170" height="110"/>
+<generatorID>B4F95473-9DB4-84BC-910A-00A52E0CCB4A</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C15A8216-D811-86E7-524C-BD75B9885BDA" otype="Table" vid="6EDBEDE3-0167-63F4-2DC0-5A0A4DA33B55">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="270" y="460" width="170" height="110"/>
+<generatorID>0B76524C-7DA4-F6AC-BBEC-C42CFDB40B3C</generatorID>
+</OView>
+</objectViews>
+</Diagram>

@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Invitatii_referral_Tranzactii_economii" id="23946EB0-6247-6894-FEFE-1CC6FC079438">
+<createdBy>kali</createdBy>
+<modifiedBy>kali</modifiedBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>9360091B-5295-FD74-83AE-EFA8CA932422</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A611C82E-BE0F-5F31-77B5-2D724C45554B" otype="Table" vid="5BF1BB0B-416A-C99D-0F16-3D79B7886EDE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="300" y="520" width="170" height="110"/>
+<generatorID>7955EB3E-1D47-9B81-71AD-69F2ACDADF00</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AA2D1C8F-2A5F-ACC8-0BAB-56A07B97F2C6" otype="Table" vid="695D7037-E36E-81E6-D12D-230C6A7FF94B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="170" y="260" width="170" height="110"/>
+<generatorID>B81D4F80-CF86-4FF5-6A39-F303D2BA35CE</generatorID>
+</OView>
+</objectViews>
+</Diagram>

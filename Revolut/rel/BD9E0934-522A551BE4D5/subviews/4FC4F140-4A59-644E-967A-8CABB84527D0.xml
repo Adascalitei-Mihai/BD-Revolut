@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Conturi_curente_Conturi_economii" id="4FC4F140-4A59-644E-967A-8CABB84527D0">
+<createdBy>kali</createdBy>
+<modifiedBy>kali</modifiedBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>34905DAA-C196-FC3F-FA86-4C552DAF05A1</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="42BCC425-8AEF-6EDA-B6BF-3A43CF96F5C7" otype="Table" vid="CE8479D2-0002-D3F5-0A61-6BCF897075BF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="140" y="200" width="170" height="110"/>
+<generatorID>82E01B14-EB5D-0DBE-88CB-C41C6350AF6E</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6B25F7FD-FCE3-6B3D-F685-C5FAC3F6F118" otype="Table" vid="DF8EC66F-3F61-D185-45A2-A9BDA2349A4E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="150" y="220" width="170" height="110"/>
+<generatorID>A10E0CAB-9E02-94B4-5C50-27F5F1CAC18A</generatorID>
+</OView>
+</objectViews>
+</Diagram>

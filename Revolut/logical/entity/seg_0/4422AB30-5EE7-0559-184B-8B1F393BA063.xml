@@ -79,6 +79,23 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id" id="7D3170D1-B223-1399-9426-415A2C0A3520">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:32:24 UTC</createdTime>
+<generatorID>BBF06244-B830-433B-4AE1-FE93B426D1F4</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6B5527DE-7B69-F6B9-AA61-E83C8C1BCFE0" name="Clienti PK">

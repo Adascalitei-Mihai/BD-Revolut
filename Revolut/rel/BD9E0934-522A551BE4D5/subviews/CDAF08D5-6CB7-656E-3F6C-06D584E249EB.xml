@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Transferuri_interne_Beneficii_Abonament_Istoric_Referral" id="CDAF08D5-6CB7-656E-3F6C-06D584E249EB">
+<createdBy>kali</createdBy>
+<modifiedBy>kali</modifiedBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>C2D127FF-D390-76B5-D97F-8BA65C8A1095</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2421F0E1-D649-0663-BD25-76D276080CB7" otype="Table" vid="BF92EC61-5061-5978-5B0B-8C1CE1AE7333">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="200" y="320" width="170" height="110"/>
+<generatorID>6F545E12-0773-78DC-AA03-4786BCFD2830</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="511B11CF-B332-753A-D254-66917715A386" otype="Table" vid="56EADAD4-A295-5FD5-C379-98AFAFD3E0CC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="90" y="100" width="170" height="110"/>
+<generatorID>85F669E8-756D-5251-B1DF-C7C0FAC98D40</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="87B0F978-ECC7-0E32-0E1B-560876C339AA" otype="Table" vid="3EF81502-8A11-21C1-A211-7364D346B2A8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="290" y="500" width="170" height="110"/>
+<generatorID>15A06E8F-FB7D-6184-9299-78562FA2B701</generatorID>
+</OView>
+</objectViews>
+</Diagram>

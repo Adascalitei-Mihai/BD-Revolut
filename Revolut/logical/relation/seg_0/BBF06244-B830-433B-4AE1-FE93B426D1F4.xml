@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="abonamente_clienti_fk" directorySegmentName="seg_0" id="BBF06244-B830-433B-4AE1-FE93B426D1F4">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:32:24 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>90C0AE0F-D2E0-29A3-A401-254C7987FC09</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>apartine</nameOnSource>
+<nameOnTarget>are un</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0E4F4E5A-5A60-B43E-A46B-6D0407D5FD41</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4422AB30-5EE7-0559-184B-8B1F393BA063</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

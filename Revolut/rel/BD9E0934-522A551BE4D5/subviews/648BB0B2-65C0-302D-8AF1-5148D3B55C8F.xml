@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Istoric_dobanzi_Istoric_plati_abonamente_Rate_conversie" id="648BB0B2-65C0-302D-8AF1-5148D3B55C8F">
+<createdBy>kali</createdBy>
+<modifiedBy>kali</modifiedBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>E8B31674-BADF-5682-A992-CC5DCB75DD4D</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="ADC36D7F-7165-6124-D69F-C81ACB9D8D96" otype="Table" vid="E19A9618-1849-C121-3A71-7FAB2C4806FE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="190" y="300" width="170" height="110"/>
+<generatorID>D7F4E31E-D157-738E-A09C-E26273BB9C0D</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B11BB58B-32BB-F7A0-C3BC-ADF923413996" otype="Table" vid="5183C8AD-ED9D-43DB-0110-CCC70F18EFA9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="250" y="420" width="170" height="110"/>
+<generatorID>94054A26-AD61-666C-E903-61AE778DCAA9</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F50BB072-6B11-1D59-5103-D562DECBE318" otype="Table" vid="E2BA6107-81E7-F541-2283-6DCBB0C2138B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="180" y="280" width="170" height="110"/>
+<generatorID>36A257FD-BBEF-D10A-3019-B08A3AB84BFC</generatorID>
+</OView>
+</objectViews>
+</Diagram>

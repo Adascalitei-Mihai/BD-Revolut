@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Logical - SubView_Plati_Abonamente" id="92A4AEEE-3922-4027-83F3-76540619FC9E">
+<createdBy>kali</createdBy>
+<modifiedBy>kali</modifiedBy>
+<createdTime>2026-11-10 19:36:06 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>20C050FE-4ECB-A054-49C0-E5C82283D37D</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8B7A7ECD-38AA-9696-CF9D-9FD38BAC8ED8" otype="Table" vid="E64639C7-F0A4-748E-5848-D4CA0E0D2C26">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="80" y="80" width="170" height="110"/>
+<generatorID>D035ADB1-DDC9-B2FC-A8AF-2EE242641087</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D0881ABF-971B-14EC-B154-6CDCBC687942" otype="Table" vid="0DC5B7A8-0F3F-4DD6-5E2D-DFEE3017F6BD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="220" y="360" width="170" height="110"/>
+<generatorID>64C3EA79-8DF6-E9C6-ED6F-A95DF45C40B6</generatorID>
+</OView>
+</objectViews>
+</Diagram>
