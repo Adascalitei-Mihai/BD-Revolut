@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="Logical - SubView_Conturi_curente_Conturi_economii" id="34905DAA-C196-FC3F-FA86-4C552DAF05A1">
+<createdBy>mihaiadascalitei</createdBy>
+<modifiedBy>mihaiadascalitei</modifiedBy>
+<createdTime>2026-11-10 09:39:48 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="289C264E-4BDF-8973-7B1F-FF7D2751347A" otype="Entity" vid="A10E0CAB-9E02-94B4-5C50-27F5F1CAC18A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="255" y="133" width="170" height="110"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6710785</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="FD7E03B9-A372-9AB9-E039-11E89B3533C4" otype="Entity" vid="82E01B14-EB5D-0DBE-88CB-C41C6350AF6E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="70" y="130" width="139" height="103"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6684775</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+</objectViews>
+</Diagram>

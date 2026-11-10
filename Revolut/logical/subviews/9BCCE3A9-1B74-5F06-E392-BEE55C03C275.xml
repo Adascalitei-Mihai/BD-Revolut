@@ -105,6 +105,13 @@
 <backgroundColor>-103</backgroundColor>
 <foregroundColor>-16777216</foregroundColor>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="92D02949-FC3A-8B1A-04D3-287315777647" otype="Entity" vid="66B8D96F-D037-BE9C-CD17-701C1A746BCA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="668" y="504" width="134" height="104"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6684775</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="A276D0AA-C318-BD64-54E7-29D95CA1225C" otype="Entity" vid="7A13CA83-11C3-4976-6490-45B3E082D214">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="842" y="209" width="170" height="110"/>

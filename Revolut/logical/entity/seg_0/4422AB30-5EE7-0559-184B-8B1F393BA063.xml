@@ -67,45 +67,6 @@
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cnp" id="F6C1842B-0468-4C0D-081C-EE97443B9CCB">
-<createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:42:38 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>13 CHAR</dataTypeSize>
-<ownDataTypeParameters>13 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="telefon" id="3B405C6C-2CFA-8013-6D94-03990495F0F1">
-<createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:42:49 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>16 CHAR</dataTypeSize>
-<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="email" id="44EB3837-AD7E-DAC6-6113-E8126957B51A">
-<createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:47:07 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>254 CHAR</dataTypeSize>
-<ownDataTypeParameters>254 CHAR,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="data_inregistrare" id="20EF7F67-DE14-D736-24A7-595328EE7EA2">
 <createdBy>kali</createdBy>
 <createdTime>2026-10-29 11:48:55 UTC</createdTime>
@@ -130,42 +91,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>E9F686E8-16FE-70A0-B59C-3D8099D69C35</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="8145B792-384D-C1BC-B1DF-AA1CB184AB5A" name="cnp_UK">
-<createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:44:55 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<newElementsIDs>F6C1842B-0468-4C0D-081C-EE97443B9CCB</newElementsIDs>
-<usedAttributes>
-<attributeRef>F6C1842B-0468-4C0D-081C-EE97443B9CCB</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="41FB8A07-44EF-4077-5A80-552369420A92" name="telefon_UK">
-<createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:45:28 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<newElementsIDs>3B405C6C-2CFA-8013-6D94-03990495F0F1</newElementsIDs>
-<usedAttributes>
-<attributeRef>3B405C6C-2CFA-8013-6D94-03990495F0F1</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="0807921D-0E50-A146-F361-3F70B313CB30" name="email_UK">
-<createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:48:04 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<newElementsIDs>44EB3837-AD7E-DAC6-6113-E8126957B51A</newElementsIDs>
-<usedAttributes>
-<attributeRef>44EB3837-AD7E-DAC6-6113-E8126957B51A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
