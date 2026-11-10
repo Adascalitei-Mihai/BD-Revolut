@@ -190,4 +190,15 @@
 <foregroundColor>-16777216</foregroundColor>
 </OView>
 </objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="58E716BA-7200-B013-CF8D-AE6BC131CE53" otype="Relation" vid_source="A2439040-7071-FC07-978D-CCB550D10920" vid_target="0EF8BCB6-1E7A-D5A5-0646-9ADE2D54387F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="595" y="387"/>
+<point x="1522" y="130"/>
+</points>
+</Connector>
+</connectors>
 </Diagram>
