@@ -177,7 +177,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | **Câmp**        |   **Tip Date** | **Constrângeri**                               | **Notă / Motivație**                                                                     |
 |:----------------|---------------:|:-----------------------------------------------|:-----------------------------------------------------------------------------------------|
 | id              |    NUMERIC(10) | PRIMARY KEY                                    | 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 10 depozite / lună     |
-| cont_id         |     NUMERIC(9) | NOT NULL                                       | contul curent în care intră banii; valuta depozitului este cea a contului                |
+| cont_id         |     NUMERIC(9) | NOT NULL, FOREIGN KEY                          | → Conturi_Curente(id); contul curent în care intră banii; valuta depozitului este cea a contului |
 | suma            | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0)                      | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant); mereu pozitivă |
 | nume_sursa      |   VARCHAR(100) | NOT NULL, CHECK(length(nume_sursa) > 1)        | banca / expeditorul extern; bonusurile referral au sursa `Revolut Referral`              |
 | data_tranzactie |           DATE | NOT NULL                                       |                                                                                          |
