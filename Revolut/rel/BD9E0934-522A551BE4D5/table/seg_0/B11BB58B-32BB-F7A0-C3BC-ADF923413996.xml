@@ -76,7 +76,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B3F9B5FD-54E5-4BFC-8035-12FA5CCE5854" name="Istoric_dobanzi_PKv1">
+<ind_PK_UK id="B3F9B5FD-54E5-4BFC-8035-12FA5CCE5854" name="Istoric_dobanzi_PKv2">
 <createdBy>kali</createdBy>
 <createdTime>2026-11-10 19:36:06 UTC</createdTime>
 <generatorID>565DA5FE-456E-03FF-5670-1AA679D80DE5</generatorID>

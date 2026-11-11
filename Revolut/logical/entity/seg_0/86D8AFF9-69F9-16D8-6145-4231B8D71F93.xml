@@ -42,8 +42,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="suma_trimisa &gt; 0
-"/>
+<implementationDef dbType="Generic Constraint" definition="suma_trimisa &gt; 0 "/>
 </checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
@@ -73,8 +72,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="cont_destinatie_id &lt;&gt; cont_sursa_id
-"/>
+<implementationDef dbType="Generic Constraint" definition="cont_destinatie_id &lt;&gt; cont_sursa_id "/>
 </checkConstraint>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
@@ -107,8 +105,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="suma_primita &gt; 0
-"/>
+<implementationDef dbType="Generic Constraint" definition="suma_primita &gt; 0 "/>
 </checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
@@ -157,8 +154,9 @@
 <createdBy>teofan</createdBy>
 <createdTime>2026-10-21 18:46:30 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

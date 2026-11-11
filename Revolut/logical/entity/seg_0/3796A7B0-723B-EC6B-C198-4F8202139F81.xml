@@ -149,9 +149,11 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<constraintName>Plati_data_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="status" id="0EDFD3D6-2F2E-D7D9-E319-75E4B8957215">
@@ -161,10 +163,15 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<constraintName>Plati_status_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;FAIL&apos;" description=""/>
+<valueDef value="&apos;SUCCESS&apos;" description=""/>
+</listOfValues>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="motiv_esuare" id="BC13E6FE-C6A2-45CA-2E9C-07E82594A2DC">
@@ -194,6 +201,21 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id2" id="9014F719-EDE3-AC9B-2C18-8B40E77A85DC">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 09:52:46 UTC</createdTime>
+<generatorID>E484A83A-C3D6-5D48-800D-041061C29BCC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

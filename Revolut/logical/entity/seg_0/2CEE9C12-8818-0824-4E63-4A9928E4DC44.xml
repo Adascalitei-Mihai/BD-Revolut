@@ -124,7 +124,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -132,8 +132,9 @@
 <createdBy>Roby</createdBy>
 <createdTime>2026-10-26 14:25:00 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

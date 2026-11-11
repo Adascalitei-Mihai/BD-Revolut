@@ -8,8 +8,8 @@
 </engineerTo>
 <sourcePk>F2407F64-A9B2-1415-65B3-21F0A3890B85</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>este a</nameOnSource>
-<nameOnTarget>are</nameOnTarget>
+<nameOnSource>este un</nameOnSource>
+<nameOnTarget>utilizeaza</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

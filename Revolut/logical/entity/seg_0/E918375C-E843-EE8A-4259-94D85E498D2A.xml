@@ -113,7 +113,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
 <listOfValues>
-<valueDef value="" description=""/>
 <valueDef value="FAILED" description=""/>
 <valueDef value="PENDING" description=""/>
 <valueDef value="SUCCES" description=""/>
@@ -138,8 +137,9 @@
 <createdBy>bianc</createdBy>
 <createdTime>2026-10-28 17:59:58 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

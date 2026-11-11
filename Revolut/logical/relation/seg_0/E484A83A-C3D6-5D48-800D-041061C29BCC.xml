@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Valute_Plati_fk" directorySegmentName="seg_0" id="E484A83A-C3D6-5D48-800D-041061C29BCC">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 09:52:46 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>E1C631FE-66B5-DE3D-81E1-5E7541B21FE5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este a</nameOnSource>
+<nameOnTarget>foloseste</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C5A2298B-426D-1C9B-0303-FE7908F49970</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3796A7B0-723B-EC6B-C198-4F8202139F81</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

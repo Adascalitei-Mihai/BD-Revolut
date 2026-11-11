@@ -132,9 +132,11 @@
 <createdTime>2026-11-10 19:36:06 UTC</createdTime>
 <generatorID>855789D8-6C4C-4F6C-2A03-A07BE4A0753D</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_data_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -143,10 +145,15 @@
 <createdTime>2026-11-10 19:36:06 UTC</createdTime>
 <generatorID>0EDFD3D6-2F2E-D7D9-E319-75E4B8957215</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_status_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;FAIL&apos;" description=""/>
+<valueDef value="&apos;SUCCESS&apos;" description=""/>
+</listOfValues>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -172,11 +179,27 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="AFE82B51-7390-C9DB-231F-2BA6F863654D" referredColumn="D9FA1840-2E68-23D1-5084-1F660DF1D614"/>
+</associations>
+</Column>
+<Column name="Id2" id="BCDD0DA3-5A86-2443-33FC-34A4F625A97D">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 09:55:00 UTC</createdTime>
+<generatorID>9014F719-EDE3-AC9B-2C18-8B40E77A85DC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6D23750-BB68-583D-9A14-73ECE5FD2713" referredColumn="E382FB50-3F7F-E45F-6C1A-3EA6AC523106"/>
 </associations>
 </Column>
 </columns>
@@ -202,6 +225,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8E1FB69A-59A1-9861-E463-0DB5811E4F60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA2D276B-D2B3-4CAD-1973-84023458CFB7" name="Valute_Plati_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 09:55:00 UTC</createdTime>
+<generatorID>E484A83A-C3D6-5D48-800D-041061C29BCC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCDD0DA3-5A86-2443-33FC-34A4F625A97D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

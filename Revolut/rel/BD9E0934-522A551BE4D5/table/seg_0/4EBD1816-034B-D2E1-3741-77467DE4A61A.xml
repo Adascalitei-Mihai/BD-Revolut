@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_abonament" id="57C465D7-FBC1-26CC-5936-956322A7FAC7">
+<Column name="id" id="57C465D7-FBC1-26CC-5936-956322A7FAC7">
 <createdBy>kali</createdBy>
 <createdTime>2026-11-10 19:36:06 UTC</createdTime>
 <generatorID>26F33FE7-DF0C-DC40-33DA-B47C2B35BE2D</generatorID>

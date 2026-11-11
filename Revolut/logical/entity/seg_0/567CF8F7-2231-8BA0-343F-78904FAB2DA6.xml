@@ -67,8 +67,9 @@
 <createdBy>bruma</createdBy>
 <createdTime>2026-10-26 16:16:25 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
