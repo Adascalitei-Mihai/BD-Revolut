@@ -7,4 +7,107 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A0AC4680-CC59-87ED-6658-C64F9D8AD36C">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:25:45 UTC</createdTime>
+<generatorID>80D67B8C-CCF8-2157-1EE4-4CE339D5EA91</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="client_id" id="B8CD788B-5ED8-B82A-805F-6F1BE90D0871">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:25:45 UTC</createdTime>
+<generatorID>AFF87407-035D-D290-9199-9C7CA3539A5E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valuta_id" id="8E068C03-A76A-2C37-3DD9-0DFFE18396FD">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:25:45 UTC</createdTime>
+<generatorID>244DE7A1-6A13-0267-E143-8ED4D8A593C9</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sold" id="2F3E18CD-C73E-CA82-23DD-9162B5A2D8B2">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:25:45 UTC</createdTime>
+<generatorID>D1CB4ACE-E958-675B-6100-E18A7E3A7E51</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Conturi_Economii_sold_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="status" id="8F27A22B-09DC-9372-C5DC-86B85B35F9B1">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:25:45 UTC</createdTime>
+<generatorID>3E63A1D1-68BF-FC08-6D8E-659F07D4F5E8</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Conturi_Economii_status_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;ACTIVE&apos;" description=""/>
+<valueDef value="&apos;INACTIVE&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;ACTIVE&apos;</defaultValue>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_deschidere" id="DD86E5C2-2CC5-33AB-75F1-8EB583CF8FF3">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:25:45 UTC</createdTime>
+<generatorID>0ECB4768-6DAD-0099-C13A-A81AB659F98B</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Conturi_Economii_data_deschidere_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FFA58D2-BF18-F75C-0D8C-5D3C5BC92205" name="Conturi_Economii_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:25:45 UTC</createdTime>
+<generatorID>28D9ECB4-9610-8A87-0419-700BD048FD14</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0AC4680-CC59-87ED-6658-C64F9D8AD36C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

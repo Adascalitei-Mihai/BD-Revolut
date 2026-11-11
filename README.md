@@ -116,10 +116,6 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 ### 5. Conturi_Curente
 
-> Fiecare client primește un cont curent în RON, cu posibilitatea de a deschide în alte valute.
-
-### 5. Conturi_Curente
-
 > Fiecare client primește un cont curent în RON, cu posibilitatea de a deschide conturi în alte valute.
 
 | Camp            | Tip de date  | Constrangeri                                                        |
@@ -267,10 +263,6 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | multiplicator_puncte | NUMERIC(3, 2) | NOT NULL, DEFAULT 1.00                     |                                                    |
 
 ---
-
-### 15. Conturi_Economii
-
-> Similar cu un cont curent, fiecare client are dreptul la maxim un cont de economii per valută.
 
 ### 15. Conturi_Economii
 

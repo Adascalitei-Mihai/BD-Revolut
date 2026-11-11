@@ -20,12 +20,11 @@
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_abonament" id="43077DFA-8EB4-B944-9D6F-B5D5A73EA38F">
+<Column name="id" id="43077DFA-8EB4-B944-9D6F-B5D5A73EA38F">
 <createdBy>kali</createdBy>
 <createdTime>2026-11-10 19:36:06 UTC</createdTime>
 <generatorID>252BE8ED-10A1-972B-84A4-8473D9C03382</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -36,12 +35,11 @@
 <colAssociation fkAssociation="C64DA0C3-B588-B69F-3C00-254928E5D312" referredColumn="0319753C-7220-DFF3-E690-69214DB2F654"/>
 </associations>
 </Column>
-<Column name="id_campanie" id="CB12FD6E-155A-0A1B-C3AF-92D7B7300E0A">
+<Column name="id1" id="CB12FD6E-155A-0A1B-C3AF-92D7B7300E0A">
 <createdBy>kali</createdBy>
 <createdTime>2026-11-10 19:36:06 UTC</createdTime>
 <generatorID>882AD887-B6AE-3B4C-CCBC-F11A4DED403C</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
