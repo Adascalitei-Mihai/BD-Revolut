@@ -28,44 +28,50 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Client_sursa_valuta_id" id="D84734D4-ECB6-AD67-BD16-FF8D69B5EA6B">
+<Attribute name="Client_sursa_valuta_id1" id="5B934F56-AA5B-2A2C-CAA0-FE5ADBC16EC8">
 <createdBy>ioana-alexandramarinkas</createdBy>
-<createdTime>2026-10-25 15:13:58 UTC</createdTime>
+<createdTime>2026-11-11 16:45:25 UTC</createdTime>
+<generatorID>547F51CF-FFFD-2C5F-4C31-CDFC0E5AB7C0</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Client_sursa_RON_id" id="5ACB8B95-C744-D0DE-305F-78E6DF6A7A6C">
+<Attribute name="Client_sursa_RON_id1" id="89361E94-6AE0-A14B-9C1F-195111EB18DA">
 <createdBy>ioana-alexandramarinkas</createdBy>
-<createdTime>2026-10-25 15:14:40 UTC</createdTime>
+<createdTime>2026-11-11 16:49:13 UTC</createdTime>
+<generatorID>8F94F3FC-E309-F541-DEED-A2068F3C6881</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Cont_destinatie" id="6C9AA4BA-F112-85F2-C213-04C8C12F64F2">
+<Attribute name="Cont_destinatie1" id="4B1D7AD2-3932-6C55-9224-EFE57F0F1B79">
 <createdBy>ioana-alexandramarinkas</createdBy>
-<createdTime>2026-10-25 15:15:12 UTC</createdTime>
+<createdTime>2026-11-11 16:51:25 UTC</createdTime>
+<generatorID>19D723CC-3C62-B6E6-E945-27434516761A</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Suma_totala" id="9BB5D127-B845-9FE0-0018-2564AE2ED5F0">
 <createdBy>ioana-alexandramarinkas</createdBy>
@@ -174,51 +180,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>64</dataTypeSize>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Client_id1" id="5B934F56-AA5B-2A2C-CAA0-FE5ADBC16EC8">
-<createdBy>ioana-alexandramarinkas</createdBy>
-<createdTime>2026-11-11 16:45:25 UTC</createdTime>
-<generatorID>547F51CF-FFFD-2C5F-4C31-CDFC0E5AB7C0</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Client_RON_id2" id="89361E94-6AE0-A14B-9C1F-195111EB18DA">
-<createdBy>ioana-alexandramarinkas</createdBy>
-<createdTime>2026-11-11 16:49:13 UTC</createdTime>
-<generatorID>8F94F3FC-E309-F541-DEED-A2068F3C6881</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Cont_dest2" id="4B1D7AD2-3932-6C55-9224-EFE57F0F1B79">
-<createdBy>ioana-alexandramarinkas</createdBy>
-<createdTime>2026-11-11 16:51:25 UTC</createdTime>
-<generatorID>19D723CC-3C62-B6E6-E945-27434516761A</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
