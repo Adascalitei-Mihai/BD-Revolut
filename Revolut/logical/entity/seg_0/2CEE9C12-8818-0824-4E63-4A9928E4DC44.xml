@@ -126,6 +126,22 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Id1" id="510E23DD-65B5-D6B6-0CC7-0B0216E55DE3">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:24:12 UTC</createdTime>
+<generatorID>58E716BA-7200-B013-CF8D-AE6BC131CE53</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>39BCF687-6F78-E951-A332-1C1B1BC0B95C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D4B7EC49-B6EB-172F-F9F9-368B41E46A86" name="Depozite PK">

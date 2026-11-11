@@ -29,8 +29,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACBBA01C-1550-7383-34ED-B13F1F3E4047" referredColumn="548F628B-075D-2BAB-3C64-7E9D696FEE57"/>
+</associations>
 </Column>
 <Column name="valuta_id" id="3AB4AB6E-7A3F-AB96-9CC4-891CCF9D0625">
 <createdBy>mihaiadascalitei</createdBy>
@@ -41,8 +44,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58505385-D8F8-06E1-08BE-38ACCDBAD88D" referredColumn="E382FB50-3F7F-E45F-6C1A-3EA6AC523106"/>
+</associations>
 </Column>
 <Column name="iban" id="9F5FC8C0-4C76-E611-5A2A-607E3FF4C094">
 <createdBy>mihaiadascalitei</createdBy>
@@ -130,6 +136,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9F5FC8C0-4C76-E611-5A2A-607E3FF4C094"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D05F302E-C22F-B5D0-DFBC-CFB22AEB39FA" name="Conturi_Curente_Clienti_FK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:49:59 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B70CD740-302A-51D6-AE7F-7D084DB698BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C2BD7BC-383D-DB61-2485-C0CE3DB978A7" name="Conturi_Curente_Valute_FK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:51:02 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AB4AB6E-7A3F-AB96-9CC4-891CCF9D0625"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

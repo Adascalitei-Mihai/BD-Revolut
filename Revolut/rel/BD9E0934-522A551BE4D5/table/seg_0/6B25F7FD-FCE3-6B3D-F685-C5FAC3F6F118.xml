@@ -31,6 +31,9 @@
 <dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE4C6DE2-FF6E-4E3C-87E6-0CA30E7A5E44" referredColumn="548F628B-075D-2BAB-3C64-7E9D696FEE57"/>
+</associations>
 </Column>
 <Column name="valuta_id" id="8E068C03-A76A-2C37-3DD9-0DFFE18396FD">
 <createdBy>mihaiadascalitei</createdBy>
@@ -43,6 +46,9 @@
 <dataTypePrecision>1</dataTypePrecision>
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE5E99E9-7FD1-611B-E8C4-6ACF2B0D25B6" referredColumn="E382FB50-3F7F-E45F-6C1A-3EA6AC523106"/>
+</associations>
 </Column>
 <Column name="sold" id="2F3E18CD-C73E-CA82-23DD-9162B5A2D8B2">
 <createdBy>mihaiadascalitei</createdBy>
@@ -107,6 +113,26 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A0AC4680-CC59-87ED-6658-C64F9D8AD36C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A59DF7B1-A8BC-CB2A-82E5-2A26D35174A1" name="Conturi_Economii__FK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:53:32 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8CD788B-5ED8-B82A-805F-6F1BE90D0871"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3028B4C-1FA2-57F8-7611-16FA1A7BB4F5" name="Conturi_Economii_Valute_FK">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:53:32 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E068C03-A76A-2C37-3DD9-0DFFE18396FD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

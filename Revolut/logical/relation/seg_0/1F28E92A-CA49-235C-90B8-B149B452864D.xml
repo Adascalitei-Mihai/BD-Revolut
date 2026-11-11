@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Valute_Conturi_Economii_fk" directorySegmentName="seg_0" id="1F28E92A-CA49-235C-90B8-B149B452864D">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:25:53 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>E1C631FE-66B5-DE3D-81E1-5E7541B21FE5</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>detine</nameOnSource>
+<nameOnTarget>apartine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C5A2298B-426D-1C9B-0303-FE7908F49970</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>289C264E-4BDF-8973-7B1F-FF7D2751347A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

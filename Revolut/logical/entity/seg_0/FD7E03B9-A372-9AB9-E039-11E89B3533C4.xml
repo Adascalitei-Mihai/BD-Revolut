@@ -121,6 +121,36 @@
 <defaultValue>SYSDATE</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_client" id="9197CA1B-2D77-D50A-26D2-B077E0D74899">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:19:31 UTC</createdTime>
+<generatorID>CF8843DA-79FD-865C-45C3-6258D779DDDD</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="39BCF687-6F78-E951-A332-1C1B1BC0B95C">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:24:12 UTC</createdTime>
+<generatorID>7C885D35-2B59-0E58-F69D-34AB3C59D5C5</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="35ED5EA7-AE96-CDAD-BDE3-0390C35FA00B" name="Conturi_Curente PK">
@@ -134,6 +164,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>E9A1DFAB-C296-19CE-172C-06B52FD83E99</attributeRef>
+<attributeRef>39BCF687-6F78-E951-A332-1C1B1BC0B95C</attributeRef>
 </usedAttributes>
 </identifier>
 <identifier id="137FB94E-78A3-D493-980A-7DC9BD3F6343" name="Conturi_Curente_iban_uk">

@@ -181,6 +181,51 @@
 <dataTypeSize>64</dataTypeSize>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Id1" id="8499C054-E51F-1CB2-9D57-705587F4DB19">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:24:12 UTC</createdTime>
+<generatorID>19D723CC-3C62-B6E6-E945-27434516761A</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>39BCF687-6F78-E951-A332-1C1B1BC0B95C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id11" id="2ACE96C1-458C-DCAE-5EFF-DBB46687D0E4">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:24:12 UTC</createdTime>
+<generatorID>547F51CF-FFFD-2C5F-4C31-CDFC0E5AB7C0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>39BCF687-6F78-E951-A332-1C1B1BC0B95C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id12" id="02C07FA8-CACE-C73D-3D74-AB26FA6C3AC9">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:24:12 UTC</createdTime>
+<generatorID>8F94F3FC-E309-F541-DEED-A2068F3C6881</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>39BCF687-6F78-E951-A332-1C1B1BC0B95C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2F7EF180-CA59-AF85-A2CC-FF4EF238747E" name="Transferuri_externe PK">

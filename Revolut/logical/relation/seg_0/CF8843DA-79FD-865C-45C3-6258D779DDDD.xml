@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Clienti_Conturi_Curente_fk" directorySegmentName="seg_0" id="CF8843DA-79FD-865C-45C3-6258D779DDDD">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:16:29 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>6B5527DE-7B69-F6B9-AA61-E83C8C1BCFE0</sourcePk>
+<targetPk>35ED5EA7-AE96-CDAD-BDE3-0390C35FA00B</targetPk>
+<identifying>false</identifying>
+<nameOnSource>apartine</nameOnSource>
+<nameOnTarget>detine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4422AB30-5EE7-0559-184B-8B1F393BA063</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FD7E03B9-A372-9AB9-E039-11E89B3533C4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
