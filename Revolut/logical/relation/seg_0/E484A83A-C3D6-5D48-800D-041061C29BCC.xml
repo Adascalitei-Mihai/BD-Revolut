@@ -8,8 +8,8 @@
 </engineerTo>
 <sourcePk>E1C631FE-66B5-DE3D-81E1-5E7541B21FE5</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>este a</nameOnSource>
-<nameOnTarget>foloseste</nameOnTarget>
+<nameOnSource>exprima</nameOnSource>
+<nameOnTarget>este exprimata in</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

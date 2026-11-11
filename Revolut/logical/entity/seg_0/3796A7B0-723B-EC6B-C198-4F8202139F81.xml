@@ -28,31 +28,35 @@
 <dataTypePrecision>11</dataTypePrecision>
 <ownDataTypeParameters>,11,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="card_id" id="8D0607EB-37CF-5846-D291-B9FC8E52D158">
-<createdBy>mihai</createdBy>
-<createdTime>2026-10-18 15:21:01 UTC</createdTime>
+<Attribute name="card_id2" id="5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:36:35 UTC</createdTime>
+<generatorID>55EBD71B-9EB4-21B5-30AC-147690AAA1E7</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>25966D56-A8DD-5260-16D5-64E148F6D552</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valuta_id" id="234E8E3B-1FB2-EFBD-0425-32462815D339">
-<createdBy>mihai</createdBy>
-<createdTime>2026-10-18 15:23:18 UTC</createdTime>
+<Attribute name="valuta_id2" id="9014F719-EDE3-AC9B-2C18-8B40E77A85DC">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 09:52:46 UTC</createdTime>
+<generatorID>E484A83A-C3D6-5D48-800D-041061C29BCC</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="suma_totala" id="DE6918F3-024B-73B6-A7DC-B10C2311E958">
 <createdBy>mihai</createdBy>
@@ -187,36 +191,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>64</dataTypeSize>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31">
-<createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-11 08:36:35 UTC</createdTime>
-<generatorID>55EBD71B-9EB4-21B5-30AC-147690AAA1E7</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>25966D56-A8DD-5260-16D5-64E148F6D552</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Id2" id="9014F719-EDE3-AC9B-2C18-8B40E77A85DC">
-<createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-11 09:52:46 UTC</createdTime>
-<generatorID>E484A83A-C3D6-5D48-800D-041061C29BCC</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
