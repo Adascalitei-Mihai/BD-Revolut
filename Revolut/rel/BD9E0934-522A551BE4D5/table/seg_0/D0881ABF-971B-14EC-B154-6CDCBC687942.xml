@@ -163,6 +163,22 @@
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="id1" id="8E1FB69A-59A1-9861-E463-0DB5811E4F60">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:39:50 UTC</createdTime>
+<generatorID>5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFE82B51-7390-C9DB-231F-2BA6F863654D" referredColumn="D9FA1840-2E68-23D1-5084-1F660DF1D614"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D2F5FA51-A9EE-D4ED-C4C6-C5DC8947681F" name="Plati_PK">
@@ -175,6 +191,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0B51754E-1FAD-051D-2DD1-2EB4B07D94C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B5CD8C1-9575-5810-9718-3775939EE0B5" name="Carduri_Plati_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:39:50 UTC</createdTime>
+<generatorID>55EBD71B-9EB4-21B5-30AC-147690AAA1E7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E1FB69A-59A1-9861-E463-0DB5811E4F60"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

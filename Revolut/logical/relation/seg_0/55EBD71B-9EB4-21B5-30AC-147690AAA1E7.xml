@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carduri_Plati_fk" directorySegmentName="seg_0" id="55EBD71B-9EB4-21B5-30AC-147690AAA1E7">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:36:35 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>F2407F64-A9B2-1415-65B3-21F0A3890B85</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este a</nameOnSource>
+<nameOnTarget>are</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A938E39F-94DA-37A8-5457-8BBC40551111</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3796A7B0-723B-EC6B-C198-4F8202139F81</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

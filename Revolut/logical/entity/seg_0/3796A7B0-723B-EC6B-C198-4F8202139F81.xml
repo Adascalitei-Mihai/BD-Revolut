@@ -181,14 +181,30 @@
 <dataTypeSize>64</dataTypeSize>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-11 08:36:35 UTC</createdTime>
+<generatorID>55EBD71B-9EB4-21B5-30AC-147690AAA1E7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>25966D56-A8DD-5260-16D5-64E148F6D552</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="DCC585F2-61E7-C17A-41A1-58BBB6DCE06E" name="Plati PK">
 <createdBy>mihai</createdBy>
 <createdTime>2026-10-18 15:20:54 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
