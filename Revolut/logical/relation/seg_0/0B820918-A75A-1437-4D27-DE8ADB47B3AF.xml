@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rata_conversie_transf_ext_fk" directorySegmentName="seg_0" id="0B820918-A75A-1437-4D27-DE8ADB47B3AF">
+<createdBy>ioana-alexandramarinkas</createdBy>
+<createdTime>2026-11-11 17:41:05 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>565DA5FE-456E-03FF-5670-1AA679D80DE5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>furnizeaza cursul pentru</nameOnSource>
+<nameOnTarget>foloseste cursul</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B9809B68-FBB9-EAC1-2E0A-309A6F331761</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4B6692BD-DED8-D533-4DF3-B10F0D64E520</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

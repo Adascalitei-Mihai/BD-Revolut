@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Client_sursa_RON_id1" id="89361E94-6AE0-A14B-9C1F-195111EB18DA">
 <createdBy>ioana-alexandramarinkas</createdBy>
@@ -56,7 +56,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Cont_destinatie1" id="4B1D7AD2-3932-6C55-9224-EFE57F0F1B79">
 <createdBy>ioana-alexandramarinkas</createdBy>
@@ -71,7 +71,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Suma_totala" id="9BB5D127-B845-9FE0-0018-2564AE2ED5F0">
 <createdBy>ioana-alexandramarinkas</createdBy>
@@ -127,20 +127,20 @@
 </checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Rata_conversie" id="E6A28D77-CEBD-E68A-FDBA-D89E8F8F48EC">
+<Attribute name="Rata_conversie1" id="14886303-E92F-34E2-7E73-CEECB9528382">
 <createdBy>ioana-alexandramarinkas</createdBy>
-<createdTime>2026-10-25 15:16:55 UTC</createdTime>
+<createdTime>2026-11-11 17:41:05 UTC</createdTime>
+<generatorID>0B820918-A75A-1437-4D27-DE8ADB47B3AF</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>25990ED3-6BB1-2416-C12A-3766DDF687A2</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>6</dataTypeScale>
-<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Data_tranzactie" id="612A527F-1AB5-E021-1A24-33A210FAC65F">
 <createdBy>ioana-alexandramarinkas</createdBy>
