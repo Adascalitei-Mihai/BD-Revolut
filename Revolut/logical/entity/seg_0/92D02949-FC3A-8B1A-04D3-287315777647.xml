@@ -15,18 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="C3C445FA-8B00-504A-FCD8-192B439E9FA8">
+<Attribute name="id_client" id="57A31DB2-33E5-E38B-C589-5DBE3131BD06">
 <createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-10 09:47:07 UTC</createdTime>
+<createdTime>2026-11-12 15:18:38 UTC</createdTime>
+<generatorID>57DA0864-0FBD-0E33-E3E2-9DB707A92E13</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cnp" id="2515A7D3-87C5-79AA-1F3F-BB381B5F8362">
 <createdBy>mihaiadascalitei</createdBy>
@@ -79,7 +81,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>C3C445FA-8B00-504A-FCD8-192B439E9FA8</attributeRef>
+<attributeRef>57A31DB2-33E5-E38B-C589-5DBE3131BD06</attributeRef>
 </usedAttributes>
 </identifier>
 <identifier id="729B3617-6540-637F-EFEF-55B58202A0E8" name="cnp_UK">

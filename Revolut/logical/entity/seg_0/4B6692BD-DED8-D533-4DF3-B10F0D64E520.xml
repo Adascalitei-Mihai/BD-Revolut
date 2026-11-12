@@ -28,7 +28,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Client_sursa_valuta_id1" id="5B934F56-AA5B-2A2C-CAA0-FE5ADBC16EC8">
+<Attribute name="Client_sursa_valuta_id" id="5B934F56-AA5B-2A2C-CAA0-FE5ADBC16EC8">
 <createdBy>ioana-alexandramarinkas</createdBy>
 <createdTime>2026-11-11 16:45:25 UTC</createdTime>
 <generatorID>547F51CF-FFFD-2C5F-4C31-CDFC0E5AB7C0</generatorID>
@@ -41,9 +41,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Client_sursa_RON_id1" id="89361E94-6AE0-A14B-9C1F-195111EB18DA">
+<Attribute name="Client_sursa_RON_id" id="89361E94-6AE0-A14B-9C1F-195111EB18DA">
 <createdBy>ioana-alexandramarinkas</createdBy>
 <createdTime>2026-11-11 16:49:13 UTC</createdTime>
 <generatorID>8F94F3FC-E309-F541-DEED-A2068F3C6881</generatorID>
@@ -56,9 +56,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Cont_destinatie1" id="4B1D7AD2-3932-6C55-9224-EFE57F0F1B79">
+<Attribute name="Cont_destinatie" id="4B1D7AD2-3932-6C55-9224-EFE57F0F1B79">
 <createdBy>ioana-alexandramarinkas</createdBy>
 <createdTime>2026-11-11 16:51:25 UTC</createdTime>
 <generatorID>19D723CC-3C62-B6E6-E945-27434516761A</generatorID>
@@ -71,7 +71,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Suma_totala" id="9BB5D127-B845-9FE0-0018-2564AE2ED5F0">
 <createdBy>ioana-alexandramarinkas</createdBy>

@@ -28,7 +28,7 @@
 <dataTypePrecision>11</dataTypePrecision>
 <ownDataTypeParameters>,11,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="card_id2" id="5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31">
+<Attribute name="card_id" id="5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-11 08:36:35 UTC</createdTime>
 <generatorID>55EBD71B-9EB4-21B5-30AC-147690AAA1E7</generatorID>
@@ -41,9 +41,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valuta_id2" id="9014F719-EDE3-AC9B-2C18-8B40E77A85DC">
+<Attribute name="valuta_id" id="9014F719-EDE3-AC9B-2C18-8B40E77A85DC">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-11 09:52:46 UTC</createdTime>
 <generatorID>E484A83A-C3D6-5D48-800D-041061C29BCC</generatorID>

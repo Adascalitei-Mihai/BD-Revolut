@@ -28,19 +28,20 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="client_id" id="B7789072-A875-82ED-073E-1F66411CC67B">
-<createdBy>bianc</createdBy>
-<createdTime>2026-10-28 17:47:09 UTC</createdTime>
+<Attribute name="id_client" id="B86FC28C-8E40-99DB-A412-0C3613D1FE9C">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-12 15:36:21 UTC</createdTime>
+<generatorID>DC704E80-4DE9-9B0D-BE36-51064C265BB7</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cont_RON_id" id="74FBF6AD-D5C4-6AE9-7EE2-E2A07C0EBD97">
 <createdBy>bianc</createdBy>

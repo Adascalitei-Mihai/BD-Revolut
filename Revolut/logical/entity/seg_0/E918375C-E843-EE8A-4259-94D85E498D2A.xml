@@ -28,7 +28,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cont_economii_od" id="719F2799-F7B7-1010-9483-168B458F6506">
+<Attribute name="cont_economii_cod" id="719F2799-F7B7-1010-9483-168B458F6506">
 <createdBy>bianc</createdBy>
 <createdTime>2026-10-28 18:00:01 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
@@ -129,6 +129,51 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="06471293-64B3-9372-154B-A75C3A8E08E9">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-12 15:30:31 UTC</createdTime>
+<generatorID>8F271E03-3642-7338-66B7-26F4E1AFB3E3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>80D67B8C-CCF8-2157-1EE4-4CE339D5EA91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client" id="E8EA0045-4B46-DCA0-2340-19E7FEE5EB5A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-12 15:30:31 UTC</createdTime>
+<generatorID>8F271E03-3642-7338-66B7-26F4E1AFB3E3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>36D2BA7D-5BD1-EBAF-8EB5-759D4B08B220</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id11" id="8A93AE01-510F-02F5-B471-735F736AF9BE">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-12 15:30:31 UTC</createdTime>
+<generatorID>8F271E03-3642-7338-66B7-26F4E1AFB3E3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>46A572D6-636D-43F7-F78C-714F5F2FF13B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

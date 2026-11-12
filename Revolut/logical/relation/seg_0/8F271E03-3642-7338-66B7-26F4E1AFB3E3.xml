@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Conturi_Economii_fk" directorySegmentName="seg_0" id="8F271E03-3642-7338-66B7-26F4E1AFB3E3">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-12 15:30:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>28D9ECB4-9610-8A87-0419-700BD048FD14</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este alimentat de</nameOnSource>
+<nameOnTarget>adauga dobanda in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>289C264E-4BDF-8973-7B1F-FF7D2751347A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E918375C-E843-EE8A-4259-94D85E498D2A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

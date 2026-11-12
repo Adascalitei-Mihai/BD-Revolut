@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Clienti_Clienti_Informatii_fk" directorySegmentName="seg_0" id="57DA0864-0FBD-0E33-E3E2-9DB707A92E13">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-12 15:18:38 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>6B5527DE-7B69-F6B9-AA61-E83C8C1BCFE0</sourcePk>
+<targetPk>D0BBD559-A4F8-0FDB-EE3A-D276DF2C23D2</targetPk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>descrie</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4422AB30-5EE7-0559-184B-8B1F393BA063</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>92D02949-FC3A-8B1A-04D3-287315777647</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

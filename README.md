@@ -187,18 +187,18 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 > Sunt pur fictive și implică un card, aplică logica de *split-payment*.
 
 | **Câmp**        |   **Tip Date** | **Constrângeri**                     | **Notă / Motivație**                                                                      |
-|:----------------|---------------:|:-------------------------------------|:------------------------------------------------------------------------------------------|
-| id              |    NUMERIC(11) | PRIMARY KEY                          | 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi |
-| card_id         |    NUMERIC(10) | NOT NULL                             |                                                                                           |
-| valuta_id       |     NUMERIC(1) | NOT NULL                             |                                                                                           |
-| suma_totala     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_totala > 0)     | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant)                  |
-| nume_destinatie |   VARCHAR(100) | NOT NULL                             |                                                                                           |
-| suma_valuta     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_valuta >= 0)    |                                                                                           |
-| suma_split_RON  | NUMERIC(10, 2) | NOT NULL, CHECK(suma_split_RON >= 0) |                                                                                           |
-| rata_conversie  |  NUMERIC(10,6) | NULL                                 | `NULL` dacă s-a făcut într-o singură valută                                               |
-| data_tranzactie |           DATE | NOT NULL                             |                                                                                           |
-| status          |     VARCHAR(8) | NOT NULL                             | `SUCCESS` \ `FAIL`                                                                        |
-| motiv_esuare    |    VARCHAR(64) | NULL                                 | `NULL` dacă tranzacția a reușit                                                           |
+|:----------------|---------------:|:---------------------------------------------|:------------------------------------------------------------------------------------------|
+| id              |    NUMERIC(11) | PRIMARY KEY| 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi |
+| card_id         |    NUMERIC(10) | NOT NULL, FOREIGN KEY REFERENCES Carduri(id)|                                                                                           |
+| valuta_id       |     NUMERIC(1) | NOT NULL, FOREIGN KEY REFERENCES Valute(id)|                                                                                           |
+| suma_totala     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_totala > 0)| Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant)                  |
+| nume_destinatie |   VARCHAR(100) | NOT NULL|                                                                                           |
+| suma_valuta     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_valuta >= 0)|                                                                                           |
+| suma_split_RON  | NUMERIC(10, 2) | NOT NULL, CHECK(suma_split_RON >= 0)|                                                                                           |
+| rata_conversie  |  NUMERIC(10,6) | NULL| `NULL` dacă s-a făcut într-o singură valută                                               |
+| data_tranzactie |           DATE | NOT NULL|                                                                                           |
+| status          |     VARCHAR(8) | NOT NULL| `SUCCESS` \ `FAIL`                                                                        |
+| motiv_esuare    |    VARCHAR(64) | NULL| `NULL` dacă tranzacția a reușit                                                           |
 
 ### 11. Transferuri_Interne
 
