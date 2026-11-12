@@ -148,6 +148,66 @@
 <dataTypeSize>64</dataTypeSize>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="AB3FD6BD-B8FC-02BC-8ED3-DD839E375604">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 08:59:36 UTC</createdTime>
+<generatorID>81190703-AAE2-B1F9-44C8-534F0B4C37F0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id11" id="A2FCCB84-826C-66FF-5170-B4AA95223849">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 08:59:36 UTC</createdTime>
+<generatorID>81190703-AAE2-B1F9-44C8-534F0B4C37F0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>39BCF687-6F78-E951-A332-1C1B1BC0B95C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="E4B17540-9863-05DE-ECDD-0659A9DDA3CA">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:04:26 UTC</createdTime>
+<generatorID>8877B266-B9F7-CFC4-6DD1-A63831D1F72B</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id12" id="BFD7E91A-1465-B179-59D5-8F9F6B58BD3E">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:04:26 UTC</createdTime>
+<generatorID>8877B266-B9F7-CFC4-6DD1-A63831D1F72B</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>39BCF687-6F78-E951-A332-1C1B1BC0B95C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="55E2A1A6-F686-845C-6144-BE26976A90AE" name="Transferuri_Interne PK">

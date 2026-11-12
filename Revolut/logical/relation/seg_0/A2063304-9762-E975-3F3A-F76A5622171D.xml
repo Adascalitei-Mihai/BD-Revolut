@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Invitatii_Referral_Istoric_Referral_fk" directorySegmentName="seg_0" id="A2063304-9762-E975-3F3A-F76A5622171D">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:11:17 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>C2670630-DFF6-10D5-8894-B321039B9554</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>generează</nameOnSource>
+<nameOnTarget>corespunde</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B16EC1DF-B401-AB5E-D6EF-F924B95F2440</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F6740B62-78D3-3402-C914-5D3848C69DE6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

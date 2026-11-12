@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Valute_Beneficii_Abonamente_NM_fk" directorySegmentName="seg_0" id="6FE668F2-82EA-7337-F1AF-90C7B98814F3">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:09:42 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>E1C631FE-66B5-DE3D-81E1-5E7541B21FE5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are asociate</nameOnSource>
+<nameOnTarget>vizează</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C5A2298B-426D-1C9B-0303-FE7908F49970</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A276D0AA-C318-BD64-54E7-29D95CA1225C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

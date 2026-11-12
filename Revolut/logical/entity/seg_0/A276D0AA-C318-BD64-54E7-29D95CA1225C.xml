@@ -73,6 +73,36 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,3,2</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id" id="CC7D4F26-DAEE-CEF8-E388-3EC87E5CCE41">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:06:33 UTC</createdTime>
+<generatorID>21A5723F-3175-3B85-B7FE-8ED9F97BF1C7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="BF93DD43-28C1-E6A4-D27B-E6F15047AFF1">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:09:42 UTC</createdTime>
+<generatorID>6FE668F2-82EA-7337-F1AF-90C7B98814F3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="67BC53B4-6B6B-424A-89C1-617493D04ED5" name="Beneficii_Abonament_NM PK">

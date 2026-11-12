@@ -84,6 +84,36 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="225395CD-78AD-F7BE-D57C-4CD635605039">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:11:17 UTC</createdTime>
+<generatorID>A2063304-9762-E975-3F3A-F76A5622171D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>39713FE5-D474-07B9-460A-B60CD76506AB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="BCC72EAE-C989-31B8-D2AD-963E7A9C5AD9">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:15:08 UTC</createdTime>
+<generatorID>BFD1C2D5-EE52-EDAA-9996-73318F9DBACB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>1277876B-ACC8-BBD9-6E04-F3A41FE096DA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="DF37CBDA-C5B9-8716-57AB-3AD860946667" name="Istoric_Referral PK">

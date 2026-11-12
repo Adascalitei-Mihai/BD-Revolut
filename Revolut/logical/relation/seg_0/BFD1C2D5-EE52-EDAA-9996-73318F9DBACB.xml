@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Depozite_Istoric_Referral_fk" directorySegmentName="seg_0" id="BFD1C2D5-EE52-EDAA-9996-73318F9DBACB">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-12 09:15:08 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>D4B7EC49-B6EB-172F-F9F9-368B41E46A86</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este asociat cu</nameOnSource>
+<nameOnTarget>referențiază</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2CEE9C12-8818-0824-4E63-4A9928E4DC44</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F6740B62-78D3-3402-C914-5D3848C69DE6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
