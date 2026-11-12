@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tipuri_Carduri_Posibilitati_Carduri_fk" directorySegmentName="seg_0" id="08F62156-8D04-7573-528B-282F94339EE6">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-12 09:20:23 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>09293290-7006-A6FF-3518-C49702AC99E8</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>este permis prin</nameOnSource>
+<nameOnTarget>se refera la</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4B72957D-56B6-C33A-7069-B5AD12789EAB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>567CF8F7-2231-8BA0-343F-78904FAB2DA6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

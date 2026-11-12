@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tipuri_Carduri_Carduri_fk" directorySegmentName="seg_0" id="E61E7FF1-69D1-FB69-7DFE-36B72D94CB43">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-12 09:13:17 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>09293290-7006-A6FF-3518-C49702AC99E8</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>defineste</nameOnSource>
+<nameOnTarget>este de tipul</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4B72957D-56B6-C33A-7069-B5AD12789EAB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A938E39F-94DA-37A8-5457-8BBC40551111</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
