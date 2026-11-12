@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Conturi_Curente_Carduri_fk" directorySegmentName="seg_0" id="D8A54B91-3382-EC1F-07F0-8B8A00589FD1">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-12 09:11:32 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>35ED5EA7-AE96-CDAD-BDE3-0390C35FA00B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are atasate</nameOnSource>
+<nameOnTarget>este atasat la</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FD7E03B9-A372-9AB9-E039-11E89B3533C4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A938E39F-94DA-37A8-5457-8BBC40551111</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

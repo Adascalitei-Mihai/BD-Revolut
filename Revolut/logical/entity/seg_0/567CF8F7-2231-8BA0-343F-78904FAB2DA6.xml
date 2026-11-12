@@ -15,31 +15,35 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="abonament_id" id="0FFC1E02-D71D-A42A-26FD-9C48DC648137">
+<Attribute name="abonament_id" id="9A3CFAEE-4C32-991D-ABF1-60E28BF2CE46">
 <createdBy>bruma</createdBy>
-<createdTime>2026-10-26 16:16:13 UTC</createdTime>
+<createdTime>2026-11-12 09:19:31 UTC</createdTime>
+<generatorID>036E5C76-BBA5-69B8-4940-2A26C1BF629F</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tip_card_id" id="1BF0DADC-AC21-AA44-C34F-32832E5C5BAD">
+<Attribute name="tip_card_id" id="098E5B44-55F1-EEB9-9B61-DC925D54F6EB">
 <createdBy>bruma</createdBy>
-<createdTime>2026-10-26 16:16:35 UTC</createdTime>
+<createdTime>2026-11-12 09:20:23 UTC</createdTime>
+<generatorID>08F62156-8D04-7573-528B-282F94339EE6</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>92D251D2-8B3B-2AC2-0EB1-53E9DF8C116D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="max_carduri_permise" id="9BC44D43-4E5F-3FDA-5C70-0FF315255C6C">
 <createdBy>bruma</createdBy>
@@ -73,8 +77,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0FFC1E02-D71D-A42A-26FD-9C48DC648137</attributeRef>
-<attributeRef>1BF0DADC-AC21-AA44-C34F-32832E5C5BAD</attributeRef>
+<attributeRef>9A3CFAEE-4C32-991D-ABF1-60E28BF2CE46</attributeRef>
+<attributeRef>098E5B44-55F1-EEB9-9B61-DC925D54F6EB</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

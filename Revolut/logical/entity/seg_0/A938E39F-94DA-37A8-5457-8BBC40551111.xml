@@ -28,31 +28,35 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cont_id" id="93861F06-0BA2-3F64-DC74-C6843BEE15C5">
+<Attribute name="cont_id" id="DB2F272B-99D5-4FFE-2F18-E98B37F64CCB">
 <createdBy>bruma</createdBy>
-<createdTime>2026-10-26 16:21:55 UTC</createdTime>
+<createdTime>2026-11-12 09:11:32 UTC</createdTime>
+<generatorID>D8A54B91-3382-EC1F-07F0-8B8A00589FD1</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tip_card_id" id="6E7F983C-9769-A420-894D-73F8BA973405">
+<Attribute name="tip_card_id" id="D59CE43E-41F4-CA92-C5E6-ECEEA1FD04A0">
 <createdBy>bruma</createdBy>
-<createdTime>2026-10-26 16:22:08 UTC</createdTime>
+<createdTime>2026-11-12 09:13:17 UTC</createdTime>
+<generatorID>E61E7FF1-69D1-FB69-7DFE-36B72D94CB43</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>92D251D2-8B3B-2AC2-0EB1-53E9DF8C116D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="numar_card" id="29C07BB1-5015-9F11-170D-35AE5595DC69">
 <createdBy>bruma</createdBy>
