@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="campanii_inv_fk" directorySegmentName="seg_0" id="BE31CBD7-20F1-781E-95EF-B8410A712992">
+<createdBy>Luiza Paslaru</createdBy>
+<createdTime>2026-11-12 10:54:02 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>2D8262CB-7117-683D-E7C3-E7904CCF6387</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>include</nameOnSource>
+<nameOnTarget>face parte din</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>040FDEC8-F423-2469-E230-DDCBE904544C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B16EC1DF-B401-AB5E-D6EF-F924B95F2440</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

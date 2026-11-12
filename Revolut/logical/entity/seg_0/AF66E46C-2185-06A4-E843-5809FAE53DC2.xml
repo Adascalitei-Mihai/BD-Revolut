@@ -120,6 +120,66 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="D40C337C-8F74-16E4-B83E-7D7D37260F65">
+<createdBy>Luiza Paslaru</createdBy>
+<createdTime>2026-11-12 10:43:41 UTC</createdTime>
+<generatorID>4B26CDDD-FC56-99E8-E71E-7E60323B2095</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="C3AE785C-E8C2-D11F-4C77-BD959884E3DD">
+<createdBy>Luiza Paslaru</createdBy>
+<createdTime>2026-11-12 10:44:14 UTC</createdTime>
+<generatorID>1799B6F6-58B2-406D-D7C9-89B9A7EF2378</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>80D67B8C-CCF8-2157-1EE4-4CE339D5EA91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client" id="BFF117B8-D36C-1D57-98CC-FF432118F68A">
+<createdBy>Luiza Paslaru</createdBy>
+<createdTime>2026-11-12 10:44:14 UTC</createdTime>
+<generatorID>1799B6F6-58B2-406D-D7C9-89B9A7EF2378</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>36D2BA7D-5BD1-EBAF-8EB5-759D4B08B220</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id11" id="0167CDDC-7E60-92BB-7830-95B14DDD24D5">
+<createdBy>Luiza Paslaru</createdBy>
+<createdTime>2026-11-12 10:44:14 UTC</createdTime>
+<generatorID>1799B6F6-58B2-406D-D7C9-89B9A7EF2378</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>46A572D6-636D-43F7-F78C-714F5F2FF13B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C776029B-2C6F-7C9F-C9E9-7A30507B2E4F" name="Tranzactii_Economii PK">

@@ -102,6 +102,51 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_client" id="0520BB40-BE21-F362-8D4E-7E84EC5D7457">
+<createdBy>Luiza Paslaru</createdBy>
+<createdTime>2026-11-12 10:45:40 UTC</createdTime>
+<generatorID>79CE133B-A089-4AA9-E40F-8FCA196218E1</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client1" id="5223A2AB-C6DC-0B1C-9264-E5C8C838EDD5">
+<createdBy>Luiza Paslaru</createdBy>
+<createdTime>2026-11-12 10:52:18 UTC</createdTime>
+<generatorID>AF76FF0E-0FEC-B0C6-7EB7-9D211FD3FCD7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="C9226F10-B46D-8853-8CE2-EF1B37EFCA02">
+<createdBy>Luiza Paslaru</createdBy>
+<createdTime>2026-11-12 10:54:02 UTC</createdTime>
+<generatorID>BE31CBD7-20F1-781E-95EF-B8410A712992</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>AB70A229-476C-E740-072B-8F466F3E4DC1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C2670630-DFF6-10D5-8894-B321039B9554" name="Invitatii_Referral PK">
