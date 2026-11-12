@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Portofele_Puncte_Tranzactii_Puncte_fk" directorySegmentName="seg_0" id="C9D3CF59-C5C1-A85F-BA5A-11DB0B0E5949">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-12 09:52:22 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>065CE950-D486-C1C5-02D3-83FA58792F26</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>inregistreaza</nameOnSource>
+<nameOnTarget>apartine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>17FE0BFE-D883-0108-D371-08E3DA2413D7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D3CB72AF-1798-F8F9-29CA-34130420B626</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Optiuni_Rascumparare_Tranzactii_Puncte_fk" directorySegmentName="seg_0" id="318AA1B2-1B5E-4DE0-6728-D09D2E46E205">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-12 10:13:34 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>9B7E36A4-4AA2-AE3E-9C03-C846B5442107</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este folosita in</nameOnSource>
+<nameOnTarget>rascumpara</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>56E98E36-F354-2DD4-01C0-A63750558A1B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D3CB72AF-1798-F8F9-29CA-34130420B626</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

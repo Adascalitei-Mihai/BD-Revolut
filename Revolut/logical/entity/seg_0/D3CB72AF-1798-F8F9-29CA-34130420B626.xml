@@ -28,19 +28,6 @@
 <dataTypePrecision>11</dataTypePrecision>
 <ownDataTypeParameters>,11,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="portofel_id" id="81622E45-287A-0752-2222-B05DCB32BE7B">
-<createdBy>Costin-Daniel</createdBy>
-<createdTime>2026-10-24 10:03:27 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="suma" id="8943D2F4-EFF8-317F-2D17-6B371B50181E">
 <createdBy>Costin-Daniel</createdBy>
 <createdTime>2026-10-24 10:04:04 UTC</createdTime>
@@ -75,34 +62,6 @@
 </checkConstraint>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="plata_referinta_id" id="E11D2B9A-851D-6008-06DC-BB045C67C57B">
-<createdBy>Costin-Daniel</createdBy>
-<createdTime>2026-10-24 10:05:05 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>11</dataTypePrecision>
-<ownDataTypeParameters>,11,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="optiune_rascumparare_id" id="B3EDE69A-1420-4172-EB34-E5007ECA0EB9">
-<createdBy>Costin-Daniel</createdBy>
-<createdTime>2026-10-24 10:05:25 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="data_tranzactie" id="DE4B9E27-55F5-4FE8-D868-4B659955CEDB">
 <createdBy>Costin-Daniel</createdBy>
 <createdTime>2026-10-24 10:05:43 UTC</createdTime>
@@ -113,6 +72,53 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="96F4A845-C4A5-C249-9175-B9F51C8163DC">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-12 09:52:22 UTC</createdTime>
+<generatorID>C9D3CF59-C5C1-A85F-BA5A-11DB0B0E5949</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>3666951E-C608-0722-23FC-A5622A66D6A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="3D3AC971-EC72-1CED-BF9C-79A2B3C14175">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-12 09:54:09 UTC</createdTime>
+<generatorID>977B5194-E02A-3774-30B8-F8005EEEB031</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E9CD63D3-9830-1916-2AFF-0115A187A211</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id3" id="44161E64-2CF3-B06B-E94F-624CA0E6BF42">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-12 10:13:34 UTC</createdTime>
+<generatorID>318AA1B2-1B5E-4DE0-6728-D09D2E46E205</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A9C6299B-7CE7-91E1-B7A0-97A50D47E036</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
