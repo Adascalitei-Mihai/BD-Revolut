@@ -15,20 +15,31 @@
 <generatorId>EA78EFBA-F2D3-B9C7-ACF8-FD59743B84B0</generatorId>
 <notation>1</notation>
 <objectViews>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4EBD1816-034B-D2E1-3741-77467DE4A61A" otype="Table" vid="AA0F1331-0E8F-3A97-C0CD-832A437FBDCB">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="120" y="160" width="170" height="110"/>
-<generatorID>27C1553B-8500-61BD-37B3-E6ABC8AFC62C</generatorID>
-</OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5277FEB5-22B1-4F4A-25BB-DF21BEBA0A9B" otype="Table" vid="ABB78684-168E-D075-ADAD-7B19A535DE95">
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7F71EBD6-BBE9-F6BD-20F2-613807BC21E2" otype="Table" vid="0A23F393-2D35-66D6-394F-712494CB9E37">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="130" y="180" width="170" height="110"/>
 <generatorID>3D30E2E1-24C6-E44D-0798-F270CE603E97</generatorID>
 </OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F168ED8A-9290-A933-9FE0-492A88E0F348" otype="Table" vid="08C198D5-99B4-7F6A-C143-D42936170A2B">
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8612A532-2819-D56E-71E1-D5BBDF18E5E7" otype="Table" vid="DE81321A-5288-04E9-5FE4-663D94B456F5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="120" y="160" width="170" height="110"/>
+<generatorID>27C1553B-8500-61BD-37B3-E6ABC8AFC62C</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="A002D9FF-D8A9-59FF-50E8-853B82045E64" otype="Table" vid="C695AC46-966E-9A40-D7BF-36FE08524415">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="260" y="440" width="170" height="110"/>
 <generatorID>89DBB0EA-7C15-DAD0-F1CB-F3590B37FE05</generatorID>
 </OView>
 </objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F4805161-DA7E-B2EC-B02B-5C68D40EC8A6" otype="FKIndexAssociation" vid_source="DE81321A-5288-04E9-5FE4-663D94B456F5" vid_target="0A23F393-2D35-66D6-394F-712494CB9E37">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="290" y="225"/>
+<point x="130" y="225"/>
+</points>
+</Connector>
+</connectors>
 </Diagram>

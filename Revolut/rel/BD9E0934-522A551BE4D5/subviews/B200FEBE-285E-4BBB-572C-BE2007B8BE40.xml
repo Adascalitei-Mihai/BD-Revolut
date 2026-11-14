@@ -15,15 +15,15 @@
 <generatorId>5473032F-5069-4CBD-6F5C-E06BBE5BCBC8</generatorId>
 <notation>1</notation>
 <objectViews>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0F0FF6CA-0F90-4764-3F0B-9E08EC753485" otype="Table" vid="AA8F1F89-2AAD-A802-E5A7-5EC5694C7D66">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="280" y="480" width="170" height="110"/>
-<generatorID>5E99B11C-6B5D-B9DC-63F3-C0C08434868F</generatorID>
-</OView>
-<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1E5984A6-5A1C-33AD-0EAA-AC0BE18B3141" otype="Table" vid="CCE70D86-A8E5-DCF0-EDE4-59ECCABA5D71">
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B9A21750-A62A-A465-967C-9623CE30789D" otype="Table" vid="C5B24881-F9A9-69DB-3DC0-807DE80B3824">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="320" y="560" width="170" height="110"/>
 <generatorID>80679D11-BB4D-5940-9A19-DCB226F6EF53</generatorID>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CB4BFFD0-0DCA-4379-AA0E-A6B3B6716F7F" otype="Table" vid="447B97E1-0AD1-6738-B740-B06E80479951">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="280" y="480" width="170" height="110"/>
+<generatorID>5E99B11C-6B5D-B9DC-63F3-C0C08434868F</generatorID>
 </OView>
 </objectViews>
 </Diagram>

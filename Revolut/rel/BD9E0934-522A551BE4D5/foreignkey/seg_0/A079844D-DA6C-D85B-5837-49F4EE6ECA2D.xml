@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A079844D-DA6C-D85B-5837-49F4EE6ECA2D" containerWithKeyObject="12836A26-FFF4-E84E-0E04-59A54F912426" localFKIndex="8420E40D-917E-9B89-2416-95F4F5449B8A" name="Portofele_Puncte_Tranzactii_Puncte_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>C9D3CF59-C5C1-A85F-BA5A-11DB0B0E5949</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Portofele_Puncte</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B1D313AF-770A-DB27-CE8F-22946E439B80</referredTableID>
+<keyObject>F7585C53-78B9-AE2E-9A23-4E428D376E88</keyObject>
+<referredKeyID>F7585C53-78B9-AE2E-9A23-4E428D376E88</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

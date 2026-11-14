@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0111F979-3DB1-748E-772F-6C708EC8F660" containerWithKeyObject="12836A26-FFF4-E84E-0E04-59A54F912426" localFKIndex="7254F69A-74BF-81C0-FA8C-F51E8C98721C" name="Plati_Tranzactii_Puncte_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>977B5194-E02A-3774-30B8-F8005EEEB031</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Plati</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C528ED53-3595-443F-8B58-32D67F1836E3</referredTableID>
+<keyObject>6E53F998-9C5F-E62C-D010-F9833AD8BBD9</keyObject>
+<referredKeyID>6E53F998-9C5F-E62C-D010-F9833AD8BBD9</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

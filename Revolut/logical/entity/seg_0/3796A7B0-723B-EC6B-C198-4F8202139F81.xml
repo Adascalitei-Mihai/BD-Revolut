@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="valuta_id" id="9014F719-EDE3-AC9B-2C18-8B40E77A85DC">
 <createdBy>mihaiadascalitei</createdBy>
@@ -104,6 +104,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK (suma_valuta &gt; 0 OR suma_split_RON &gt; 0)"/>
+</checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <listOfRanges>
 <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
@@ -124,6 +127,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((suma_split_RON &gt; 0 AND rata_conversie IS NOT NULL) OR (suma_split_RON = 0 AND rata_conversie IS NULL))"/>
+</checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <listOfRanges>
 <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
@@ -138,12 +144,17 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<constraintName>Plati_rata_conversie_ck</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <dataTypeScale>6</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK (rata_conversie IS NULL OR rata_conversie &gt; 0)"/>
+</checkConstraint>
+<defaultValue>NULL</defaultValue>
 <ownDataTypeParameters>,10,6</ownDataTypeParameters>
 </Attribute>
 <Attribute name="data" id="855789D8-6C4C-4F6C-2A03-A07BE4A0753D">
@@ -185,11 +196,15 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<constraintName>Plati_motiv_esuare_ck</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>64</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((status = &apos;SUCCESS&apos; AND motiv_esuare IS NULL) OR (status = &apos;FAIL&apos; AND motiv_esuare IS NOT NULL))"/>
+</checkConstraint>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

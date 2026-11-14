@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F71EBD6-BBE9-F6BD-20F2-613807BC21E2" name="Clienti_Informatii">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>92D02949-FC3A-8B1A-04D3-287315777647</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_client" id="4EB12A12-9CA6-F55B-4430-A535908E1F76">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>57A31DB2-33E5-E38B-C589-5DBE3131BD06</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4805161-DA7E-B2EC-B02B-5C68D40EC8A6" referredColumn="E164DFDA-0A29-4E06-484B-8AB37F4534CA"/>
+</associations>
+</Column>
+<Column name="cnp" id="298BF93D-F922-1FF1-0C72-83ED220C46A4">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>2515A7D3-87C5-79AA-1F3F-BB381B5F8362</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="D8D606F7-7CC0-1861-3A7C-DD7997B944D4">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>0688BF42-BBD7-6BC5-F894-75E4CF0E613C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="F5009AFD-77D3-E55A-3C33-632F88FC6BF5">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>DDF45198-AA94-6C73-2F3A-C26B47CF2A5B</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254</dataTypeSize>
+<ownDataTypeParameters>254,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04589F11-FFF6-D56B-F4F7-1A4B76A22D09" name="Clienti_Informatii_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>D0BBD559-A4F8-0FDB-EE3A-D276DF2C23D2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EB12A12-9CA6-F55B-4430-A535908E1F76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB7E4F54-19B1-F7F9-62BD-6AE8EA4B51DB" name="cnp_UK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>729B3617-6540-637F-EFEF-55B58202A0E8</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="298BF93D-F922-1FF1-0C72-83ED220C46A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBE5A5E0-1AE0-AF2B-6D6E-76E998CE9D7E" name="telefon_UK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>0D6A4B6C-AD73-F372-57AA-18B64356613C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8D606F7-7CC0-1861-3A7C-DD7997B944D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3195A194-ABE1-5A2D-93D8-DB81AE686F8C" name="email_UK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>A7FFC20E-A223-672D-5EA7-CE17C87A0D55</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5009AFD-77D3-E55A-3C33-632F88FC6BF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4352D67-1D17-DA88-1CC6-73C9C2191415" name="Clienti_Clienti_Informatii_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>57DA0864-0FBD-0E33-E3E2-9DB707A92E13</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EB12A12-9CA6-F55B-4430-A535908E1F76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

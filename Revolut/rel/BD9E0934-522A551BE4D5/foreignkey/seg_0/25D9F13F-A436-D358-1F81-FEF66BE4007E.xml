@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="25D9F13F-A436-D358-1F81-FEF66BE4007E" containerWithKeyObject="12836A26-FFF4-E84E-0E04-59A54F912426" localFKIndex="547182D6-4A60-7088-6C1F-279BAD7E054A" name="Optiuni_Rascumparare_Tranzactii_Puncte_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>318AA1B2-1B5E-4DE0-6728-D09D2E46E205</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Optiuni_Rascumparare</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8D0C4EF3-48FB-B905-1FA3-31336D6C17D7</referredTableID>
+<keyObject>392E4BC6-AB9C-E08B-FDED-42D131AE9B21</keyObject>
+<referredKeyID>392E4BC6-AB9C-E08B-FDED-42D131AE9B21</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

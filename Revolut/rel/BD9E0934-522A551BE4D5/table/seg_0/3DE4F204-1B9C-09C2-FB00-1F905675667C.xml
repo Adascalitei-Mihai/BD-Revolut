@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DE4F204-1B9C-09C2-FB00-1F905675667C" name="Posibilitati_Carduri_NM">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>567CF8F7-2231-8BA0-343F-78904FAB2DA6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="abonament_id" id="63B54296-2F29-5F66-C200-2D169BC38110">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>9A3CFAEE-4C32-991D-ABF1-60E28BF2CE46</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7248436-940A-6931-B32C-4C7DCD2C7FD7" referredColumn="20ABFA78-29DB-E0DF-B2B0-121815512477"/>
+</associations>
+</Column>
+<Column name="tip_card_id" id="BC02141D-BEEB-3C0B-3448-11359F0C2DB2">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>098E5B44-55F1-EEB9-9B61-DC925D54F6EB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AC7FA6E-21B4-04E0-6108-D0301D3C0783" referredColumn="8F59352F-BDFA-C3BA-12A8-108531590AD0"/>
+</associations>
+</Column>
+<Column name="max_carduri_permise" id="E6C0EC35-B255-0ABF-14DB-1357E394C6C5">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>9BC44D43-4E5F-3FDA-5C70-0FF315255C6C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Posibilitati_Carduri_NM_max_carduri_permise_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>20</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B5B0E9B-0D82-B9BE-97F6-77E9B009731A" name="Posibilitati_Carduri_NM_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>C945F57B-7C1F-9100-90BD-20F0648984BC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63B54296-2F29-5F66-C200-2D169BC38110"/>
+<colUsage columnID="BC02141D-BEEB-3C0B-3448-11359F0C2DB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82360995-1D25-5710-359E-2A9F777BB5FA" name="Abonamente_Posibilitati_Carduri_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>036E5C76-BBA5-69B8-4940-2A26C1BF629F</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63B54296-2F29-5F66-C200-2D169BC38110"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DC3807B-4170-A2EE-E1A8-7D066F5897A0" name="Tipuri_Carduri_Posibilitati_Carduri_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>08F62156-8D04-7573-528B-282F94339EE6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC02141D-BEEB-3C0B-3448-11359F0C2DB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

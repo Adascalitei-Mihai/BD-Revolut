@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8FA09EBA-2D23-52FF-DA78-989C369AC6C0" name="Carduri">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>A938E39F-94DA-37A8-5457-8BBC40551111</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FD4A8C5C-4C90-AE59-130F-0D6827D33841">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>25966D56-A8DD-5260-16D5-64E148F6D552</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cont_id" id="6E7B5353-B84E-1251-840C-78B1BCC42C7E">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>DB2F272B-99D5-4FFE-2F18-E98B37F64CCB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13EFF97A-18B4-B8CF-8C1B-CAB7408BDDDA" referredColumn="3DC88A8D-4A3D-452A-D3CD-D40E08CAE88F"/>
+</associations>
+</Column>
+<Column name="tip_card_id" id="4F3C8EE3-B5F2-9260-5CAA-0B7CBA6BB08E">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>D59CE43E-41F4-CA92-C5E6-ECEEA1FD04A0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B338B962-52C0-69C9-1D6D-B7858BDA8600" referredColumn="8F59352F-BDFA-C3BA-12A8-108531590AD0"/>
+</associations>
+</Column>
+<Column name="numar_card" id="56196CCE-48C3-E134-2C5F-AC6D9F047CEB">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>29C07BB1-5015-9F11-170D-35AE5595DC69</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_numar_card_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(numar_card, &apos;^[0-9]{16}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_expirare" id="04735BBC-F9E3-3E44-7759-5B5F12A5C7CA">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>A5630932-067E-6DB7-C5FD-327BCFF6F809</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_data_expirare_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="data_expirare &gt; data_emitere"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cvv" id="20C0B4E3-462C-BC3F-230C-9BBA4A68BBA3">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>34ECAA28-8242-A3B1-8B59-8DACF7D96E10</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_cvv_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(cvv, &apos;^[0-9]{3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pin" id="CD68664B-A451-0ACB-7F3F-F8B382E7BBB2">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>94FBFFC7-E3BD-73C0-10C9-41C24BA8F4A0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_pin_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(pin, &apos;^[0-9]{4}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="DDB2F016-C48E-33D3-225C-CBBDEBA6AD6A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>1102569E-61F5-64C7-0E2F-FBD5AA8B6565</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_status_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK (status IN (&apos;ACTIVE&apos;, &apos;INACTIVE&apos;))"/>
+</checkConstraint>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_emitere" id="6B5209BB-6D35-A95A-EEC2-64B17E356DC9">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>43833977-063A-179C-3E3D-56038A263AA2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3FD89713-FED5-A54D-60F1-1847FE9DFF79" name="Carduri_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>F2407F64-A9B2-1415-65B3-21F0A3890B85</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD4A8C5C-4C90-AE59-130F-0D6827D33841"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="364E377B-29F0-BC32-58C2-511640C77362" name="Carduri_numar_card_UK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>E2AAE5C0-F3CD-F7AF-BF63-48C59FECA491</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56196CCE-48C3-E134-2C5F-AC6D9F047CEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4796EF55-99CE-492C-0CAA-90EDEBEFA3EB" name="Conturi_Curente_Carduri_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>D8A54B91-3382-EC1F-07F0-8B8A00589FD1</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E7B5353-B84E-1251-840C-78B1BCC42C7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C51B4ECD-C2B6-731C-D351-62B439101D52" name="Tipuri_Carduri_Carduri_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>E61E7FF1-69D1-FB69-7DFE-36B72D94CB43</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F3C8EE3-B5F2-9260-5CAA-0B7CBA6BB08E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

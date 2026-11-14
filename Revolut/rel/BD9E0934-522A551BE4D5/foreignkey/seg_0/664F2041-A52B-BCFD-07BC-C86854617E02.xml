@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="664F2041-A52B-BCFD-07BC-C86854617E02" containerWithKeyObject="A29A5FED-B673-0E51-13B7-ED19CD1F0DF5" localFKIndex="90049832-79C0-FC18-3522-63243564EA98" name="campanii_inv_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>BE31CBD7-20F1-781E-95EF-B8410A712992</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Campanii_Referral</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>88ACB296-522B-0AB0-E457-C12C5EF28BFA</referredTableID>
+<keyObject>90400082-347B-A1C1-555C-9451FA947570</keyObject>
+<referredKeyID>90400082-347B-A1C1-555C-9451FA947570</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

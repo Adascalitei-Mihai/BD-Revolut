@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E03DFF8A-0340-AB6C-C3ED-E6A3F949F776" containerWithKeyObject="CB4BFFD0-0DCA-4379-AA0E-A6B3B6716F7F" localFKIndex="B8D548D9-6A0C-BA71-A69E-7F27B1F2E7E9" name="rata_conversie_transf_ext_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>0B820918-A75A-1437-4D27-DE8ADB47B3AF</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>rate_conversie</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>25C40E6D-DCDB-C7B9-045B-CE54B2E27E17</referredTableID>
+<keyObject>7CDE360F-FC68-B8BC-0E0B-58A6582ABF41</keyObject>
+<referredKeyID>7CDE360F-FC68-B8BC-0E0B-58A6582ABF41</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

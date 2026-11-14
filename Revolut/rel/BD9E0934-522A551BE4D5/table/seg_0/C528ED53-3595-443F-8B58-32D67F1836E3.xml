@@ -1,0 +1,233 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C528ED53-3595-443F-8B58-32D67F1836E3" name="Plati">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>3796A7B0-723B-EC6B-C198-4F8202139F81</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="55427E08-F918-3D8C-FC2E-5475F736D991">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>E9CD63D3-9830-1916-2AFF-0115A187A211</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="card_id" id="F63A7F8A-E91E-6A78-E8F4-D69DF366FEDF">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="234DACC4-1625-EA05-D434-EB7CF85B4647" referredColumn="FD4A8C5C-4C90-AE59-130F-0D6827D33841"/>
+</associations>
+</Column>
+<Column name="valuta_id" id="CC4C7467-5C96-2666-D3C3-4FB96191CA8F">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>9014F719-EDE3-AC9B-2C18-8B40E77A85DC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F458F36A-5E73-B89D-7617-0D01ED64FCB2" referredColumn="C295AB83-5C52-F05B-1F9A-7A2D5BF7EE7F"/>
+</associations>
+</Column>
+<Column name="suma_totala" id="7111D05C-E5F6-89E4-CE94-E99D68C80F3A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>DE6918F3-024B-73B6-A7DC-B10C2311E958</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_suma_totala_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0.01</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="nume_destinatie" id="2D69B20E-3A7F-BEF0-A19A-6317D29C1C99">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>7F8F2A6D-EB64-A70B-09CE-BC04A3633C69</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="suma_valuta" id="7189C517-C79B-500F-EEDA-6370701BA720">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>DCDE5568-135E-2558-4028-D1D11F9163AA</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_suma_valuta_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK (suma_valuta &gt; 0 OR suma_split_RON &gt; 0)"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="suma_split_RON" id="1C136381-0C2D-9CE7-361A-C6DE604A9D22">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>707BB793-1E6A-9EEC-C5CF-DC382A939FF2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_suma_split_RON</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((suma_split_RON &gt; 0 AND rata_conversie IS NOT NULL) OR (suma_split_RON = 0 AND rata_conversie IS NULL))"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="rata_conversie" id="70B3A116-8949-6519-4BD6-51BDF765B0E7">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>F652DCC7-0D58-9B2B-B6F5-6E0C46DB1461</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_rata_conversie_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK (rata_conversie IS NULL OR rata_conversie &gt; 0)"/>
+</checkConstraint>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data" id="3D5D8D91-4E72-D949-0ACD-095859F9C23C">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>855789D8-6C4C-4F6C-2A03-A07BE4A0753D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_data_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="46F61CDC-044A-02B7-F5B0-74998700EB3D">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>0EDFD3D6-2F2E-D7D9-E319-75E4B8957215</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_status_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;FAIL&apos;" description=""/>
+<valueDef value="&apos;SUCCESS&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="motiv_esuare" id="423EFC67-DB31-8562-A277-058598B8509A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>BC13E6FE-C6A2-45CA-2E9C-07E82594A2DC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_motiv_esuare_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((status = &apos;SUCCESS&apos; AND motiv_esuare IS NULL) OR (status = &apos;FAIL&apos; AND motiv_esuare IS NOT NULL))"/>
+</checkConstraint>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E53F998-9C5F-E62C-D010-F9833AD8BBD9" name="Plati_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>DCC585F2-61E7-C17A-41A1-58BBB6DCE06E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55427E08-F918-3D8C-FC2E-5475F736D991"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B585C32-D524-28B4-6B96-D0261F129A4F" name="Carduri_Plati_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>55EBD71B-9EB4-21B5-30AC-147690AAA1E7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F63A7F8A-E91E-6A78-E8F4-D69DF366FEDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56D27C18-F13F-9D0E-D776-180F03E81021" name="Valute_Plati_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>E484A83A-C3D6-5D48-800D-041061C29BCC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC4C7467-5C96-2666-D3C3-4FB96191CA8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

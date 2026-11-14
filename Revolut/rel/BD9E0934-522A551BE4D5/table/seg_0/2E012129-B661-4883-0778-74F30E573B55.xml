@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E012129-B661-4883-0778-74F30E573B55" name="Tranzactii_Economii">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>AF66E46C-2185-06A4-E843-5809FAE53DC2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A0BBD872-DBCA-61E4-3C67-935123B4B7B5">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>186FA946-84AA-F693-9BC4-DA68A2E77FAD</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cont_curent_id" id="046FFFA6-B7FE-C1FF-46D2-667686BDD825">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>AEA3DDD1-AD37-C5A9-AE91-A7ED37282E54</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cont_economii_id" id="9F2C338D-D0D1-99D4-D159-6DD03AEBC625">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>89EFA2C8-84DA-5CED-560B-69B40D5010B0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="suma" id="83091966-00F8-E625-1486-AADFE9A20ABD">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>08F3C069-C247-2977-8C8B-FBBD50DAF46C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>tranzactii_economii_suma_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="suma&gt;0 "/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_operatiune" id="9413556D-1CF4-C748-21BF-3E37FDE88964">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>E4046803-DB56-166D-CBA4-432EFB0DA7C5</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>tranzactii_economii_tip_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="DEPUNERE" description=""/>
+<valueDef value="RETRAGERE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="4D052E12-6AD0-46D9-AC7F-8469E169291C">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>04427826-65DA-DD29-9817-1A79339E6AAB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>tranzactii_economii_status_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="FAIL" description=""/>
+<valueDef value="SUCCESS" description=""/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_tranzactie" id="431A7844-72F4-D31C-5B18-8E9D2ACBD89A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>476D96A0-CA3D-206F-436C-258D4923C80D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id1" id="9A21F399-BDF6-93CC-7EA1-E285F6E736B8">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>D40C337C-8F74-16E4-B83E-7D7D37260F65</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7282251B-1007-2880-13B7-C0B79908CC87" referredColumn="3DC88A8D-4A3D-452A-D3CD-D40E08CAE88F"/>
+</associations>
+</Column>
+<Column name="id2" id="86E84EEE-6F22-EFB9-5944-377F1E32DC56">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>C3AE785C-E8C2-D11F-4C77-BD959884E3DD</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65855E73-441F-E4D1-A8A7-36B0F8DC1526" referredColumn="60316930-9BC3-BC01-D92E-FCE3BB3F04E6"/>
+</associations>
+</Column>
+<Column name="id_client" id="DAFEC1B2-A4CA-14EA-BE78-392277E214F9">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>BFF117B8-D36C-1D57-98CC-FF432118F68A</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65855E73-441F-E4D1-A8A7-36B0F8DC1526" referredColumn="7F7CC8B8-AB6D-B154-9606-92F73DAE6D59"/>
+</associations>
+</Column>
+<Column name="Id11" id="9439EC89-8F11-0B80-09CF-F7B147439748">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>0167CDDC-7E60-92BB-7830-95B14DDD24D5</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65855E73-441F-E4D1-A8A7-36B0F8DC1526" referredColumn="8FEB6AF6-4EFA-87EC-939A-15ADD98FEBFE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09EFB410-3763-9D12-8DD2-D6E339DC5801" name="Tranzactii_Economii_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>C776029B-2C6F-7C9F-C9E9-7A30507B2E4F</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0BBD872-DBCA-61E4-3C67-935123B4B7B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="732EB8CA-C947-4337-B3C3-EE097DA4EF2D" name="conturi_cur_tranz_ec_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>4B26CDDD-FC56-99E8-E71E-7E60323B2095</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A21F399-BDF6-93CC-7EA1-E285F6E736B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A25DF6C1-0B00-CC33-7152-0D3FA073EF68" name="conturi_econ_tranz_ec_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>1799B6F6-58B2-406D-D7C9-89B9A7EF2378</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86E84EEE-6F22-EFB9-5944-377F1E32DC56"/>
+<colUsage columnID="DAFEC1B2-A4CA-14EA-BE78-392277E214F9"/>
+<colUsage columnID="9439EC89-8F11-0B80-09CF-F7B147439748"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

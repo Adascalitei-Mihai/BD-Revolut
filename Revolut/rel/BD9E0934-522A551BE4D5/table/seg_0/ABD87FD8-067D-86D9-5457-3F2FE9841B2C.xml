@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABD87FD8-067D-86D9-5457-3F2FE9841B2C" name="Beneficii_Abonament_NM">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>A276D0AA-C318-BD64-54E7-29D95CA1225C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="abonament_id" id="A72F3240-5376-47CC-EA31-563866CD1CE9">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>6F7E31C3-8A0A-5968-3ED9-1B1BEEA01AA9</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valuta_id" id="48914134-DB32-F3EB-307F-086849CF978B">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>F3C78759-CD9E-2428-896B-83C8A96F3D60</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rata_dobanda_anuala" id="9977E764-22C6-1D3E-488C-9780955872D0">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>6AF225EB-2FBC-DE74-BDD8-C81811061897</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Beneficii_Abonament_NM_rata_dobanda_anuala_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="rata_dobanda &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="multiplicator_puncte" id="B11000C4-0630-7385-1BA7-342D17D0E0E2">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>BD694A0C-2DEB-498E-6616-CC94FD71DA64</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="9984A795-FD42-EBB9-2B68-ACB69EDB2DC6">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>CC7D4F26-DAEE-CEF8-E388-3EC87E5CCE41</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D21494F-0935-14B8-F2D4-069C0622A204" referredColumn="20ABFA78-29DB-E0DF-B2B0-121815512477"/>
+</associations>
+</Column>
+<Column name="Id1" id="0AEE4F5C-35BB-2634-6807-0DCF261EE2BF">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>BF93DD43-28C1-E6A4-D27B-E6F15047AFF1</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC2A850A-DED5-45F2-FBEE-1DC11AAEBAE6" referredColumn="C295AB83-5C52-F05B-1F9A-7A2D5BF7EE7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F395F822-FB6E-2ED2-C0DA-F436CF50AF29" name="Beneficii_Abonament_NM_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>67BC53B4-6B6B-424A-89C1-617493D04ED5</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A72F3240-5376-47CC-EA31-563866CD1CE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C0DE035-8CC3-1AB2-80AB-FB951B15D939" name="Abonamente_Beneficii_Abonamente_NM_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>21A5723F-3175-3B85-B7FE-8ED9F97BF1C7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9984A795-FD42-EBB9-2B68-ACB69EDB2DC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3A0EE23-23D7-82D6-3526-BE2E6B9B3635" name="Valute_Beneficii_Abonamente_NM_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-14 15:08:27 UTC</createdTime>
+<generatorID>6FE668F2-82EA-7337-F1AF-90C7B98814F3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AEE4F5C-35BB-2634-6807-0DCF261EE2BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
