@@ -2,9 +2,15 @@
 ### Baze de date - proiect
 
 ## To-do:
+
+## Stage 1: pana joi, 17:00 19.11
 ### 1. modificare README: autoincrement, constrangeri de tabel
-### 2. adaugare in data modeler cele prevazute mai sus, stergere atribute duplicate si lasate doar cele generate de fk (redenumite corect)
-### 3. STERGETI FORKURILE SI CITITI COMMURILE PE GIT!
+### 2. adaugare in data modeler in partea logica constrangerile, stergere atribute duplicate si lasate doar cele generate de fk (redenumite corect)
+
+## Stage 2: pana joi, 17:00 26.11
+### Asteptati sa generez realationalul, apoi puneti partea de autoincrement si de check date
+
+### STERGETI FORKURILE SI CITITI COMMURILE PE GIT!
 
 > (btw, Invitatii_Referral - Istoric_Referral ar trebui sa fie 1:n, nu 1:1 cred)
 ---
