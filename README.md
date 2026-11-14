@@ -1,22 +1,28 @@
 # Revolut
 ### Baze de date - proiect
 
+## To-do:
+### 1. modificare README: autoincrement, constrangeri de tabel
+### 2. adaugare in data modeler cele prevazute mai sus, stergere atribute duplicate si lasate doar cele generate de fk (redenumite corect)
+### 3. STERGETI FORKURILE SI CITITI COMMURILE PE GIT!
+
+> (btw, Invitatii_Referral - Istoric_Referral ar trebui sa fie 1:n, nu 1:1 cred)
 ---
 
 ## Componența echipei
 
 | **Nume**                       | **Grupă** | **Email**                                    |                                                                    Task-uri                                                                     |
 |:-------------------------------|:---------:|:---------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------:|
-| **Adăscăliței Cristian-Mihai** |   1307A   | cristian-mihai.adascalitei@student.tuiasi.ro |                                            [Abonamente](#1-Abonamente) + [Plati](#10-Plati) & Design                                            |
-| **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            |                [Carduri](#8-Carduri) + [Tipuri carduri](#6-Tipuri_Carduri) + [Posibilitati carduri](#7-Posibilitati_Carduri_NM)                 |
-| **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     |                                [Conturi curente](#conturi-curente) + [Conturi de economii](#conturi-de-economii)                                |
-| **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |                                    [Clienti](#2-clienti) + [Recompense_referral](#22-recompense_referral_nm)                                    |
-| **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   |                                      [Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)                                       |
-| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |     [Istoric dobanzi](#17-istoric_dobanzi) + [Istoric plati abonamente](#13-istoric_plati_abonamente) + [Rate conversie](#4-rate_conversie)     |
-| **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    |    [Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte)     |
-| **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |                          [Invitatii referral](#23-Invitatii_Referral) + [Tranzactii economii](#16-Tranzactii_Economii)                          |                                             
-| **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |                                      [Campanii referral](#21-campanii_referral) + [Depozite](#9-depozite)                                       |
-| **Sava Teofan**                |   1307A   | teofan.sava@student.tuiasi.ro                | [Transferuri interne](#11-transferuri_interne) + [Beneficii abonamente](#14-beneficii_abonamente_nm) + [Istoric referral](#24-istorii_referral) |
+| **Adăscăliței Cristian-Mihai** |   1307A   | cristian-mihai.adascalitei@student.tuiasi.ro |[Abonamente](#1-Abonamente) + [Plati](#10-Plati) & Design|
+| **Brumă Cristian**             |   1306B   | cristian.bruma3@student.tuiasi.ro            |[Carduri](#8-Carduri) + [Tipuri carduri](#6-Tipuri_Carduri) + [Posibilitati carduri](#7-Posibilitati_Carduri_NM)|
+| **Enache Teodora-Iasmina**     |   1309B   | teodora-iasmina.enache@student.tuiasi.ro     |[Conturi curente](#5-Conturi_Curente) + [Conturi de economii](#15-Conturi_Economii)|
+| **Ferariu Ioan-Andrei**        |   1306A   | ioan-andrei.ferariu@student.tuiasi.ro        |[Clienti](#2-clienti) + [Recompense_referral](#22-recompense_referral_nm)|
+| **Marinkaș Ioana-Alexandra**   |   1307A   | ioana-alexandra.marinkas@student.tuiasi.ro   |[Transferuri Externe](#12-transferuri_externe) + [Valute](#3-valute)|
+| **Mateiuc Florentina-Bianca**  |   1306A   | florentina-bianca.mateiuc@student.tuiasi.ro  |[Istoric dobanzi](#17-istoric_dobanzi) + [Istoric plati abonamente](#13-istoric_plati_abonamente) + [Rate conversie](#4-rate_conversie)|
+| **Mihalache Costin-Daniel**    |   1309B   | costin-daniel.mihalache@student.tuiasi.ro    |[Portofele puncte](#18-Portofele_Puncte) + [Optiuni răscumpărare](#19-Optiuni_Rascumparare) + [Tranzacții puncte](#20-Tranzactii_Puncte)|
+| **Pâslaru Luiza-Maria**        |   1309B   | luiza-maria.paslaru@student.tuiasi.ro        |[Invitatii referral](#23-Invitatii_Referral) + [Tranzactii economii](#16-Tranzactii_Economii)|                                             
+| **Pâslaru Robert-Mihai**       |   1309B   | robert-mihai.paslaru@student.tuiasi.ro       |[Campanii referral](#21-campanii_referral) + [Depozite](#9-depozite)|
+| **Sava Teofan**                |   1307A   | teofan.sava@student.tuiasi.ro                |[Transferuri interne](#11-transferuri_interne) + [Beneficii abonamente](#14-beneficii_abonamente_nm) + [Istoric referral](#24-Istoric_Referral)|
 
 ---
 
@@ -70,9 +76,9 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 > Stochează nivelurile de cont disponibile în aplicație (Standard, Plus, Metal) și costul zilnic al acestora.
 
 | **Câmp**     |   **Tip Date** | **Constrângeri**                   | **Notă / Motivație**          |
-|:-------------|---------------:|:-----------------------------------|:------------------------------|
-| id           |     NUMERIC(1) | PRIMARY KEY                        |                               | 
-| denumire     |    VARCHAR(20) | NOT NULL, UNIQUE                   |                               | 
+|:-------------|---------------:|:-------------------------------------------------------------------|:------------------------------|
+| id           |     NUMERIC(1) | PRIMARY KEY, AUTO_INCREMENT                        |                               | 
+| denumire     |    VARCHAR(20) | NOT NULL, UNIQUE, CHECK(denumire IN ('Standard', 'Plus', 'Metal'))|                               | 
 | taxa_zilnica | NUMERIC(10, 2) | NOT NULL, CHECK(taxa_zilnica >= 0) | nu putem avea o taxă negativă |
 
 ### 2. Clienti
@@ -171,7 +177,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 > Sunt intrările de fonduri din exterior. Aici ne interesează doar contul în care intră banii (fără să implice un card).
 
 | **Câmp**        |   **Tip Date** | **Constrângeri**                               | **Notă / Motivație**                                                                     |
-|:----------------|---------------:|:-----------------------------------------------|:-----------------------------------------------------------------------------------------|
+|:----------------|---------------:|:-----------------------------------------------|:-------------------------------------------------------------------------------------------------|
 | id              |    NUMERIC(10) | PRIMARY KEY                                    | 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 10 depozite / lună     |
 | cont_id         |     NUMERIC(9) | NOT NULL, FOREIGN KEY                          | → Conturi_Curente(id); contul curent în care intră banii; valuta depozitului este cea a contului |
 | suma            | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0)                      | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant); mereu pozitivă |
@@ -187,18 +193,23 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 > Sunt pur fictive și implică un card, aplică logica de *split-payment*.
 
 | **Câmp**        |   **Tip Date** | **Constrângeri**                     | **Notă / Motivație**                                                                      |
-|:----------------|---------------:|:---------------------------------------------|:------------------------------------------------------------------------------------------|
-| id              |    NUMERIC(11) | PRIMARY KEY| 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi |
+|:----------------|---------------:|:----------------------------------------------|:------------------------------------------------------------------------------------------|
+| id              |    NUMERIC(11) | PRIMARY KEY, AUTO_INCREMENT| 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi |
 | card_id         |    NUMERIC(10) | NOT NULL, FOREIGN KEY REFERENCES Carduri(id)|                                                                                           |
 | valuta_id       |     NUMERIC(1) | NOT NULL, FOREIGN KEY REFERENCES Valute(id)|                                                                                           |
 | suma_totala     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_totala > 0)| Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant)                  |
 | nume_destinatie |   VARCHAR(100) | NOT NULL|                                                                                           |
 | suma_valuta     | NUMERIC(10, 2) | NOT NULL, CHECK(suma_valuta >= 0)|                                                                                           |
 | suma_split_RON  | NUMERIC(10, 2) | NOT NULL, CHECK(suma_split_RON >= 0)|                                                                                           |
-| rata_conversie  |  NUMERIC(10,6) | NULL| `NULL` dacă s-a făcut într-o singură valută                                               |
+| rata_conversie  |  NUMERIC(10,6) | NULL, CHECK(rata_conversie > 0)| `NULL` dacă s-a făcut într-o singură valută                                               |
 | data_tranzactie |           DATE | NOT NULL|                                                                                           |
-| status          |     VARCHAR(8) | NOT NULL| `SUCCESS` \ `FAIL`                                                                        |
+| status          |     VARCHAR(8) | NOT NULL, CHECK(status IN ('SUCCES', 'FAIL')) |                                                                      |
 | motiv_esuare    |    VARCHAR(64) | NULL| `NULL` dacă tranzacția a reușit                                                           |
+
+> **Constrângeri la nivel de tabel:**
+> - `CHECK ((status = 'SUCCESS' AND motiv_esuare IS NULL) OR (status = 'FAIL' AND motiv_esuare IS NOT NULL))`
+> - `CHECK (suma_valuta > 0 OR suma_split_RON > 0)`
+> - `CHECK ((suma_split_RON > 0 AND rata_conversie IS NOT NULL) OR (suma_split_RON = 0 AND rata_conversie IS NULL))`
 
 ### 11. Transferuri_Interne
 
