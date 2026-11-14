@@ -35,10 +35,17 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<constraintName>Abonamente_denumire_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Metal&apos;" description=""/>
+<valueDef value="&apos;Plus&apos;" description=""/>
+<valueDef value="&apos;Standard&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;Standard&apos;</defaultValue>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="taxa_zilnica" id="8575FB6A-BEBA-AD8F-47B3-3F2A00165112">
