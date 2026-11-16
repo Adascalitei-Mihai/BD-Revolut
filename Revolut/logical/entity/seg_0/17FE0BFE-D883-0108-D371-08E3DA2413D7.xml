@@ -57,7 +57,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_client" id="9F476FF6-561C-6B8F-ABD2-8C254DB8EC81">
+<Attribute name="client_id" id="9F476FF6-561C-6B8F-ABD2-8C254DB8EC81">
 <createdBy>Costin-Daniel</createdBy>
 <createdTime>2026-11-12 09:50:44 UTC</createdTime>
 <generatorID>93F57A40-76EB-6BA0-C134-88476B30C6F6</generatorID>
@@ -85,6 +85,18 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>3666951E-C608-0722-23FC-A5622A66D6A6</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="26DDA931-28B9-BA57-D33A-7FD1C0E93B0C" name="Portofele_Puncte_client_id_uk">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-16 17:09:53 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<newElementsIDs>9F476FF6-561C-6B8F-ABD2-8C254DB8EC81</newElementsIDs>
+<usedAttributes>
+<attributeRef>9F476FF6-561C-6B8F-ABD2-8C254DB8EC81</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

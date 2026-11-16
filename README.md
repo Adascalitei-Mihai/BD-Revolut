@@ -328,8 +328,8 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**    | **Tip Date** | **Constrângeri**          | **Notă / Motivație**                              |
 |:------------|-------------:|:--------------------------|:--------------------------------------------------|
-| id          |   NUMERIC(8) | PRIMARY KEY               | 7*10<sup>7</sup> utilizatori globali * 1 portofel |
-| client_id   |  NUMERIC(10) | NOT NULL, UNIQUE          | Un singur portofel per client                     |
+| id          |   NUMERIC(8) | PRIMARY KEY, AUTO_INCREMENT (IDENTITY)| 7*10<sup>7</sup> utilizatori globali * 1 portofel |
+| client_id   |  NUMERIC(8) | NOT NULL, UNIQUE, FOREIGN KEY (referă `Clienti.id`)          | Un singur portofel per client; același tip ca `Clienti.id`                     |
 | sold        |  NUMERIC(10) | NOT NULL, CHECK (sold>=0) |                                                   |
 | data_creare |         DATE | NOT NULL                  |                                                   |
 
@@ -339,7 +339,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**        |  **Tip Date** | **Constrângeri**                       | **Notă / Motivație**                |
 |:----------------|--------------:|:---------------------------------------|:------------------------------------|
-| id              |   NUMERIC(10) | PRIMARY KEY                            |                                     |
+| id              |   NUMERIC(10) | PRIMARY KEY, AUTO_INCREMENT (IDENTITY)                           |                                     |
 | denumire        |  VARCHAR(100) | NOT NULL, UNIQUE                       |                                     |
 | descriere       |  VARCHAR(500) |                                        | NULL dacă opțiunea nu are descriere |
 | cost            |   NUMERIC(10) | NOT NULL, CHECK (cost > 0)             |                                     |
@@ -351,12 +351,12 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**                | **Tip Date** | **Constrângeri**                                                  | **Notă / Motivație**                                                                                                       |
 |:------------------------|-------------:|:------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
-| id                      |  NUMERIC(11) | PRIMARY KEY                                                       | 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi (1 tranzacție de câștig / plată) |
-| portofel_id             |   NUMERIC(8) | NOT NULL                                                          |                                                                                                                            |
+| id                      |  NUMERIC(11) | PRIMARY KEY, AUTO_INCREMENT (IDENTITY)                                                      | 7*10<sup>7</sup> utilizatori globali * 3 luni perioadă simulare * 30 zile * 10 plați / zi (1 tranzacție de câștig / plată) |
+| portofel_id             |   NUMERIC(8) | NOT NULL, FOREIGN KEY (referă `Portofele_Puncte.id`)                                                          |                                                                                                                            |
 | suma                    |  NUMERIC(10) | NOT NULL, CHECK (suma <> 0)                                       | număr de puncte, nenul                                                                                                     |
 | tip_operatiune          |  VARCHAR(20) | NOT NULL, CHECK (tip_operatiune IN ('CASTIGARE', 'RASCUMPARARE')) | CASTIGARE \ RASCUMPARARE                                                                                                   |
-| plata_referinta_id      |  NUMERIC(11) |                                                                   | NULL dacă tranzacția este o răscumpărare                                                                                   |
-| optiune_rascumparare_id |  NUMERIC(10) |                                                                   | NULL dacă tranzacția este un câștig                                                                                        |
+| plata_referinta_id      |  NUMERIC(11) | FOREIGN KEY (referă `Plati.id`)                                                                  | NULL dacă tranzacția este o răscumpărare                                                                                   |
+| optiune_rascumparare_id |  NUMERIC(10) | FOREIGN KEY (referă `Optiuni_Rascumparare.id`)                                                                  | NULL dacă tranzacția este un câștig                                                                                        |
 | data_tranzactie         |         DATE | NOT NULL                                                          |                                                                                                                            |
 
 > **Constrângere la nivel de tabel:** `CHECK ((tip_operatiune = 'CASTIGARE' AND plata_referinta_id IS NOT NULL AND optiune_rascumparare_id IS NULL) OR (tip_operatiune = 'RASCUMPARARE' AND optiune_rascumparare_id IS NOT NULL AND plata_referinta_id IS NULL))`

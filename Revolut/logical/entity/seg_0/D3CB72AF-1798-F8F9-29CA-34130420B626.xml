@@ -74,7 +74,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="96F4A845-C4A5-C249-9175-B9F51C8163DC">
+<Attribute name="portofel_id" id="96F4A845-C4A5-C249-9175-B9F51C8163DC">
 <createdBy>Costin-Daniel</createdBy>
 <createdTime>2026-11-12 09:52:22 UTC</createdTime>
 <generatorID>C9D3CF59-C5C1-A85F-BA5A-11DB0B0E5949</generatorID>
@@ -87,9 +87,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id2" id="3D3AC971-EC72-1CED-BF9C-79A2B3C14175">
+<Attribute name="plata_referinta_id" id="3D3AC971-EC72-1CED-BF9C-79A2B3C14175">
 <createdBy>Costin-Daniel</createdBy>
 <createdTime>2026-11-12 09:54:09 UTC</createdTime>
 <generatorID>977B5194-E02A-3774-30B8-F8005EEEB031</generatorID>
@@ -103,9 +103,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>11</dataTypePrecision>
-<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id3" id="44161E64-2CF3-B06B-E94F-624CA0E6BF42">
+<Attribute name="optiune_rascumparare_id" id="44161E64-2CF3-B06B-E94F-624CA0E6BF42">
 <createdBy>Costin-Daniel</createdBy>
 <createdTime>2026-11-12 10:13:34 UTC</createdTime>
 <generatorID>318AA1B2-1B5E-4DE0-6728-D09D2E46E205</generatorID>
