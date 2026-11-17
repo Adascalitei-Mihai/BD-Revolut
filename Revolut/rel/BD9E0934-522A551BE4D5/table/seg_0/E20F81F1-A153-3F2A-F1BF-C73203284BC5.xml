@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E20F81F1-A153-3F2A-F1BF-C73203284BC5" name="Carduri">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>A938E39F-94DA-37A8-5457-8BBC40551111</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="E38AC74B-3CE9-6A70-84E2-2D98A1297485">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>25966D56-A8DD-5260-16D5-64E148F6D552</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Conturi_Curente_id" id="8C85A57E-F4E0-71A1-CA97-858D45DC1C1F">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>DB2F272B-99D5-4FFE-2F18-E98B37F64CCB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A46367A3-3F6A-1BF7-AFA9-FADFDDD3C5E5" referredColumn="6924D078-965B-4B32-F7CC-F4901C8FDCDB"/>
+</associations>
+</Column>
+<Column name="Tipuri_Carduri_id" id="A831C547-8985-D87D-2C57-366EC5F9B7B2">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>D59CE43E-41F4-CA92-C5E6-ECEEA1FD04A0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47D7DDBE-0CB5-A7BB-B2AB-64F2CC2F6F91" referredColumn="177B217C-6A80-6D53-0C3D-A5B30A0464EC"/>
+</associations>
+</Column>
+<Column name="numar_card" id="7F90150F-52F2-02DC-155B-B2ADA4A1B48E">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>29C07BB1-5015-9F11-170D-35AE5595DC69</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_numar_card_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(numar_card, &apos;^[0-9]{16}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_expirare" id="F7C0DE0D-FAA0-05BA-1CC7-70FFED261630">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>A5630932-067E-6DB7-C5FD-327BCFF6F809</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_data_expirare_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cvv" id="8992E2A1-83E2-715F-04AC-9EE892623AC7">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>34ECAA28-8242-A3B1-8B59-8DACF7D96E10</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_cvv_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(cvv, &apos;^[0-9]{3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pin" id="540843AC-4E11-4FE4-FA95-41E9171575CC">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>94FBFFC7-E3BD-73C0-10C9-41C24BA8F4A0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_pin_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(pin, &apos;^[0-9]{4}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="1BC1E3C8-8780-BEF8-29D4-B3657B104FDA">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>1102569E-61F5-64C7-0E2F-FBD5AA8B6565</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Carduri_status_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="status IN (&apos;ACTIVE&apos;, &apos;INACTIVE&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_emitere" id="01995C8A-2357-9D5A-15E8-A65937E09267">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>43833977-063A-179C-3E3D-56038A263AA2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF71F72A-B07D-A424-17E5-8830C6FFC252" name="Carduri_PK">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>F2407F64-A9B2-1415-65B3-21F0A3890B85</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E38AC74B-3CE9-6A70-84E2-2D98A1297485"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA2328BC-CF6F-3E1A-F033-0D6E7858198F" name="Carduri_numar_card_UK">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>E2AAE5C0-F3CD-F7AF-BF63-48C59FECA491</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F90150F-52F2-02DC-155B-B2ADA4A1B48E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D567A3DD-1665-F068-C7FE-1DC2798C5DBB" name="Conturi_Curente_Carduri_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>D8A54B91-3382-EC1F-07F0-8B8A00589FD1</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C85A57E-F4E0-71A1-CA97-858D45DC1C1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8748158-D8F9-0F5F-87E0-68F123393AEC" name="Tipuri_Carduri_Carduri_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>E61E7FF1-69D1-FB69-7DFE-36B72D94CB43</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A831C547-8985-D87D-2C57-366EC5F9B7B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

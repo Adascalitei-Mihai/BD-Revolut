@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56F1B869-3CA6-3EDF-2009-D26FBBD73801" name="Clienti">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>4422AB30-5EE7-0559-184B-8B1F393BA063</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_client" id="5981015C-4E45-E204-3993-D903CE415D87">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>E9F686E8-16FE-70A0-B59C-3D8099D69C35</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_abonament" id="9148DE8D-0B55-40FF-383B-636F7674F274">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>26F33FE7-DF0C-DC40-33DA-B47C2B35BE2D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="C7E541C0-00AB-5FBA-628F-8EBDEEFCE6EF">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>7002E0F4-CAC2-05C5-F3F0-FCAE595DF159</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="F654D94D-394A-330F-CAB8-672105E950D7">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>36B65546-A1AF-219C-E05A-C38EA6AB6B69</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_inregistrare" id="DAC4F5FD-868B-A2EC-ADF9-E7DA50FC5096">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>20EF7F67-DE14-D736-24A7-595328EE7EA2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Abonamente_id" id="34C7A03A-5BC3-4CBD-CDEF-C038F0DF1FB5">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>7D3170D1-B223-1399-9426-415A2C0A3520</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6126DC4-00C4-FC22-E879-F9014D28A782" referredColumn="B34AE889-989C-3D01-3F9C-84FB1CED479E"/>
+</associations>
+</Column>
+<Column name="Portofele_Puncte_id" id="D797A02A-E1D1-478D-8449-1ED9384A3A68">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>35FEE0C1-9855-CB5A-970B-F8281D163A5E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE3D50AF-20BF-8107-7418-72F2F2738875" referredColumn="AA5BF847-AB92-C240-57C2-7DE6A428C38D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C70E35BE-6426-C36F-625B-77273B389DF8" name="Clienti_PK">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>6B5527DE-7B69-F6B9-AA61-E83C8C1BCFE0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5981015C-4E45-E204-3993-D903CE415D87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2DADB0A-EDF0-BCC3-46B1-9A1F40BED918" name="Clienti__IDX">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>93F57A40-76EB-6BA0-C134-88476B30C6F6</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D797A02A-E1D1-478D-8449-1ED9384A3A68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3100FD9A-3F50-606F-87CA-79118E592F0E" name="abonamente_clienti_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>BBF06244-B830-433B-4AE1-FE93B426D1F4</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34C7A03A-5BC3-4CBD-CDEF-C038F0DF1FB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="749A4B08-0028-195D-5C55-C35F9A82D13B" name="Clienti_Portofele_Puncte_fkv2">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>93F57A40-76EB-6BA0-C134-88476B30C6F6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D797A02A-E1D1-478D-8449-1ED9384A3A68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

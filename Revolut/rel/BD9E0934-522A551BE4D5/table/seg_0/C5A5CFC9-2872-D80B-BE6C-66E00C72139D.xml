@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5A5CFC9-2872-D80B-BE6C-66E00C72139D" name="Tranzactii_Puncte">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>D3CB72AF-1798-F8F9-29CA-34130420B626</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A24982E9-7732-7CC2-89F8-BCF9AB06F61D">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>57B05CC1-173C-9BA9-4132-008378CBD0F2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="suma" id="03BD3023-A3BA-7D52-BFCB-7666ADD2ABF6">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>8943D2F4-EFF8-317F-2D17-6B371B50181E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Tranzactii_Puncte_suma_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="suma &lt;&gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_operatiune" id="73B16F6C-499A-645D-C36E-2D1C5E5DDBA9">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>2F88A222-1D48-0CAC-3606-AD450006004D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Tranzactii_Puncte_tip_operatiune_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="tip_operatiune IN (&apos;CASTIGARE&apos;, &apos;RASCUMPARARE&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_tranzactie" id="9B956B2D-A5DA-F6F3-8A47-6855B7DF932C">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>DE4B9E27-55F5-4FE8-D868-4B659955CEDB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Portofele_Puncte_id" id="A02A4E08-A117-F3D3-7468-69D798B6AE93">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>96F4A845-C4A5-C249-9175-B9F51C8163DC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3648D0B-1E01-23B1-9400-23CD824B6FDD" referredColumn="AA5BF847-AB92-C240-57C2-7DE6A428C38D"/>
+</associations>
+</Column>
+<Column name="Plati_id" id="D7FD98C2-6CD8-1D84-0849-EB883F8C1D95">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>3D3AC971-EC72-1CED-BF9C-79A2B3C14175</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEAC5AF5-E96E-15C6-F4B0-E374F0D4C5C9" referredColumn="A1E3013A-23BD-E12B-29C9-E6438DE0F9AC"/>
+</associations>
+</Column>
+<Column name="Optiuni_Rascumparare_id" id="68509810-4BB5-9F44-182C-5E16D42AE53D">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>44161E64-2CF3-B06B-E94F-624CA0E6BF42</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="103F1571-C4E3-32A4-6B29-D843019BB318" referredColumn="F765A9B0-1C26-419B-FE26-4D00CDDE007F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4982C7EC-09B4-22C0-8A0A-E4719793CDE1" name="Tranzactii_Puncte_PK">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>83F16096-715A-2635-F4DF-DFCEE50CB905</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A24982E9-7732-7CC2-89F8-BCF9AB06F61D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF10BC39-8D0A-6861-7E6A-D62455133E0D" name="Optiuni_Rascumparare_Tranzactii_Puncte_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>318AA1B2-1B5E-4DE0-6728-D09D2E46E205</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68509810-4BB5-9F44-182C-5E16D42AE53D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D88F590A-1B1A-7836-AF71-DE72E0060466" name="Plati_Tranzactii_Puncte_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>977B5194-E02A-3774-30B8-F8005EEEB031</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7FD98C2-6CD8-1D84-0849-EB883F8C1D95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6C0F08E-D711-160B-B7A8-32B6D235FB60" name="Portofele_Puncte_Tranzactii_Puncte_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>C9D3CF59-C5C1-A85F-BA5A-11DB0B0E5949</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A02A4E08-A117-F3D3-7468-69D798B6AE93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

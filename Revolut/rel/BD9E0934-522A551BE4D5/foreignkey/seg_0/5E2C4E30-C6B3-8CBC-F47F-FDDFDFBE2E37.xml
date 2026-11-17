@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5E2C4E30-C6B3-8CBC-F47F-FDDFDFBE2E37" containerWithKeyObject="726C54E3-2C0F-5E54-E980-9F9644599192" localFKIndex="6D12A464-00C4-2DEA-E45A-111714E990E9" name="Tipuri_Carduri_Posibilitati_Carduri_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>08F62156-8D04-7573-528B-282F94339EE6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Tipuri_Carduri</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EC578E57-2095-6EFA-8016-2242CB74EFE4</referredTableID>
+<keyObject>D39B41D0-2488-0EEF-CA8E-6CB4FB2469B8</keyObject>
+<referredKeyID>D39B41D0-2488-0EEF-CA8E-6CB4FB2469B8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

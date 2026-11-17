@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="tip_card_id" id="D59CE43E-41F4-CA92-C5E6-ECEEA1FD04A0">
 <createdBy>bruma</createdBy>
@@ -56,7 +56,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="numar_card" id="29C07BB1-5015-9F11-170D-35AE5595DC69">
 <createdBy>bruma</createdBy>
@@ -86,9 +86,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="data_expirare &gt; data_emitere"/>
-</checkConstraint>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cvv" id="34ECAA28-8242-A3B1-8B59-8DACF7D96E10">
@@ -138,7 +135,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="CHECK (status IN (&apos;ACTIVE&apos;, &apos;INACTIVE&apos;))"/>
+<implementationDef dbType="Generic Constraint" definition="status IN (&apos;ACTIVE&apos;, &apos;INACTIVE&apos;)"/>
 </checkConstraint>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 </Attribute>

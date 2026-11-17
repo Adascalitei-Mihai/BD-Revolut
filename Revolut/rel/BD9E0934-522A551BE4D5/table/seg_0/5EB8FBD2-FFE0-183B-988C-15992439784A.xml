@@ -1,0 +1,233 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5EB8FBD2-FFE0-183B-988C-15992439784A" name="Plati">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>3796A7B0-723B-EC6B-C198-4F8202139F81</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A1E3013A-23BD-E12B-29C9-E6438DE0F9AC">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>E9CD63D3-9830-1916-2AFF-0115A187A211</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Carduri_id" id="E5BB77D3-1613-40A3-BFC9-32C02AA7F3B5">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E35EDD0A-898C-6E87-F21D-F4E206581349" referredColumn="E38AC74B-3CE9-6A70-84E2-2D98A1297485"/>
+</associations>
+</Column>
+<Column name="Valute_Id" id="35B20988-5D70-5BED-5552-DA97D378D168">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>9014F719-EDE3-AC9B-2C18-8B40E77A85DC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA22ABE0-6540-0D47-A1BB-8E70D85BFDDD" referredColumn="36BF2BD4-AFA5-BC13-3B24-6C7DC091DE6A"/>
+</associations>
+</Column>
+<Column name="suma_totala" id="6E61FA25-EB6E-AD69-DA56-B8B1E07BC73B">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>DE6918F3-024B-73B6-A7DC-B10C2311E958</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_suma_totala_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0.01</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="nume_destinatie" id="92DDAE0B-0AA5-0813-E91D-30EBCA0DD106">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>7F8F2A6D-EB64-A70B-09CE-BC04A3633C69</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="suma_valuta" id="B3E38993-26A2-11B7-2335-45A90413D84E">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>DCDE5568-135E-2558-4028-D1D11F9163AA</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_suma_valuta_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK (suma_valuta &gt; 0 OR suma_split_RON &gt; 0)"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="suma_split_RON" id="FF3C6A61-6B91-69C9-027D-103B2B12DDC3">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>707BB793-1E6A-9EEC-C5CF-DC382A939FF2</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_suma_split_RON</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((suma_split_RON &gt; 0 AND rata_conversie IS NOT NULL) OR (suma_split_RON = 0 AND rata_conversie IS NULL))"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="rata_conversie" id="8882D3F6-A599-530B-C7A4-CE2FE81BCC1C">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>F652DCC7-0D58-9B2B-B6F5-6E0C46DB1461</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_rata_conversie_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK (rata_conversie IS NULL OR rata_conversie &gt; 0)"/>
+</checkConstraint>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data" id="5F6086F9-0F2F-B8E2-90BB-5BA26D60249B">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>855789D8-6C4C-4F6C-2A03-A07BE4A0753D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_data_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="F1B0531A-8DDE-6EE4-E9B0-0E9A9D953849">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>0EDFD3D6-2F2E-D7D9-E319-75E4B8957215</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_status_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;FAIL&apos;" description=""/>
+<valueDef value="&apos;SUCCESS&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="motiv_esuare" id="534C555A-870D-195B-99B3-884FA700BC2B">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>BC13E6FE-C6A2-45CA-2E9C-07E82594A2DC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Plati_motiv_esuare_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((status = &apos;SUCCESS&apos; AND motiv_esuare IS NULL) OR (status = &apos;FAIL&apos; AND motiv_esuare IS NOT NULL))"/>
+</checkConstraint>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A0513C6-B2D5-1CA1-1F7A-CF5BEEE0FC72" name="Plati_PK">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>DCC585F2-61E7-C17A-41A1-58BBB6DCE06E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1E3013A-23BD-E12B-29C9-E6438DE0F9AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FD46E80-95DB-3085-8172-F8646D5CE477" name="Carduri_Plati_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>55EBD71B-9EB4-21B5-30AC-147690AAA1E7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5BB77D3-1613-40A3-BFC9-32C02AA7F3B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E261C39B-CC2D-146B-1097-2D0E1DF1F660" name="Valute_Plati_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>E484A83A-C3D6-5D48-800D-041061C29BCC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35B20988-5D70-5BED-5552-DA97D378D168"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

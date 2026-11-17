@@ -1,0 +1,228 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11CEDA86-D598-C13F-DF4F-33322D1A1F09" name="Transferuri_Interne">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>86D8AFF9-69F9-16D8-6145-4231B8D71F93</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9157CFD3-3717-632C-38EC-FECBB83C9D66">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>F45E56C0-0609-CBEA-16D0-2535A5E96A57</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="suma_trimisa" id="8A64601B-243B-2981-E764-040ECC2F4064">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>2EFFD628-DEFA-9AB8-DECB-3A90221398B8</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Transferuri_Interne_suma_trimisa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="suma_trimisa &gt; 0 "/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cont_sursa_id" id="FD44610D-410C-13F4-EF88-DE22483C90E3">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>3C83D653-B72A-32EB-2301-7DBED5AC2CAC</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cont_destinatie_id" id="CE84C3AC-961F-3173-1401-B8520D4D448B">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>7753A3DD-AE1F-E650-1810-EE04E36C5571</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Transferuri_Interne_cont_destinatie_id_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cont_destinatie_id &lt;&gt; cont_sursa_id "/>
+</checkConstraint>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rata_conversie" id="E3ADFC95-7AC9-4C71-6EC9-96998E6268CE">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>073D1D22-3018-20A9-3A10-3D9A3261A472</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="suma_primita" id="21475E26-A3CC-4896-1FA3-C339A681B4DB">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>66E54F63-F80F-862F-3BF7-62FFE3E008FB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Transferuri_Interne_suma_primita_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="suma_primita &gt; 0 "/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_tranzactie" id="548405D7-70C6-D7B3-4BC4-8D37224C74A0">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>BACC2320-3A28-E44B-8455-F381EFD03DBE</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="A0653818-4D5E-75EA-249C-D24F5263CC0C">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>B4B18FB2-584D-EC66-03EA-BC92AE02ACD5</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="motiv_esuare" id="BC01141F-1049-8B9A-B060-0BF1D00058E7">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>FA59B2D6-A43C-155A-2D56-3B2FE4DA326A</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Conturi_Curente_id" id="FB272C25-C991-1723-CDF3-A10242D4B398">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>AB3FD6BD-B8FC-02BC-8ED3-DD839E375604</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46EFB201-85FA-130C-F47A-C74DD66803F9" referredColumn="6924D078-965B-4B32-F7CC-F4901C8FDCDB"/>
+</associations>
+</Column>
+<Column name="Id11" id="CEE779EB-BC32-ADDE-5933-B377C1F2E8F7">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>A2FCCB84-826C-66FF-5170-B4AA95223849</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Conturi_Curente_id1" id="9923FD04-D5B3-9E8C-6C9A-B48BC14D9436">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>E4B17540-9863-05DE-ECDD-0659A9DDA3CA</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40E31CCA-7A16-36C9-EA09-07532FE64560" referredColumn="6924D078-965B-4B32-F7CC-F4901C8FDCDB"/>
+</associations>
+</Column>
+<Column name="Id12" id="56E62F41-D9BB-EF3E-26F5-A688F4C3C8D5">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>BFD7E91A-1465-B179-59D5-8F9F6B58BD3E</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD72863F-6964-A589-C4DD-64F1E4763592" name="Transferuri_Interne_PK">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>55E2A1A6-F686-845C-6144-BE26976A90AE</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9157CFD3-3717-632C-38EC-FECBB83C9D66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CF41248-83D4-FBC3-35DA-325C11C7AF8A" name="Conturi_Curente_Transferuri_Interne_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>81190703-AAE2-B1F9-44C8-534F0B4C37F0</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB272C25-C991-1723-CDF3-A10242D4B398"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF76A977-48B4-6C4A-4DB6-692935724975" name="Conturi_Curente_Transferuri_Interne_fkv2">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>8877B266-B9F7-CFC4-6DD1-A63831D1F72B</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9923FD04-D5B3-9E8C-6C9A-B48BC14D9436"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

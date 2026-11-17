@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81CD31F1-0709-4F49-E5C3-27E0A9C46294" name="Abonamente">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>0E4F4E5A-5A60-B43E-A46B-6D0407D5FD41</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B34AE889-989C-3D01-3F9C-84FB1CED479E">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire" id="49CC3A3A-6D9B-45D0-EB99-6035394FD680">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>4BD68258-636F-1AD4-18B4-5DF163D56753</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Abonamente_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Metal&apos;" description=""/>
+<valueDef value="&apos;Plus&apos;" description=""/>
+<valueDef value="&apos;Standard&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;Standard&apos;</defaultValue>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="taxa_zilnica" id="C73A73D6-0D3E-DB5E-5E5E-223EA85C813B">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>8575FB6A-BEBA-AD8F-47B3-3F2A00165112</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Abonamente_taxa_zilnica_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41D0A333-AFD4-AB50-28F5-3A6A9AE9AFEF" name="Abonamente_PK">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>90C0AE0F-D2E0-29A3-A401-254C7987FC09</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B34AE889-989C-3D01-3F9C-84FB1CED479E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1A7810F-0D3B-A316-0F5D-76EC2301EBF3" name="Abonamente_denumire_uk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:08 UTC</createdTime>
+<generatorID>9596E9D2-A35E-FFF1-B9FA-809FD45C7C54</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49CC3A3A-6D9B-45D0-EB99-6035394FD680"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

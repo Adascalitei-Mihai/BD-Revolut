@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BC633AF7-1A98-6607-998F-54FDD4A41E3B" containerWithKeyObject="09C6ED06-CAD6-8850-5FC5-710951FA063D" localFKIndex="290359D0-A049-6D1D-A6F7-6D491C36BDAC" name="Depozite_Istoric_Referral_fk">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-17 08:32:09 UTC</createdTime>
+<generatorID>BFD1C2D5-EE52-EDAA-9996-73318F9DBACB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Depozite</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>14DD20AA-0000-5C08-0FB0-AF1AA83B4FC0</referredTableID>
+<keyObject>39118E9B-A87D-F425-E2DA-67D55DBADDDA</keyObject>
+<referredKeyID>39118E9B-A87D-F425-E2DA-67D55DBADDDA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

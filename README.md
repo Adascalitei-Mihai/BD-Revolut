@@ -146,7 +146,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**          |   **Tip Date** | **Constrângeri**                       | **Notă / Motivație**             |
 |:------------------|---------------:|:---------------------------------------|:---------------------------------|
-| id                |     NUMERIC(1) | PRIMARY KEY                            |                                  |
+| id                |     NUMERIC(1) | PRIMARY KEY, AUTO_INCREMENT            |                                  |
 | denumire          |    VARCHAR(20) | NOT NULL, UNIQUE                       |                                  |
 | limita_tranzactie | NUMERIC(10, 2) | NOT NULL, CHECK(limita_tranzactie > 0) | în RON, pentru o singură plată   |
 
@@ -154,11 +154,13 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Aceasta este tabela de legătură care rezolvă logica de retrogradare și limitare.
 
-| **Câmp**            | **Tip Date** | **Constrângeri**                                      | **Notă / Motivație**                  |
-|:--------------------|-------------:|:------------------------------------------------------|:--------------------------------------|
-| abonament_id        |   NUMERIC(1) | NOT NULL                                              |                                       |
-| tip_card_id         |   NUMERIC(1) | NOT NULL                                              |                                       |
-| max_carduri_permise |   NUMERIC(2) | NOT NULL, CHECK(max_carduri_permise BETWEEN 1 AND 20) | max 20 pentru cel mai scump abonament |
+| **Câmp**            | **Tip Date** | **Constrângeri**                                                  | **Notă / Motivație**                  |
+|:--------------------|-------------:|:------------------------------------------------------------------|:--------------------------------------|
+| abonament_id        |   NUMERIC(1) | NOT NULL, FOREIGN KEY REFERENCES Abonamente(id)                   |                                       |
+| tip_card_id         |   NUMERIC(1) | NOT NULL, FOREIGN KEY REFERENCES Tipuri_Carduri(id)               |                                       |
+| max_carduri_permise |   NUMERIC(2) | NOT NULL, CHECK(max_carduri_permise BETWEEN 1 AND 20)             | max 20 pentru cel mai scump abonament |
+
+> **Constrângere la nivel de tabel:** `PRIMARY KEY (abonament_id, tip_card_id)` – un abonament are o singură limită pentru fiecare tip de card
 
 ### 8. Carduri
 
@@ -166,17 +168,17 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**      | **Tip Date** | **Constrângeri**                                                | **Notă / Motivație**                                          |
 |:--------------|-------------:|:----------------------------------------------------------------|:--------------------------------------------------------------|
-| id            |  NUMERIC(10) | PRIMARY KEY                                                     | 7*10<sup>7</sup> utilizatori globali * 20 carduri max         |
-| cont_id       |   NUMERIC(9) | NOT NULL                                                        |                                                               |
-| tip_card_id   |   NUMERIC(1) | NOT NULL                                                        |                                                               |
+| id            |  NUMERIC(10) | PRIMARY KEY, AUTO_INCREMENT                                     | 7*10<sup>7</sup> utilizatori globali * 20 carduri max         |
+| cont_id       |   NUMERIC(9) | NOT NULL, FOREIGN KEY REFERENCES Conturi_Curente(id)            |                                                               |
+| tip_card_id   |   NUMERIC(1) | NOT NULL, FOREIGN KEY REFERENCES Tipuri_Carduri(id)             |                                                               |
 | numar_card    |     CHAR(16) | NOT NULL, UNIQUE, CHECK(REGEXP_LIKE(numar_card, '^[0-9]{16}$')) | exact 16 cifre; text, nu facem calcule pe el                  |
-| data_expirare |         DATE | NOT NULL, CHECK(data_expirare > data_emitere)                   | cardul nu poate expira înainte să fie emis                    |
+| data_expirare |         DATE | NOT NULL                                                        | vezi constrângerea la nivel de tabel                          |
 | cvv           |      CHAR(3) | NOT NULL, CHECK(REGEXP_LIKE(cvv, '^[0-9]{3}$'))                 | exact 3 cifre; text ca să păstrăm zerourile din față (`047`)  |
 | pin           |      CHAR(4) | NOT NULL, CHECK(REGEXP_LIKE(pin, '^[0-9]{4}$'))                 | exact 4 cifre; text ca să păstrăm zerourile din față (`0815`) |
-| status        |   VARCHAR(8) | NOT NULL, CHECK(status IN ('ACTIVE', 'INACTIVE'))               | `ACTIVE` \ `INACTIVE`                                         |
-| data_emitere  |         DATE | NOT NULL                                                        |                                                               |
+| status        |   VARCHAR(8) | NOT NULL, DEFAULT 'ACTIVE', CHECK(status IN ('ACTIVE', 'INACTIVE')) | `ACTIVE` \ `INACTIVE`                                     |
+| data_emitere  |         DATE | NOT NULL, DEFAULT SYSDATE                                       |                                                               |
 
----
+> **Constrângere la nivel de tabel:** `CHECK (data_expirare > data_emitere)` – cardul nu poate expira înainte să fie emis (compară două coloane, deci nu poate fi constrângere de coloană)
 
 ### 9. Depozite
 
