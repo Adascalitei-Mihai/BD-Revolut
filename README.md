@@ -108,7 +108,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp** | **Tip Date** | **Constrângeri** | **Notă / Motivație** |
 |:---------|-------------:|:----------------|:---------------------|
-| id       |   NUMERIC(1) | PRIMARY KEY     | RON, GBP, EUR, USD   |
+| id       |   NUMERIC(1) | PRIMARY KEY, AUTO_INCREMENT     | RON, GBP, EUR, USD   |
 | cod      |   VARCHAR(3) | NOT NULL,UNIQUE |                      |
 | denumire |  VARCHAR(30) | NOT NULL        |                      | 
 
@@ -241,7 +241,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**               |           **Tip Date** | **Constrângeri**                          | **Notă / Motivație**                                                       |
 |:-----------------------|-----------------------:|:------------------------------------------|:---------------------------------------------------------------------------|
-| id                     |            NUMERIC(10) | PRIMARY KEY                               |                                                                            |
+| id                     |            NUMERIC(10) | PRIMARY KEY, AUTO_INCREMENT                              |                                                                            |
 | client_sursa_valuta_id |             NUMERIC(9) | NOT NULL                                  |                                                                            |
 | client_sursa_RON_id    |             NUMERIC(9) | NOT NULL                                  |                                                                            |
 | cont_destinatie_id     |             NUMERIC(9) | NOT NULL                                  |                                                                            |
@@ -252,6 +252,11 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | data_tranzactie        |                   DATE | NOT NULL                                  |                                                                            |
 | status                 |             VARCHAR(8) | NOT NULL                                  | SUCCES/FAIL                                                                |
 | motiv_esuare           |            VARCHAR(64) | NULL                                      | `NULL` daca tranzacția  a reușit                                           |
+
+>**Constrângeri la nivel de tabel :**
+> - `CHECK((status ='SUCCESS' AND motiv_esuare IS NULL) OR (status ='FAIL' AND motiv_esuare IS NOT NULL))`
+> - `CHECK (suma_debitata_valuta > 0 OR suma_debitata_RON > 0)`
+> - `CHECK ((suma_debitata_RON > 0 AND rata_conversie IS NOT NULL) OR (suma_debitata_RON = 0 AND rata_conversie IS NULL))`
 
 ### 13. Istoric_Plati_Abonamente
 
