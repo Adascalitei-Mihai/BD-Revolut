@@ -254,7 +254,6 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 >**Constrângeri la nivel de tabel :**
 > - `CHECK((status ='SUCCESS' AND motiv_esuare IS NULL) OR (status ='FAIL' AND motiv_esuare IS NOT NULL))`
-> - `CHECK (suma_debitata_valuta > 0 OR suma_debitata_RON > 0)`
 > - `CHECK ((suma_debitata_RON > 0 AND rata_conversie IS NOT NULL) OR (suma_debitata_RON = 0 AND rata_conversie IS NULL))`
 
 ### 13. Istoric_Plati_Abonamente
