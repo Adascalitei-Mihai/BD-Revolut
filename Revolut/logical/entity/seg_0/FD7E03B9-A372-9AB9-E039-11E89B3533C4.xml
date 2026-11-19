@@ -28,32 +28,6 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="client_id" id="4CF35E4A-46A6-47BE-334E-96CA5804FA93">
-<createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-11 08:07:37 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="valuta_id" id="46735F36-4E6F-E8EF-5A97-D7D27770337C">
-<createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-11 08:08:13 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="iban" id="EC8A78F8-3662-075F-94DC-A613AC4E84BC">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-11 08:08:39 UTC</createdTime>
@@ -80,6 +54,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>15</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 12cR2" definition="sold&gt;=0"/>
+</checkConstraint>
 <defaultValue>0</defaultValue>
 <ownDataTypeParameters>,15,2</ownDataTypeParameters>
 <listOfRanges>
@@ -121,7 +98,7 @@
 <defaultValue>SYSDATE</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_client" id="9197CA1B-2D77-D50A-26D2-B077E0D74899">
+<Attribute name="client_id" id="9197CA1B-2D77-D50A-26D2-B077E0D74899">
 <createdBy>Innovation</createdBy>
 <createdTime>2026-11-11 23:19:31 UTC</createdTime>
 <generatorID>CF8843DA-79FD-865C-45C3-6258D779DDDD</generatorID>
@@ -134,9 +111,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Id1" id="39BCF687-6F78-E951-A332-1C1B1BC0B95C">
+<Attribute name="valuta_id" id="39BCF687-6F78-E951-A332-1C1B1BC0B95C">
 <createdBy>Innovation</createdBy>
 <createdTime>2026-11-11 23:24:12 UTC</createdTime>
 <generatorID>7C885D35-2B59-0E58-F69D-34AB3C59D5C5</generatorID>
@@ -149,7 +126,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
