@@ -9,9 +9,9 @@
 <sourcePk>35ED5EA7-AE96-CDAD-BDE3-0390C35FA00B</sourcePk>
 <identifying>false</identifying>
 <nameOnSource>primeste</nameOnSource>
-<nameOnTarget>inta in</nameOnTarget>
-<optionalSource>false</optionalSource>
-<optionalTarget>true</optionalTarget>
+<nameOnTarget>intra in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>FD7E03B9-A372-9AB9-E039-11E89B3533C4</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
