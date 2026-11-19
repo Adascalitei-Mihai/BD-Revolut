@@ -140,6 +140,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((Suma_debitata_RON &gt; 0 AND Rata_conversie1 IS NOT NULL) OR (Suma_debitata_RON = 0 AND Rata_conversie1 IS NULL))`"/>
+</checkConstraint>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Data_tranzactie" id="612A527F-1AB5-E021-1A24-33A210FAC65F">
@@ -165,9 +168,12 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((Status = &apos;SUCCESS&apos; AND Motiv_esuare IS NULL) OR (Status = &apos;FAIL&apos; AND Motiv_esuare IS NOT NULL))"/>
+</checkConstraint>
 <listOfValues>
 <valueDef value="FAIL" description=""/>
-<valueDef value="SUCCES" description=""/>
+<valueDef value="SUCCESS" description=""/>
 </listOfValues>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 </Attribute>
