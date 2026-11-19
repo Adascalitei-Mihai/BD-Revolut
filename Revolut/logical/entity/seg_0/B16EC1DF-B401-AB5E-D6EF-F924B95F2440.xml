@@ -115,7 +115,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id_client1" id="5223A2AB-C6DC-0B1C-9264-E5C8C838EDD5">
 <createdBy>Luiza Paslaru</createdBy>
@@ -130,7 +130,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id1" id="C9226F10-B46D-8853-8CE2-EF1B37EFCA02">
 <createdBy>Luiza Paslaru</createdBy>
@@ -145,6 +145,22 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="2A11B1FF-4315-3526-DB1D-880F6229A7B1">
+<createdBy>teofan</createdBy>
+<createdTime>2026-11-19 17:39:54 UTC</createdTime>
+<generatorID>A2063304-9762-E975-3F3A-F76A5622171D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>ACD08C38-B675-3052-6E8E-9D9906E82E85</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

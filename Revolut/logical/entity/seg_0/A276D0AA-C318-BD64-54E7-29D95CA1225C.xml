@@ -28,19 +28,6 @@
 <dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valuta_id" id="F3C78759-CD9E-2428-896B-83C8A96F3D60">
-<createdBy>teofan</createdBy>
-<createdTime>2026-10-21 19:52:18 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="rata_dobanda_anuala" id="6AF225EB-2FBC-DE74-BDD8-C81811061897">
 <createdBy>teofan</createdBy>
 <createdTime>2026-10-21 19:52:38 UTC</createdTime>
@@ -73,7 +60,7 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,3,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id" id="CC7D4F26-DAEE-CEF8-E388-3EC87E5CCE41">
+<Attribute name="valuta_id" id="CC7D4F26-DAEE-CEF8-E388-3EC87E5CCE41">
 <createdBy>teofan</createdBy>
 <createdTime>2026-11-12 09:06:33 UTC</createdTime>
 <generatorID>21A5723F-3175-3B85-B7FE-8ED9F97BF1C7</generatorID>

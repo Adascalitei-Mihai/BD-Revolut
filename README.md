@@ -224,15 +224,18 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**           |    **Tip Date** | **Constrângeri**                                     | **Notă / Motivație**                                                     |
 |:-------------------|----------------:|:-----------------------------------------------------|:-------------------------------------------------------------------------|
-| id                 |      NUMERIC(9) | PRIMARY KEY                                          | 4*10<sup>8</sup> tranzacții interne pe lună * 3 luni perioadă simulare   |
+| id                 |      NUMERIC(9) | PRIMARY KEY, AUTO_INCREMENT                          | 4*10<sup>8</sup> tranzacții interne pe lună * 3 luni perioadă simulare   |
 | suma_trimisa       |  NUMERIC(10, 2) | NOT NULL, CHECK(suma_trimisa > 0)                    | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant) |
 | cont_sursa_id      |      NUMERIC(9) | NOT NULL                                             |                                                                          |
 | cont_destinatie_id |      NUMERIC(9) | NOT NULL, CHECK(cont_sursa_id <> cont_destinatie_id) |                                                                          |
 | rata_conversie     |  NUMERIC(10, 6) | NULL                                                 | `NULL` dacă s-a făcut într-o singură valută                              |
 | suma_primita       |  NUMERIC(10, 2) | NOT NULL, CHECK(suma_primita > 0)                    |                                                                          |
 | data_tranzactie    |            DATE | NOT NULL                                             |                                                                          |
-| status             |      VARCHAR(8) | NOT NULL                                             | `SUCCESS` \ `FAIL`                                                       |
+| status             |      VARCHAR(8) | NOT NULL, CHECK(status IN ('SUCCES', 'FAIL'))        | `SUCCESS` \ `FAIL`                                                       |
 | motiv_esuare       |     VARCHAR(64) | NULL                                                 | `NULL` dacă tranzacția a reușit                                          |
+
+>**Constrângeri la nivel de tabel :**
+> - `CHECK((status ='SUCCESS' AND motiv_esuare IS NULL) OR (status ='FAIL' AND motiv_esuare IS NOT NULL))`
 
 ### 12. Transferuri_Externe
 
@@ -279,7 +282,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**             |  **Tip Date** | **Constrângeri**                           | **Notă / Motivație**                               |
 |:---------------------|--------------:|:-------------------------------------------|:---------------------------------------------------|
-| abonament_id         |    NUMERIC(8) | PRIMARY KEY                                | 7*10<sup>7</sup> utilizatori globali * 1 abonament |
+| abonament_id         |    NUMERIC(8) | PRIMARY KEY, AUTO_INCREMENT                | 7*10<sup>7</sup> utilizatori globali * 1 abonament |
 | valuta_id            |    NUMERIC(1) | NOT NULL                                   | RON, GBP, EUR, USD                                 |
 | rata_dobanda_anuala  | NUMERIC(5, 4) | NOT NULL, CHECK (rata_dobanda_anuala >= 0) |                                                    |
 | multiplicator_puncte | NUMERIC(3, 2) | NOT NULL, DEFAULT 1.00                     |                                                    |
@@ -414,10 +417,10 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 > Dacă invitația este `Completed`, intrarea în acest tabel este o referință către `Depozite`.
 
-| **Câmp**             |   **Tip Date** | **Constrângeri**          | **Notă / Motivație**                               |
-|:---------------------|---------------:|:--------------------------|:---------------------------------------------------|
-| id                   |     NUMERIC(7) | PRIMARY KEY               |                                                    |
-| invitatie_id         |     NUMERIC(7) | NOT NULL, UNIQUE          | 10<sup>7</sup> invitatii                           |
-| suma                 | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0) | Revolut oferă diferite sume în funcție de promoții |
-| depozit_referinta_id |    NUMERIC(10) | NOT NULL                  |                                                    |
-| data_tranzactie      |           DATE | NOT NULL                  |                                                    |
+| **Câmp**             |   **Tip Date** | **Constrângeri**            | **Notă / Motivație**                               |
+|:---------------------|---------------:|:----------------------------|:---------------------------------------------------|
+| id                   |     NUMERIC(7) | PRIMARY KEY, AUTO_INCREMENT |                                                    |
+| invitatie_id         |     NUMERIC(7) | NOT NULL, UNIQUE            | 10<sup>7</sup> invitatii                           |
+| suma                 | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0)   | Revolut oferă diferite sume în funcție de promoții |
+| depozit_referinta_id |    NUMERIC(10) | NOT NULL                    |                                                    |
+| data_tranzactie      |           DATE | NOT NULL                    |                                                    |
