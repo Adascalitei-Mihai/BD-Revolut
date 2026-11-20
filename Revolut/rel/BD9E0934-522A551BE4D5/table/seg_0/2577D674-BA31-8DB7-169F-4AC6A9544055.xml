@@ -47,7 +47,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Clienti_id_client" id="47D22F3D-15F7-D3B4-11D9-E9CF2E669F25">
+<Column name="client_id" id="47D22F3D-15F7-D3B4-11D9-E9CF2E669F25">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>9F476FF6-561C-6B8F-ABD2-8C254DB8EC81</generatorID>
@@ -56,12 +56,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="EB14333A-5333-7686-36F1-0D92C10F2D06" referredColumn="5981015C-4E45-E204-3993-D903CE415D87"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -83,17 +80,6 @@
 <generatorID>26DDA931-28B9-BA57-D33A-7FD1C0E93B0C</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <indexState>Unique Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="47D22F3D-15F7-D3B4-11D9-E9CF2E669F25"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="1973FDC1-2CDD-3422-F240-C9B0C9D4C6A2" name="Clienti_Portofele_Puncte_fk">
-<createdBy>bruma</createdBy>
-<createdTime>2026-11-17 08:32:09 UTC</createdTime>
-<generatorID>93F57A40-76EB-6BA0-C134-88476B30C6F6</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="47D22F3D-15F7-D3B4-11D9-E9CF2E669F25"/>

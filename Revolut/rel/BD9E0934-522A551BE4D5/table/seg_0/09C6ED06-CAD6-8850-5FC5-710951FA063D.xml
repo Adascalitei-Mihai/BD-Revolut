@@ -72,23 +72,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Invitatii_Referral_id" id="02FDF691-BE13-7D29-89F4-CA73DD58F6A5">
-<createdBy>bruma</createdBy>
-<createdTime>2026-11-17 08:32:08 UTC</createdTime>
-<generatorID>225395CD-78AD-F7BE-D57C-4CD635605039</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="7CAFF53C-95EA-D83D-5B06-AF29B711C858" referredColumn="D76F42DF-681E-8C04-9362-2F54CFCB5EE6"/>
-</associations>
-</Column>
-<Column name="Depozite_id" id="BF505C76-BFB8-22A1-5290-FA34CA9F2AC8">
+<Column name="depozit_referinta_id1" id="BF505C76-BFB8-22A1-5290-FA34CA9F2AC8">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>BCC72EAE-C989-31B8-D2AD-963E7A9C5AD9</generatorID>
@@ -97,7 +81,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -129,17 +113,6 @@
 <colUsage columnID="EB13BDE8-1F21-5F42-BB6C-198FF9799691"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9230D64A-A51D-6379-0F66-BB3746187F36" name="Istoric_Referral__IDX">
-<createdBy>bruma</createdBy>
-<createdTime>2026-11-17 08:32:09 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>A2063304-9762-E975-3F3A-F76A5622171D</relationGeneratorID>
-<indexColumnUsage>
-<colUsage columnID="02FDF691-BE13-7D29-89F4-CA73DD58F6A5"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="290359D0-A049-6D1D-A6F7-6D491C36BDAC" name="Depozite_Istoric_Referral_fk">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
@@ -149,17 +122,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BF505C76-BFB8-22A1-5290-FA34CA9F2AC8"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="CC374541-5396-8BB5-A7F5-FAF4675A48A7" name="Invitatii_Referral_Istoric_Referral_fk">
-<createdBy>bruma</createdBy>
-<createdTime>2026-11-17 08:32:09 UTC</createdTime>
-<generatorID>A2063304-9762-E975-3F3A-F76A5622171D</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="02FDF691-BE13-7D29-89F4-CA73DD58F6A5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

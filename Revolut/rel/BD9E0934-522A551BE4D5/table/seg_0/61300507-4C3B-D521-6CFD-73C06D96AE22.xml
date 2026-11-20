@@ -89,7 +89,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Clienti_id_client" id="B5125298-77DC-6E98-1F2A-B82BFCC7D2B5">
+<Column name="client_invita_id1" id="B5125298-77DC-6E98-1F2A-B82BFCC7D2B5">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>0520BB40-BE21-F362-8D4E-7E84EC5D7457</generatorID>
@@ -98,30 +98,34 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="50495656-E652-4884-CCF4-959608DD3747" referredColumn="5981015C-4E45-E204-3993-D903CE415D87"/>
 </associations>
 </Column>
-<Column name="Clienti_id_client1" id="0C71CE3B-4F7B-89EF-8FB1-8A29BE81979A">
+<Column name="client_nou_id1" id="0C71CE3B-4F7B-89EF-8FB1-8A29BE81979A">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>5223A2AB-C6DC-0B1C-9264-E5C8C838EDD5</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
+<constraintName>invitatii_referral_clienti_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="client_invita_id &lt;&gt; client_nou_id"/>
+</checkConstraint>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="7F92B384-8D6F-C15D-87D1-16959C835F67" referredColumn="5981015C-4E45-E204-3993-D903CE415D87"/>
 </associations>
 </Column>
-<Column name="Campanii_Referral_id" id="45D70A80-6536-1A7A-8643-A1578B3DD881">
+<Column name="campanie_id1" id="45D70A80-6536-1A7A-8643-A1578B3DD881">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>C9226F10-B46D-8853-8CE2-EF1B37EFCA02</generatorID>
@@ -130,11 +134,28 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="93892BBA-0C24-CACB-61F0-24902031C96F" referredColumn="D66E1238-72D0-E1E1-FDAF-754DB47AB0C9"/>
+</associations>
+</Column>
+<Column name="id2" id="BAB75CFE-378E-4305-3C20-53BB1532457E">
+<createdBy>bianc</createdBy>
+<createdTime>2026-11-20 17:45:16 UTC</createdTime>
+<generatorID>2A11B1FF-4315-3526-DB1D-880F6229A7B1</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87E0473A-BB95-33B5-81AF-129170500CEA" referredColumn="405BF445-46B8-A24C-8178-DF3DC7258595"/>
 </associations>
 </Column>
 </columns>
@@ -182,6 +203,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0C71CE3B-4F7B-89EF-8FB1-8A29BE81979A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B79F9F6-6A9C-2765-295E-F27FC422732E" name="Invitatii_Referral_Istoric_Referral_fk">
+<createdBy>bianc</createdBy>
+<createdTime>2026-11-20 17:45:16 UTC</createdTime>
+<generatorID>A2063304-9762-E975-3F3A-F76A5622171D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAB75CFE-378E-4305-3C20-53BB1532457E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

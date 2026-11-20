@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,11,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Carduri_id" id="E5BB77D3-1613-40A3-BFC9-32C02AA7F3B5">
+<Column name="card_id" id="E5BB77D3-1613-40A3-BFC9-32C02AA7F3B5">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>5B896B5C-FEC4-8FA8-BBBF-1A7AF8EAAA31</generatorID>
@@ -29,14 +29,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="E35EDD0A-898C-6E87-F21D-F4E206581349" referredColumn="E38AC74B-3CE9-6A70-84E2-2D98A1297485"/>
 </associations>
 </Column>
-<Column name="Valute_Id" id="35B20988-5D70-5BED-5552-DA97D378D168">
+<Column name="valuta_id" id="35B20988-5D70-5BED-5552-DA97D378D168">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>9014F719-EDE3-AC9B-2C18-8B40E77A85DC</generatorID>
@@ -45,7 +45,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

@@ -28,32 +28,6 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="valuta_sursa_id" id="448DAFD0-496D-ACFD-2248-2E2A953AFC34">
-<createdBy>bianc</createdBy>
-<createdTime>2026-10-28 17:04:34 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="valuta_destinatie_id" id="641180DB-54ED-AE41-E1F9-908BF7A411EB">
-<createdBy>bianc</createdBy>
-<createdTime>2026-10-28 17:33:44 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="rata_schimb" id="193C7394-FBC5-FF54-78C4-6305228A8795">
 <createdBy>bianc</createdBy>
 <createdTime>2026-10-28 17:34:46 UTC</createdTime>

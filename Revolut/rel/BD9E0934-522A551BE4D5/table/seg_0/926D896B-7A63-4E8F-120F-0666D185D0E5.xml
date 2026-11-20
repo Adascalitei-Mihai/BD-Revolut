@@ -57,7 +57,7 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Abonamente_id" id="62007E5C-4A4A-7F9D-63FD-ED60709C7077">
+<Column name="id" id="62007E5C-4A4A-7F9D-63FD-ED60709C7077">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>9AC77D19-93BC-1CB7-7281-5D52A9898E8A</generatorID>
@@ -67,14 +67,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="61EDD63C-DF94-C9B4-5400-F391BB0B1CD7" referredColumn="B34AE889-989C-3D01-3F9C-84FB1CED479E"/>
 </associations>
 </Column>
-<Column name="Campanii_Referral_id" id="5FBE1ED5-AE38-629D-68FE-6DC887F7566B">
+<Column name="id1" id="5FBE1ED5-AE38-629D-68FE-6DC887F7566B">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>24126717-BFA5-6CD4-DBE7-D0CFF1648C93</generatorID>
@@ -84,7 +84,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

@@ -63,7 +63,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Portofele_Puncte_id" id="A02A4E08-A117-F3D3-7468-69D798B6AE93">
+<Column name="portofel_id" id="A02A4E08-A117-F3D3-7468-69D798B6AE93">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>96F4A845-C4A5-C249-9175-B9F51C8163DC</generatorID>
@@ -72,14 +72,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A3648D0B-1E01-23B1-9400-23CD824B6FDD" referredColumn="AA5BF847-AB92-C240-57C2-7DE6A428C38D"/>
 </associations>
 </Column>
-<Column name="Plati_id" id="D7FD98C2-6CD8-1D84-0849-EB883F8C1D95">
+<Column name="plata_referinta_id" id="D7FD98C2-6CD8-1D84-0849-EB883F8C1D95">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>3D3AC971-EC72-1CED-BF9C-79A2B3C14175</generatorID>
@@ -89,14 +89,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>11</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="DEAC5AF5-E96E-15C6-F4B0-E374F0D4C5C9" referredColumn="A1E3013A-23BD-E12B-29C9-E6438DE0F9AC"/>
 </associations>
 </Column>
-<Column name="Optiuni_Rascumparare_id" id="68509810-4BB5-9F44-182C-5E16D42AE53D">
+<Column name="optiune_rascumparare_id" id="68509810-4BB5-9F44-182C-5E16D42AE53D">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>44161E64-2CF3-B06B-E94F-624CA0E6BF42</generatorID>
@@ -106,7 +106,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Abonamente_id" id="7092350C-01EE-9C49-05EF-0549AEA1A6F3">
+<Column name="abonament_id" id="7092350C-01EE-9C49-05EF-0549AEA1A6F3">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>9A3CFAEE-4C32-991D-ABF1-60E28BF2CE46</generatorID>
@@ -17,14 +17,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="45704FA3-2CA1-8B07-D002-191AE6637426" referredColumn="B34AE889-989C-3D01-3F9C-84FB1CED479E"/>
 </associations>
 </Column>
-<Column name="Tipuri_Carduri_id" id="454B60E7-B1ED-971A-02D4-9A9402213573">
+<Column name="tip_card_id" id="454B60E7-B1ED-971A-02D4-9A9402213573">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>098E5B44-55F1-EEB9-9B61-DC925D54F6EB</generatorID>
@@ -33,7 +33,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

@@ -95,7 +95,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Clienti_id_client" id="5A41AB08-645E-360D-459A-305D4826DE5E">
+<Column name="client_id1" id="5A41AB08-645E-360D-459A-305D4826DE5E">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>36D2BA7D-5BD1-EBAF-8EB5-759D4B08B220</generatorID>
@@ -104,14 +104,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A7DAE19C-AFB5-A508-77A2-82B100B3F38C" referredColumn="5981015C-4E45-E204-3993-D903CE415D87"/>
 </associations>
 </Column>
-<Column name="Valute_Id" id="4B55E4A8-6E3D-A785-FE12-244E7D11A8AC">
+<Column name="valuta_id1" id="4B55E4A8-6E3D-A785-FE12-244E7D11A8AC">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>46A572D6-636D-43F7-F78C-714F5F2FF13B</generatorID>
@@ -120,7 +120,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

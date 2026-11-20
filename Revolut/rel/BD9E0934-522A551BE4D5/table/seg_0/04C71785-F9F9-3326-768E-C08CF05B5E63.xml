@@ -117,7 +117,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Conturi_Economii_id" id="B3EA5EBE-36A7-982A-D8C7-BFF01E2A1F8A">
+<Column name="id1" id="B3EA5EBE-36A7-982A-D8C7-BFF01E2A1F8A">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>06471293-64B3-9372-154B-A75C3A8E08E9</generatorID>
@@ -126,7 +126,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -142,7 +142,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -158,7 +158,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -179,7 +179,7 @@
 <colUsage columnID="19C28C75-10BC-219C-F93C-AEF67FD72DFD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7078DEC4-EEA5-E06C-96F8-6B4E72768D84" name="Conturi_Economii_fk">
+<ind_PK_UK id="7078DEC4-EEA5-E06C-96F8-6B4E72768D84" name="conturi_economii_istoric_dobanzi_fk">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>8F271E03-3642-7338-66B7-26F4E1AFB3E3</generatorID>

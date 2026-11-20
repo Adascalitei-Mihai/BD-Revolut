@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Conturi_Curente_id2" id="538E306D-A31B-D5AD-EA81-12BD008D73BF">
+<Column name="Client_sursa_valuta_id" id="538E306D-A31B-D5AD-EA81-12BD008D73BF">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>5B934F56-AA5B-2A2C-CAA0-FE5ADBC16EC8</generatorID>
@@ -29,14 +29,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="ECFE7A4F-26B9-672E-30DB-10DD5FFBAB36" referredColumn="6924D078-965B-4B32-F7CC-F4901C8FDCDB"/>
 </associations>
 </Column>
-<Column name="Conturi_Curente_id1" id="CD3CF706-BA6A-0E3A-5BF8-B736309D769E">
+<Column name="Client_sursa_RON_id" id="CD3CF706-BA6A-0E3A-5BF8-B736309D769E">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>89361E94-6AE0-A14B-9C1F-195111EB18DA</generatorID>
@@ -45,14 +45,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="B5C663F6-4618-C31C-C07C-82EC64448F54" referredColumn="6924D078-965B-4B32-F7CC-F4901C8FDCDB"/>
 </associations>
 </Column>
-<Column name="Conturi_Curente_id" id="AD9194F7-CCBB-6320-1C82-4ADD0FA90A91">
+<Column name="Cont_destinatie" id="AD9194F7-CCBB-6320-1C82-4ADD0FA90A91">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>4B1D7AD2-3932-6C55-9224-EFE57F0F1B79</generatorID>
@@ -61,7 +61,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -119,7 +119,7 @@
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="rate_conversie_id" id="FC5F809C-73C6-AE22-C498-0C9DF7393749">
+<Column name="Rata_conversie1" id="FC5F809C-73C6-AE22-C498-0C9DF7393749">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:09 UTC</createdTime>
 <generatorID>14886303-E92F-34E2-7E73-CEECB9528382</generatorID>
@@ -127,8 +127,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((Suma_debitata_RON &gt; 0 AND Rata_conversie1 IS NOT NULL) OR (Suma_debitata_RON = 0 AND Rata_conversie1 IS NULL))`"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -155,6 +158,13 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="CHECK ((Status = &apos;SUCCESS&apos; AND Motiv_esuare IS NULL) OR (Status = &apos;FAIL&apos; AND Motiv_esuare IS NOT NULL))"/>
+</checkConstraint>
+<listOfValues>
+<valueDef value="FAIL" description=""/>
+<valueDef value="SUCCESS" description=""/>
+</listOfValues>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

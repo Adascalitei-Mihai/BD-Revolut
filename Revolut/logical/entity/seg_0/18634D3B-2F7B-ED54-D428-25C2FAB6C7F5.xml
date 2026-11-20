@@ -41,33 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="cont_RON_id" id="74FBF6AD-D5C4-6AE9-7EE2-E2A07C0EBD97">
-<createdBy>bianc</createdBy>
-<createdTime>2026-10-28 17:47:30 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="abonament_id" id="BFF6B598-115C-874E-10E3-24FD2C3BA07B">
-<createdBy>bianc</createdBy>
-<createdTime>2026-10-28 17:48:22 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="suma" id="ED2445D7-A9A8-4AFF-AC2F-F288EF99F7C2">
 <createdBy>bianc</createdBy>

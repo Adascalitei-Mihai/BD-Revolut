@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Conturi_Curente_id" id="8C85A57E-F4E0-71A1-CA97-858D45DC1C1F">
+<Column name="cont_id" id="8C85A57E-F4E0-71A1-CA97-858D45DC1C1F">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>DB2F272B-99D5-4FFE-2F18-E98B37F64CCB</generatorID>
@@ -29,14 +29,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="A46367A3-3F6A-1BF7-AFA9-FADFDDD3C5E5" referredColumn="6924D078-965B-4B32-F7CC-F4901C8FDCDB"/>
 </associations>
 </Column>
-<Column name="Tipuri_Carduri_id" id="A831C547-8985-D87D-2C57-366EC5F9B7B2">
+<Column name="tip_card_id" id="A831C547-8985-D87D-2C57-366EC5F9B7B2">
 <createdBy>bruma</createdBy>
 <createdTime>2026-11-17 08:32:08 UTC</createdTime>
 <generatorID>D59CE43E-41F4-CA92-C5E6-ECEEA1FD04A0</generatorID>
@@ -45,7 +45,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
