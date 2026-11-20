@@ -28,6 +28,21 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cont_economii_id" id="06471293-64B3-9372-154B-A75C3A8E08E9">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-12 15:30:31 UTC</createdTime>
+<generatorID>8F271E03-3642-7338-66B7-26F4E1AFB3E3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>80D67B8C-CCF8-2157-1EE4-4CE339D5EA91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="sold_initial" id="0C08E02E-9C8E-D054-7E45-0691A65B1F9B">
 <createdBy>bianc</createdBy>
 <createdTime>2026-10-28 18:00:30 UTC</createdTime>
@@ -116,21 +131,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="06471293-64B3-9372-154B-A75C3A8E08E9">
-<createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-12 15:30:31 UTC</createdTime>
-<generatorID>8F271E03-3642-7338-66B7-26F4E1AFB3E3</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>80D67B8C-CCF8-2157-1EE4-4CE339D5EA91</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

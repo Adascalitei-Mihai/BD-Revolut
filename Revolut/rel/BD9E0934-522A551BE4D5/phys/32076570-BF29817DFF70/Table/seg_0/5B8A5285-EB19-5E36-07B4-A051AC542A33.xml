@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Tipuri_Carduri" directorySegmentName="seg_0" id="5B8A5285-EB19-5E36-07B4-A051AC542A33">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="limita_tranzactie" id="6F1637E2-637B-29A0-1A1D-64E13AFBA3A9">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="C3D4DBD2-02D9-4F92-1193-15C7D030033D">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="denumire" id="DC412E70-BFA3-DAE6-87F1-8D78BB97872D">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Tipuri_Carduri_PK" id="E6029856-1FE7-CD1D-90C8-D6206C4A76B8">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Tipuri_Carduri_denumire_UK" id="B79D68DF-5F91-0BE2-294E-A5955F40914E">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

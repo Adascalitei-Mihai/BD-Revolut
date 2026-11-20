@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Istoric_Referral_Invitatii_Referral_fk" directorySegmentName="seg_0" id="8A8EA452-5AEE-56B2-390A-92A84F6C2B94">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:08:42 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>DF37CBDA-C5B9-8716-57AB-3AD860946667</sourcePk>
+<targetPk>C2670630-DFF6-10D5-8894-B321039B9554</targetPk>
+<identifying>false</identifying>
+<nameOnSource>retine</nameOnSource>
+<nameOnTarget>apare in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F6740B62-78D3-3402-C914-5D3848C69DE6</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B16EC1DF-B401-AB5E-D6EF-F924B95F2440</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

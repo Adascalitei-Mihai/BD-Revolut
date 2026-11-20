@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Conturi_Economii" directorySegmentName="seg_0" id="5D0F08C7-C0B0-1CA2-2CF5-D892D53CDC6C">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="sold" id="0B0B9FFA-5BB8-AECC-CD0C-2986522CF302">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="client_id" id="2C80185C-43C8-CAA2-EDC4-E4AFA8EE7A9E">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="BDBEBA48-D466-9F11-43E4-71EFFE148F1C">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="valuta_id" id="CCE8136E-AA4D-762B-3E84-7A364EF1ED31">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_deschidere" id="CE7D9883-613C-AC99-BBFC-F043C1C32734">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="status" id="F254A47D-2353-DEEB-E067-13ACDA69B1B6">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<defaultValue>&apos;ACTIVE&apos;</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Clienti_Conturi_Economii_fk" id="47127126-864C-FE89-7D4D-B6F6A866B528">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Valute_Conturi_Economii_fk" id="6B3494F1-8343-3D98-07F6-1D3746A38808">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Conturi_Economii_PK" id="1EFCBDD5-DB5F-AAB3-07EC-230722B8CA69">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

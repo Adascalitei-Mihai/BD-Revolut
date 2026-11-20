@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07118B86-4059-7868-BFA0-D751D6C71020" name="Portofele_Puncte">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>17FE0BFE-D883-0108-D371-08E3DA2413D7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="56DDCB61-FC1B-D299-AB4C-32E953B6B707">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>3666951E-C608-0722-23FC-A5622A66D6A6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="client_id" id="466FB590-7E21-F82C-EC46-F5BA797762D2">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>FC4C2985-9688-6F2B-5053-59A47316DDD8</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71BECA44-7D74-E50A-57E5-1AAE20BDAA87" referredColumn="95C2969E-C23D-1678-44BB-DEB09E8E1133"/>
+</associations>
+</Column>
+<Column name="sold" id="4EB19900-2851-E6A5-A63D-51AC149CC0CA">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>C3A20CB5-EB1A-9A99-6015-34A9BA33EBC6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Portofele_Puncte_sold_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="sold &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_creare" id="C06602DD-37B6-6864-F5CA-4BCA6BDD307A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>0460EE1C-0B09-C2AC-DAE6-EAD1766A2016</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06E31129-D646-9176-BBFE-545796515AB1" name="Portofele_Puncte_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>065CE950-D486-C1C5-02D3-83FA58792F26</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56DDCB61-FC1B-D299-AB4C-32E953B6B707"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45C3FF0C-6ECE-971E-CB6F-E2A2FFFB9156" name="Portofele_Puncte_client_id_uk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>26DDA931-28B9-BA57-D33A-7FD1C0E93B0C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="466FB590-7E21-F82C-EC46-F5BA797762D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A8F64DE-438B-0E05-F337-307B3B2D0C47" name="Clienti_Portofele_Puncte_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>93F57A40-76EB-6BA0-C134-88476B30C6F6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="466FB590-7E21-F82C-EC46-F5BA797762D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="02C64F35-FF63-D56E-5A4B-535D8387AC3A" containerWithKeyObject="366055DD-CA9E-C048-2B9C-2E13557FBE11" localFKIndex="AEF22C55-CBDB-1CE5-B539-6B8CB0F80B48" name="Valute_Rate_Conversie_Sursa_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>5B45E8DF-F699-DB56-B21F-DEA4ED836851</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Valute</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4DAC8A43-E422-4090-16FA-E538BE05C1EF</referredTableID>
+<keyObject>3EBCB45B-6D29-91B8-84F0-1A14AF54F7BE</keyObject>
+<referredKeyID>3EBCB45B-6D29-91B8-84F0-1A14AF54F7BE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

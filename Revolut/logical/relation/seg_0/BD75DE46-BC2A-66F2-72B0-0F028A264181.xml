@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Conturi_Curente_Istoric_Plati_Abonamente_fk" directorySegmentName="seg_0" id="BD75DE46-BC2A-66F2-72B0-0F028A264181">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:54:56 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>35ED5EA7-AE96-CDAD-BDE3-0390C35FA00B</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>debiteaza din</nameOnSource>
+<nameOnTarget>foloseste</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FD7E03B9-A372-9AB9-E039-11E89B3533C4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>18634D3B-2F7B-ED54-D428-25C2FAB6C7F5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Invitatii_Referral" directorySegmentName="seg_0" id="8149C1E2-3A7E-983D-0E23-21F66D550042">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id" id="2EA6FA2F-9CC2-5342-A05E-693D48C5FB5B">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="client_invita_id" id="2F4720A7-7AD5-C0DA-2410-115FC25DBDC3">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="campanie_id" id="6AB3AF60-7132-E809-90EF-7A414E2F291D">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_invitatie" id="ABED0B12-0184-8A6D-A19B-CF9B8EECF230">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="status" id="B0F4C343-31A4-5CBB-C1B0-259949052EE0">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="client_nou_id" id="F70E4674-61E1-692F-D317-54A308635D85">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="clienti_inv_invita_fk" id="397BCC11-32C2-91ED-0002-7E4A0461198A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="campanii_inv_fk" id="82FDD5E6-E177-E45E-E155-00415E41C84C">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="clienti_inv_nou_fk" id="866768A5-E415-3503-E5EA-F3D1573362A4">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Invitatii_Referral_PK" id="C638F8E9-20D1-F2D4-DD71-4CF28475AF16">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

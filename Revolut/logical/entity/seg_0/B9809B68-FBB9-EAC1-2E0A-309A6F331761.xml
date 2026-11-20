@@ -60,6 +60,36 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="valuta_sursa_id" id="A994B3D9-0772-9297-88D9-AB4776A77A06">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:43:16 UTC</createdTime>
+<generatorID>5B45E8DF-F699-DB56-B21F-DEA4ED836851</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valuta_destinatie_id" id="39B6A24D-01F8-DAD4-CBD8-85E8173D896D">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:46:26 UTC</createdTime>
+<generatorID>008DE1CE-83A0-D78E-C4D4-A2922190A028</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="565DA5FE-456E-03FF-5670-1AA679D80DE5" name="Istoric_dobanzi PK">
@@ -72,6 +102,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>25990ED3-6BB1-2416-C12A-3766DDF687A2</attributeRef>
+<attributeRef>A994B3D9-0772-9297-88D9-AB4776A77A06</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

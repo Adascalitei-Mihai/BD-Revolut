@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Clienti_Informatii" directorySegmentName="seg_0" id="8450C535-2BCA-951D-6841-34E574C2C6E6">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="email" id="65A5FD0F-494F-FDDF-1BC6-52D1A1256F63">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefon" id="6FDEC13B-B7DA-19DF-EF4B-BF655FF2DBBA">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cnp" id="71E2EBBF-8085-5361-4962-A27DA122224B">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="93E678BF-30DA-6E4E-1E6A-CA8207344081">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="Clienti_Informatii__IDX" id="79C7C0E8-3D7D-A4BD-4514-722C42F080A1">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Clienti_Clienti_Informatii_fk" id="BD3ACE34-BE2B-580A-5C75-932F93BDE1C5">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Clienti_Informatii_PK" id="E57633CC-D519-71C1-F966-C60FA3686570">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="email_UK" id="2D412F50-4E71-041F-93C5-BB17677F45B5">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="telefon_UK" id="81BF608F-1526-8222-356F-DD10B5FEBC0E">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="cnp_UK" id="AEF75E9F-FD64-1EA6-12DB-DF93031208C1">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

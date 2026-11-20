@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Optiuni_Rascumparare" directorySegmentName="seg_0" id="762A174E-DC42-46C5-6A1D-FECE5E6F46FF">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="descriere" id="0488D76F-862F-BB74-A4D9-18CE578F1EF2">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="denumire" id="87046CF2-ABEE-75FD-ABCA-2190E1063AAB">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="stoc_disponibil" id="BDA3C88C-F978-248B-9B5A-4990D2D90224">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="E197D8FC-09AA-9556-0FCE-30EBA16BE08A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cost" id="F166B1DE-2D6C-3C9B-6B99-20F71E560D16">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Optiuni_Rascumparare_PK" id="3C268E1F-1E35-AC2C-CBB0-7F75E2B09C9A">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Optiuni_Rascumparare_denumire_uk" id="185B9522-8655-1B78-C6B2-90DA31DEAE85">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:26:31 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

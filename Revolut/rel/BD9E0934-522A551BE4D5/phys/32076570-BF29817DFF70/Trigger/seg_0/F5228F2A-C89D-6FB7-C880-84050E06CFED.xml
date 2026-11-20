@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Plati_BRIU" directorySegmentName="seg_0" id="F5228F2A-C89D-6FB7-C880-84050E06CFED">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:27:26 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.data_tranzactie <= SYSDATE )
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida: ' || TO_CHAR( :new.data_tranzactie, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
+	END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>0BDC5E1D-D58D-DCC7-3256-E577B79239E5</table>
+</TriggerOraclev10g>

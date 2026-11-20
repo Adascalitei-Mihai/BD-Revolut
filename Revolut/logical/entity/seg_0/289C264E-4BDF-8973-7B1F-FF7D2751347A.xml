@@ -28,6 +28,36 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="client_id" id="A0BC3A27-8D2A-14E8-2B88-EEC261F29834">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:20:16 UTC</createdTime>
+<generatorID>68FD1729-9DA5-A057-CBB6-853C37B30D3A</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E70D2203-D06E-4B44-EFDB-D418C71CFAF7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valuta_id" id="46A572D6-636D-43F7-F78C-714F5F2FF13B">
+<createdBy>Innovation</createdBy>
+<createdTime>2026-11-11 23:25:53 UTC</createdTime>
+<generatorID>1F28E92A-CA49-235C-90B8-B149B452864D</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="sold" id="D1CB4ACE-E958-675B-6100-E18A7E3A7E51">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-11 08:18:49 UTC</createdTime>
@@ -84,36 +114,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <defaultValue>SYSDATE</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="client_id" id="36D2BA7D-5BD1-EBAF-8EB5-759D4B08B220">
-<createdBy>Innovation</createdBy>
-<createdTime>2026-11-11 23:21:48 UTC</createdTime>
-<generatorID>68FD1729-9DA5-A057-CBB6-853C37B30D3A</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="valuta_id" id="46A572D6-636D-43F7-F78C-714F5F2FF13B">
-<createdBy>Innovation</createdBy>
-<createdTime>2026-11-11 23:25:53 UTC</createdTime>
-<generatorID>1F28E92A-CA49-235C-90B8-B149B452864D</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>71517EE3-8CDD-BFC5-C532-2F1610460DD1</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

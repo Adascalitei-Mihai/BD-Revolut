@@ -15,21 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_client" id="57A31DB2-33E5-E38B-C589-5DBE3131BD06">
-<createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-12 15:18:38 UTC</createdTime>
-<generatorID>57DA0864-0FBD-0E33-E3E2-9DB707A92E13</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="cnp" id="2515A7D3-87C5-79AA-1F3F-BB381B5F8362">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-10 09:48:57 UTC</createdTime>
@@ -69,6 +54,21 @@
 <dataTypeSize>254</dataTypeSize>
 <ownDataTypeParameters>254,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id" id="20420B78-8D9B-1FB2-2120-210FACBAD220">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:23:13 UTC</createdTime>
+<generatorID>79BFCFAC-EBF7-867B-1D68-26B3770900C3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E70D2203-D06E-4B44-EFDB-D418C71CFAF7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D0BBD559-A4F8-0FDB-EE3A-D276DF2C23D2" name="Clienti_Informatii PK">
@@ -80,9 +80,6 @@
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="false"/>
 </engineerTo>
 <pk>true</pk>
-<usedAttributes>
-<attributeRef>57A31DB2-33E5-E38B-C589-5DBE3131BD06</attributeRef>
-</usedAttributes>
 </identifier>
 <identifier id="729B3617-6540-637F-EFEF-55B58202A0E8" name="cnp_UK">
 <createdBy>mihaiadascalitei</createdBy>

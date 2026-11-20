@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A85AAA19-E422-60A4-A051-C210BCDB594A" containerWithKeyObject="5AEF7AB2-70F5-DE57-90D7-352EB0BC30AF" localFKIndex="D6154B28-5E1D-021C-78E2-13D08D889C0E" name="Valute_Beneficii_Abonamente_NM_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>6FE668F2-82EA-7337-F1AF-90C7B98814F3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<referredTableLongName>Valute</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4DAC8A43-E422-4090-16FA-E538BE05C1EF</referredTableID>
+<keyObject>3EBCB45B-6D29-91B8-84F0-1A14AF54F7BE</keyObject>
+<referredKeyID>3EBCB45B-6D29-91B8-84F0-1A14AF54F7BE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

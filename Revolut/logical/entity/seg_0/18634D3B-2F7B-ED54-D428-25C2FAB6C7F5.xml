@@ -28,20 +28,50 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_client" id="B86FC28C-8E40-99DB-A412-0C3613D1FE9C">
+<Attribute name="client_id" id="CF6C65B8-DD77-B33C-08CB-A3D0F029BDDA">
 <createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-12 15:36:21 UTC</createdTime>
+<createdTime>2026-11-20 19:20:16 UTC</createdTime>
 <generatorID>DC704E80-4DE9-9B0D-BE36-51064C265BB7</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
-<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
+<referedAttribute>E70D2203-D06E-4B44-EFDB-D418C71CFAF7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cont_RON_id" id="91ED4C75-E6EE-B984-9066-8F13E62B5D6B">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:54:56 UTC</createdTime>
+<generatorID>BD75DE46-BC2A-66F2-72B0-0F028A264181</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>E9A1DFAB-C296-19CE-172C-06B52FD83E99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="abonament_id" id="46842178-F777-9C65-AE6E-8E25E601526F">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:56:28 UTC</createdTime>
+<generatorID>3C003475-4608-2CDF-C66F-BCEB6A5B81F4</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="suma" id="ED2445D7-A9A8-4AFF-AC2F-F288EF99F7C2">
 <createdBy>bianc</createdBy>
@@ -120,6 +150,8 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>CE197833-298D-3C38-162F-FEE3F6843C75</attributeRef>
+<attributeRef>91ED4C75-E6EE-B984-9066-8F13E62B5D6B</attributeRef>
+<attributeRef>46842178-F777-9C65-AE6E-8E25E601526F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

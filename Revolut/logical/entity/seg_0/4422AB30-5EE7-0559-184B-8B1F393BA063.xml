@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_client" id="E9F686E8-16FE-70A0-B59C-3D8099D69C35">
-<createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:18:35 UTC</createdTime>
+<Attribute name="id" id="E70D2203-D06E-4B44-EFDB-D418C71CFAF7">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:19:56 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
@@ -28,18 +28,36 @@
 <dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_abonament" id="26F33FE7-DF0C-DC40-33DA-B47C2B35BE2D">
-<createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:20:53 UTC</createdTime>
+<Attribute name="id_informatii" id="35FEE0C1-9855-CB5A-970B-F8281D163A5E">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-12 09:51:51 UTC</createdTime>
+<generatorID>93F57A40-76EB-6BA0-C134-88476B30C6F6</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>3666951E-C608-0722-23FC-A5622A66D6A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_abonament" id="7D3170D1-B223-1399-9426-415A2C0A3520">
+<createdBy>kali</createdBy>
+<createdTime>2026-11-10 19:32:24 UTC</createdTime>
+<generatorID>BBF06244-B830-433B-4AE1-FE93B426D1F4</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nume" id="7002E0F4-CAC2-05C5-F3F0-FCAE595DF159">
 <createdBy>kali</createdBy>
@@ -79,37 +97,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id" id="7D3170D1-B223-1399-9426-415A2C0A3520">
-<createdBy>kali</createdBy>
-<createdTime>2026-11-10 19:32:24 UTC</createdTime>
-<generatorID>BBF06244-B830-433B-4AE1-FE93B426D1F4</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="35FEE0C1-9855-CB5A-970B-F8281D163A5E">
-<createdBy>Costin-Daniel</createdBy>
-<createdTime>2026-11-12 09:51:51 UTC</createdTime>
-<generatorID>93F57A40-76EB-6BA0-C134-88476B30C6F6</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>3666951E-C608-0722-23FC-A5622A66D6A6</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6B5527DE-7B69-F6B9-AA61-E83C8C1BCFE0" name="Clienti PK">
@@ -122,7 +109,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E9F686E8-16FE-70A0-B59C-3D8099D69C35</attributeRef>
+<attributeRef>E70D2203-D06E-4B44-EFDB-D418C71CFAF7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

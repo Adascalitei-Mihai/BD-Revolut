@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Valute_Rate_Conversie_Destinatie_fk" directorySegmentName="seg_0" id="008DE1CE-83A0-D78E-C4D4-A2922190A028">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:46:26 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<sourcePk>E1C631FE-66B5-DE3D-81E1-5E7541B21FE5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este destinatie pentru</nameOnSource>
+<nameOnTarget>converteste in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C5A2298B-426D-1C9B-0303-FE7908F49970</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B9809B68-FBB9-EAC1-2E0A-309A6F331761</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

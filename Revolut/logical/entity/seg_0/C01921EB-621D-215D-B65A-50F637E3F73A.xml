@@ -28,31 +28,37 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_abonament" id="252BE8ED-10A1-972B-84A4-8473D9C03382">
+<Attribute name="id_abonament" id="9AC77D19-93BC-1CB7-7281-5D52A9898E8A">
 <createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:52:38 UTC</createdTime>
+<createdTime>2026-11-10 19:33:04 UTC</createdTime>
+<generatorID>EB4A4F85-DA7F-9D23-EDCE-DF1EFD7DF0A9</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_campanie" id="882AD887-B6AE-3B4C-CCBC-F11A4DED403C">
+<Attribute name="id_campanie" id="24126717-BFA5-6CD4-DBE7-D0CFF1648C93">
 <createdBy>kali</createdBy>
-<createdTime>2026-10-29 11:53:36 UTC</createdTime>
+<createdTime>2026-11-10 19:34:12 UTC</createdTime>
+<generatorID>FC85492F-EDA0-BF07-4298-8FF650480312</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AB70A229-476C-E740-072B-8F466F3E4DC1</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="suma" id="6FE39462-96F1-BE92-912F-D1BCB1347793">
 <createdBy>kali</createdBy>
@@ -67,38 +73,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id" id="9AC77D19-93BC-1CB7-7281-5D52A9898E8A">
-<createdBy>kali</createdBy>
-<createdTime>2026-11-10 19:33:04 UTC</createdTime>
-<generatorID>EB4A4F85-DA7F-9D23-EDCE-DF1EFD7DF0A9</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>DDA4FEC2-48A2-66B1-5985-01B91BC26A61</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="24126717-BFA5-6CD4-DBE7-D0CFF1648C93">
-<createdBy>kali</createdBy>
-<createdTime>2026-11-10 19:34:12 UTC</createdTime>
-<generatorID>FC85492F-EDA0-BF07-4298-8FF650480312</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>AB70A229-476C-E740-072B-8F466F3E4DC1</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

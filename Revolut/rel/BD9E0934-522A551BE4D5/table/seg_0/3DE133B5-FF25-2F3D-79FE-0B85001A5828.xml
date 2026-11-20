@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DE133B5-FF25-2F3D-79FE-0B85001A5828" name="Istoric_Referral">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>F6740B62-78D3-3402-C914-5D3848C69DE6</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3483BD04-E911-A3A1-A336-AC96508060C4">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>ACD08C38-B675-3052-6E8E-9D9906E82E85</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="suma" id="76BE8E9F-2F02-FDC3-11E0-3EB7990CC689">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>017B74E1-DFE4-474B-C167-4E585AC9EBA7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Istoric_Referral_suma_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="suma &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_tranzactie" id="7FF48C2C-CF8E-DB44-C5E6-E5FBA9E0D69D">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>8B51F9DE-ABFE-B8C0-BB32-1D55485873AB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="depozit_referinta_id" id="74CEACD9-F536-0673-D7F1-33362F659131">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>BCC72EAE-C989-31B8-D2AD-963E7A9C5AD9</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D45C52CB-4977-63D6-1D2F-6EBAB24E6A3F" referredColumn="A4FA7AF0-3B94-95A7-A506-BC10853A15C4"/>
+</associations>
+</Column>
+<Column name="invitatie_id" id="687BE905-2DDF-71D6-1BED-9DAFF611ED0B">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>0C6CEA09-8B6C-2866-A825-33BF07869EC7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="888E71CE-4656-29B8-9102-BF4A42E497A0" referredColumn="2EA6FA2F-9CC2-5342-A05E-693D48C5FB5B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="876447F4-FF89-6F56-3615-48EC42F41253" name="Istoric_Referral_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>DF37CBDA-C5B9-8716-57AB-3AD860946667</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3483BD04-E911-A3A1-A336-AC96508060C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C941516D-64DC-4A59-D1B5-BB61E2E10630" name="Depozite_Istoric_Referral_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>BFD1C2D5-EE52-EDAA-9996-73318F9DBACB</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74CEACD9-F536-0673-D7F1-33362F659131"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="146996CB-20D8-DB00-8F4D-2B0AE2967432" name="Istoric_Referral_Invitatii_Referral_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:08:02 UTC</createdTime>
+<generatorID>8A8EA452-5AEE-56B2-390A-92A84F6C2B94</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="687BE905-2DDF-71D6-1BED-9DAFF611ED0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

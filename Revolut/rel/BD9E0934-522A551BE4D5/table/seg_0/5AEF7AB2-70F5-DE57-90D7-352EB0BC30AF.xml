@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5AEF7AB2-70F5-DE57-90D7-352EB0BC30AF" name="Beneficii_Abonament_NM">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>A276D0AA-C318-BD64-54E7-29D95CA1225C</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="abonament_id" id="B57C7F99-3942-7260-EE6E-7355F8C5ADC0">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>BF93DD43-28C1-E6A4-D27B-E6F15047AFF1</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A85AAA19-E422-60A4-A051-C210BCDB594A" referredColumn="5897949F-A362-31F2-1F96-E7B6FE3A69D5"/>
+</associations>
+</Column>
+<Column name="valuta_id" id="3CDCF698-BC98-1B44-5DFB-26A946099062">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>CC7D4F26-DAEE-CEF8-E388-3EC87E5CCE41</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6195FEC-A4F4-24F0-CAC9-22B027DBA13E" referredColumn="0815EAE7-F3EB-EC65-5913-7B902E3D1FFF"/>
+</associations>
+</Column>
+<Column name="rata_dobanda_anuala" id="2BB09205-8D0A-FA18-44A6-17F8345BE12B">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>6AF225EB-2FBC-DE74-BDD8-C81811061897</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<constraintName>Beneficii_Abonament_NM_rata_dobanda_anuala_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="rata_dobanda &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="multiplicator_puncte" id="9C586AFD-02D1-DCD3-A1B8-7F9F7F35C571">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>BD694A0C-2DEB-498E-6616-CC94FD71DA64</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E362B36-0C9B-947F-1950-3A044141D9AB" name="Beneficii_Abonament_NM_PK">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>67BC53B4-6B6B-424A-89C1-617493D04ED5</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B57C7F99-3942-7260-EE6E-7355F8C5ADC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65458D76-4DBB-0A98-C85C-6CE9B4A242C2" name="Abonamente_Beneficii_Abonamente_NM_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>21A5723F-3175-3B85-B7FE-8ED9F97BF1C7</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CDCF698-BC98-1B44-5DFB-26A946099062"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6154B28-5E1D-021C-78E2-13D08D889C0E" name="Valute_Beneficii_Abonamente_NM_fk">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 20:18:19 UTC</createdTime>
+<generatorID>6FE668F2-82EA-7337-F1AF-90C7B98814F3</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B57C7F99-3942-7260-EE6E-7355F8C5ADC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

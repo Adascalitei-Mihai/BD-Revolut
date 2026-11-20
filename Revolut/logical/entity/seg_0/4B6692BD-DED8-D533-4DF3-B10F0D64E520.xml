@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Client_sursa_RON_id" id="89361E94-6AE0-A14B-9C1F-195111EB18DA">
 <createdBy>ioana-alexandramarinkas</createdBy>
@@ -56,9 +56,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Cont_destinatie" id="4B1D7AD2-3932-6C55-9224-EFE57F0F1B79">
+<Attribute name="Cont_destinatie_id" id="4B1D7AD2-3932-6C55-9224-EFE57F0F1B79">
 <createdBy>ioana-alexandramarinkas</createdBy>
 <createdTime>2026-11-11 16:51:25 UTC</createdTime>
 <generatorID>19D723CC-3C62-B6E6-E945-27434516761A</generatorID>
@@ -71,7 +71,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Suma_totala" id="9BB5D127-B845-9FE0-0018-2564AE2ED5F0">
 <createdBy>ioana-alexandramarinkas</createdBy>
@@ -127,7 +127,7 @@
 </checkConstraint>
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Rata_conversie1" id="14886303-E92F-34E2-7E73-CEECB9528382">
+<Attribute name="Rata_conversie" id="14886303-E92F-34E2-7E73-CEECB9528382">
 <createdBy>ioana-alexandramarinkas</createdBy>
 <createdTime>2026-11-11 17:41:05 UTC</createdTime>
 <generatorID>0B820918-A75A-1437-4D27-DE8ADB47B3AF</generatorID>
@@ -190,6 +190,21 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>64</dataTypeSize>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valuta_sursa_id" id="1692ED12-22AD-0CE8-2D90-B8A1EAAEB0DE">
+<createdBy>mihaiadascalitei</createdBy>
+<createdTime>2026-11-20 19:43:16 UTC</createdTime>
+<generatorID>0B820918-A75A-1437-4D27-DE8ADB47B3AF</generatorID>
+<ownerDesignName>Revolut</ownerDesignName>
+<engineerTo>
+<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
+</engineerTo>
+<referedAttribute>A994B3D9-0772-9297-88D9-AB4776A77A06</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
