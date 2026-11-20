@@ -306,13 +306,14 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**         |  **Tip Date** | **Constrângeri**                                            | **Notă / Motivație**                         |
 |:-----------------|--------------:|:------------------------------------------------------------|:---------------------------------------------|
-| id               |   NUMERIC(10) | PRIMARY KEY                                                 |                                              |
-| cont_curent_id   |    NUMERIC(9) | NOT NULL                                                    |                                              |
-| cont_economii_id |    NUMERIC(9) | NOT NULL                                                    |                                              |
+| id               |   NUMERIC(10) | PRIMARY KEY ,AUTO_INCREMENT                                                     |                                              |
+| cont_curent_id   |    NUMERIC(9) | NOT NULL, FOREIGN KEY (refera Conturi_Curente(id) )                                                    |                                              |
+| cont_economii_id |    NUMERIC(9) | NOT NULL,FOREIGN KEY (refera Conturi_Economii(id) )                                                   |                                              |
 | suma             | NUMERIC(10,2) | NOT NULL, CHECK(suma > 0)                                   | mereu pozitiva                               |
 | tip_operatiune   |   VARCHAR(10) | NOT NULL,CHECK(tip_operatiune IN ('DEPUNERE', 'RETRAGERE')) | `DEPUNERE` \ `RETRAGERE`                     |
 | status           |    VARCHAR(8) | NOT NULL,CHECK(status IN ('SUCCESS', 'FAIL'))               | `SUCCESS` \ `FAIL`                           |
 | data_tranzactie  |          DATE | NOT NULL                                                    |                                              |
+| motiv_esuare     |   VARCHAR(64) | NULL                                                         | `NULL` dacă tranzacția a reușit; vezi constrângerea la nivel de tabel  |
 
 ### 17. Istoric_Dobanzi
 
@@ -406,10 +407,10 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 
 | **Câmp**         | **Tip Date** | **Constrângeri**                                                | **Notă / Motivație**                 |
 |:-----------------|-------------:|:----------------------------------------------------------------|:-------------------------------------|
-| id               |   NUMERIC(7) | PRIMARY KEY                                                     | 10<sup>7</sup> invitații             |
-| client_invita_id |   NUMERIC(8) | NOT NULL,                                                       | 7*10<sup>7</sup> utilizatori globali |
-| client_nou_id    |   NUMERIC(8) | NOT NULL,CHECK(client_invita_id <> client_nou_id)               | Un client nu se poate invita pe sine |
-| campanie_id      |   NUMERIC(3) | NOT NULL,                                                       |                                      |
+| id               |   NUMERIC(7) | PRIMARY KEY  ,AUTO_INCREMENT                                                    | 10<sup>7</sup> invitații             |
+| client_invita_id |   NUMERIC(8) | NOT NULL, FOREIGN KEY (refera Clienti(id)  )                                                    | 7*10<sup>7</sup> utilizatori globali |
+| client_nou_id    |   NUMERIC(8) | NOT NULL,CHECK(client_invita_id <> client_nou_id),FOREIGN KEY (refera Clienti(id) )             | Un client nu se poate invita pe sine |
+| campanie_id      |   NUMERIC(3) | NOT NULL,FOREIGN KEY (refera Campanii_Referral(id) )                                                    |                                      |
 | status           |  VARCHAR(10) | NOT NULL, CHECK(status IN ('PENDING', 'COMPLETED', 'EXPIRED'))  | `PENDING` \ `COMPLETED` \ `EXPIRED`  |
 | data_invitatie   |         DATE | NOT NULL,                                                       |                                      |
 
