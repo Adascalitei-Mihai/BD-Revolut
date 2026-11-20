@@ -28,27 +28,31 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="client_invita_id" id="2A2E8D8F-5EAD-CABA-50FE-F76A2A02C625">
+<Attribute name="client_invita_id" id="0520BB40-BE21-F362-8D4E-7E84EC5D7457">
 <createdBy>Luiza Paslaru</createdBy>
-<createdTime>2026-10-26 09:34:45 UTC</createdTime>
+<createdTime>2026-11-12 10:45:40 UTC</createdTime>
+<generatorID>79CE133B-A089-4AA9-E40F-8FCA196218E1</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="client_nou_id" id="A2B8418D-CE17-B6C5-C5B1-F8457C2B2E1A">
+<Attribute name="client_nou_id" id="5223A2AB-C6DC-0B1C-9264-E5C8C838EDD5">
 <createdBy>Luiza Paslaru</createdBy>
-<createdTime>2026-10-26 09:36:31 UTC</createdTime>
+<createdTime>2026-11-12 10:52:18 UTC</createdTime>
+<generatorID>AF76FF0E-0FEC-B0C6-7EB7-9D211FD3FCD7</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
 <constraintName>invitatii_referral_clienti_ck</constraintName>
+<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -56,20 +60,7 @@
 <checkConstraint>
 <implementationDef dbType="Generic Constraint" definition="client_invita_id &lt;&gt; client_nou_id"/>
 </checkConstraint>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="campanie_id" id="0808B1CE-0E5E-8D69-2C66-BEBF111ABAF9">
-<createdBy>Luiza Paslaru</createdBy>
-<createdTime>2026-10-26 09:39:16 UTC</createdTime>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="status" id="571D86DD-D734-53D0-18B9-E5001C553290">
 <createdBy>Luiza Paslaru</createdBy>
@@ -102,37 +93,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_client" id="0520BB40-BE21-F362-8D4E-7E84EC5D7457">
-<createdBy>Luiza Paslaru</createdBy>
-<createdTime>2026-11-12 10:45:40 UTC</createdTime>
-<generatorID>79CE133B-A089-4AA9-E40F-8FCA196218E1</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_client1" id="5223A2AB-C6DC-0B1C-9264-E5C8C838EDD5">
-<createdBy>Luiza Paslaru</createdBy>
-<createdTime>2026-11-12 10:52:18 UTC</createdTime>
-<generatorID>AF76FF0E-0FEC-B0C6-7EB7-9D211FD3FCD7</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>E9F686E8-16FE-70A0-B59C-3D8099D69C35</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="C9226F10-B46D-8853-8CE2-EF1B37EFCA02">
+<Attribute name="campanie_id" id="C9226F10-B46D-8853-8CE2-EF1B37EFCA02">
 <createdBy>Luiza Paslaru</createdBy>
 <createdTime>2026-11-12 10:54:02 UTC</createdTime>
 <generatorID>BE31CBD7-20F1-781E-95EF-B8410A712992</generatorID>
@@ -145,7 +106,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id2" id="2A11B1FF-4315-3526-DB1D-880F6229A7B1">
 <createdBy>teofan</createdBy>
@@ -161,7 +122,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

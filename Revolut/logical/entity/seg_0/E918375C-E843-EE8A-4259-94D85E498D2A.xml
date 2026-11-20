@@ -144,37 +144,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_client" id="E8EA0045-4B46-DCA0-2340-19E7FEE5EB5A">
-<createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-12 15:30:31 UTC</createdTime>
-<generatorID>8F271E03-3642-7338-66B7-26F4E1AFB3E3</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>36D2BA7D-5BD1-EBAF-8EB5-759D4B08B220</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Id11" id="8A93AE01-510F-02F5-B471-735F736AF9BE">
-<createdBy>mihaiadascalitei</createdBy>
-<createdTime>2026-11-12 15:30:31 UTC</createdTime>
-<generatorID>8F271E03-3642-7338-66B7-26F4E1AFB3E3</generatorID>
-<ownerDesignName>Revolut</ownerDesignName>
-<engineerTo>
-<item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
-</engineerTo>
-<referedAttribute>46A572D6-636D-43F7-F78C-714F5F2FF13B</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="conturi_econ_tranz_ec_fk" directorySegmentName="seg_0" id="1799B6F6-58B2-406D-D7C9-89B9A7EF2378">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="conturi_econ_tranz_ec_fk" directorySegmentName="seg_0" id="0B60C423-0AC6-CE0A-8743-815E05479979">
 <createdBy>Luiza Paslaru</createdBy>
-<createdTime>2026-11-12 10:44:14 UTC</createdTime>
+<createdTime>2026-11-20 12:56:48 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
