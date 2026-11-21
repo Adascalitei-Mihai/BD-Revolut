@@ -18,6 +18,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="denumire" id="87046CF2-ABEE-75FD-ABCA-2190E1063AAB">
@@ -66,7 +67,7 @@
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>E7F138BF-1D93-75DF-4A94-30A4DEF3AB1E</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
-<constraintName>Optiuni_Rascumparare_stoc_disponibil_ck</constraintName>
+<constraintName>Optiuni_Rasc_stoc_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -91,7 +92,7 @@
 <colUsage columnID="E197D8FC-09AA-9556-0FCE-30EBA16BE08A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="185B9522-8655-1B78-C6B2-90DA31DEAE85" name="Optiuni_Rascumparare_denumire_uk">
+<ind_PK_UK id="185B9522-8655-1B78-C6B2-90DA31DEAE85" name="Optiuni_Rasc_denumire_uk">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>BB5F7666-8460-ABC4-8DC9-93B336137C68</generatorID>

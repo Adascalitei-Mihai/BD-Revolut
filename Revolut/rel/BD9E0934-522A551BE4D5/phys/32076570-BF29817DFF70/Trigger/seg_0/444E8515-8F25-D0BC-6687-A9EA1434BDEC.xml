@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_portofele_puncte_BRIU" directorySegmentName="seg_0" id="444E8515-8F25-D0BC-6687-A9EA1434BDEC">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-21 09:16:03 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+  IF ( :new.data_creare > SYSDATE ) THEN
+    RAISE_APPLICATION_ERROR( -20001,
+      'Data invalida: ' || TO_CHAR( :new.data_creare, 'DD.MM.YYYY HH24:MI:SS' ) || ' nu poate fi in viitor.' );
+  END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>07118B86-4059-7868-BFA0-D751D6C71020</table>
+</TriggerOraclev10g>

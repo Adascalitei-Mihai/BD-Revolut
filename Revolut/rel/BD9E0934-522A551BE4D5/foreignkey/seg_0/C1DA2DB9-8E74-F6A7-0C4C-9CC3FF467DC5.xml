@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1DA2DB9-8E74-F6A7-0C4C-9CC3FF467DC5" containerWithKeyObject="74108376-4592-36E6-589B-77775175A1D9" localFKIndex="6EE8F99E-1B9C-DAD5-9DAA-69E43DB7215C" name="Portofele_Puncte_Tranzactii_Puncte_fk">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1DA2DB9-8E74-F6A7-0C4C-9CC3FF467DC5" containerWithKeyObject="74108376-4592-36E6-589B-77775175A1D9" localFKIndex="6EE8F99E-1B9C-DAD5-9DAA-69E43DB7215C" name="Portofele_Tranz_Puncte_fk">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>C9D3CF59-C5C1-A85F-BA5A-11DB0B0E5949</generatorID>

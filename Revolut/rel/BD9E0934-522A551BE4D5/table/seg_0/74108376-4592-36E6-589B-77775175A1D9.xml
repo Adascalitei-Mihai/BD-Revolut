@@ -18,6 +18,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>11</dataTypePrecision>
 <ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="suma" id="B1F3D898-43B3-39A6-E9C3-CD040DF20D9A">
@@ -41,7 +42,7 @@
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>2F88A222-1D48-0CAC-3606-AD450006004D</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
-<constraintName>Tranzactii_Puncte_tip_operatiune_ck</constraintName>
+<constraintName>Tranzactii_Puncte_tip_op_ck</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -127,7 +128,7 @@
 <colUsage columnID="E886B9E7-8A3D-03CA-D0D8-031839B64CE0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D6F3CC16-5BE1-7FBD-8C75-BFACD5946CCB" name="Optiuni_Rascumparare_Tranzactii_Puncte_fk">
+<ind_PK_UK id="D6F3CC16-5BE1-7FBD-8C75-BFACD5946CCB" name="Optiuni_Tranz_Puncte_fk">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>318AA1B2-1B5E-4DE0-6728-D09D2E46E205</generatorID>
@@ -149,7 +150,7 @@
 <colUsage columnID="3DCED65A-1806-3982-33EC-DEE2E828327D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6EE8F99E-1B9C-DAD5-9DAA-69E43DB7215C" name="Portofele_Puncte_Tranzactii_Puncte_fk">
+<ind_PK_UK id="6EE8F99E-1B9C-DAD5-9DAA-69E43DB7215C" name="Portofele_Tranz_Puncte_fk">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>C9D3CF59-C5C1-A85F-BA5A-11DB0B0E5949</generatorID>
@@ -161,4 +162,13 @@
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Tranzactii_Puncte_tip_ref_ck" directorySegmentName="seg_0" id="DF841744-91E1-573E-1C82-43D2E77B18C4">
+<createdBy>Costin-Daniel</createdBy>
+<createdTime>2026-11-21 09:07:17 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<rule><![CDATA[(tip_operatiune = 'CASTIGARE' AND plata_referinta_id IS NOT NULL AND optiune_rascumparare_id IS NULL) OR
+(tip_operatiune = 'RASCUMPARARE' AND optiune_rascumparare_id IS NOT NULL AND plata_referinta_id IS NULL)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>
