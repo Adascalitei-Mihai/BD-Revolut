@@ -18,6 +18,8 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id_informatii" id="80275B54-5FB6-54D0-0DE2-41B8DDCFABCE">
@@ -41,7 +43,6 @@
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>7D3170D1-B223-1399-9426-415A2C0A3520</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
