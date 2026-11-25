@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="client_nou_id" id="75D95B4F-C200-7855-5D3A-5FE4DC900453">
 <createdBy>mihaiadascalitei</createdBy>
@@ -51,11 +51,15 @@
 <engineerTo>
 <item key="BD9E0934-1E7F-F3AF-8AE1-522A551BE4D5" value="true"/>
 </engineerTo>
+<constraintName>invitatii_referral_clienti_ck</constraintName>
 <referedAttribute>E70D2203-D06E-4B44-EFDB-D418C71CFAF7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="client_invita_id &lt;&gt; client_nou_id"/>
+</checkConstraint>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="campanie_id" id="C9226F10-B46D-8853-8CE2-EF1B37EFCA02">
@@ -71,7 +75,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="status" id="571D86DD-D734-53D0-18B9-E5001C553290">
 <createdBy>Luiza Paslaru</createdBy>
