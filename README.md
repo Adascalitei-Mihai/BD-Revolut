@@ -312,8 +312,9 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | suma             | NUMERIC(10,2) | NOT NULL, CHECK(suma > 0)                                   | mereu pozitiva                               |
 | tip_operatiune   |   VARCHAR(10) | NOT NULL,CHECK(tip_operatiune IN ('DEPUNERE', 'RETRAGERE')) | `DEPUNERE` \ `RETRAGERE`                     |
 | status           |    VARCHAR(8) | NOT NULL,CHECK(status IN ('SUCCESS', 'FAIL'))               | `SUCCESS` \ `FAIL`                           |
-| data_tranzactie  |          DATE | NOT NULL                                                    |                                              |
+| data_tranzactie  |          DATE | NOT NULL                                                    |  nu poate fi in viitor,verificat prin trigger-ul `trg_tranzactii_economii_BRIU`                                            |
 | motiv_esuare     |   VARCHAR(64) | NULL                                                         | `NULL` dacă tranzacția a reușit; vezi constrângerea la nivel de tabel  |
+> **Constrângere la nivel de tabel:** `CHECK ((status = 'SUCCESS' AND motiv_esuare IS NULL) OR (status = 'FAIL' AND motiv_esuare IS NOT NULL))` – motivul e obligatoriu doar dacă tranzacția a eșuat
 
 ### 17. Istoric_Dobanzi
 
@@ -412,7 +413,8 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | client_nou_id    |   NUMERIC(8) | NOT NULL,CHECK(client_invita_id <> client_nou_id),FOREIGN KEY (refera Clienti(id) )             | Un client nu se poate invita pe sine |
 | campanie_id      |   NUMERIC(3) | NOT NULL,FOREIGN KEY (refera Campanii_Referral(id) )                                                    |                                      |
 | status           |  VARCHAR(10) | NOT NULL, CHECK(status IN ('PENDING', 'COMPLETED', 'EXPIRED'))  | `PENDING` \ `COMPLETED` \ `EXPIRED`  |
-| data_invitatie   |         DATE | NOT NULL,                                                       |                                      |
+| data_invitatie   |         DATE | NOT NULL,                                                       |  nu poate fi în viitor; verificat prin trigger-ul `trg_invitatii_referral_BRIU`                                    |
+> **Constrângere la nivel de tabel:** `CHECK (client_invita_id <> client_nou_id)` – un client nu se poate invita pe sine
 
 ### 24. Istoric_Referral
 
