@@ -45,7 +45,7 @@
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>9BC44D43-4E5F-3FDA-5C70-0FF315255C6C</generatorID>
 <ownerDesignName>Revolut</ownerDesignName>
-<constraintName>Posibilitati_Carduri_NM_max_carduri_permise_CK</constraintName>
+<constraintName>Pos_Carduri_NM_max_CK</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -74,7 +74,7 @@
 <colUsage columnID="DD58572D-5553-E421-FD0D-0D3C2AC2AF7B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BE8DD5CD-BCB8-EF95-2565-9BA326B1AB88" name="Abonamente_Posibilitati_Carduri_fk">
+<ind_PK_UK id="BE8DD5CD-BCB8-EF95-2565-9BA326B1AB88" name="Abonamente_Pos_Carduri_fk">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>036E5C76-BBA5-69B8-4940-2A26C1BF629F</generatorID>
@@ -85,7 +85,7 @@
 <colUsage columnID="63F2FF0E-D3D9-FF41-E214-0AAB0BB4C890"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="562C365D-E6CD-C85F-4DEC-564C958521DB" name="Tipuri_Carduri_Posibilitati_Carduri_fk">
+<ind_PK_UK id="562C365D-E6CD-C85F-4DEC-564C958521DB" name="Tipuri_Carduri_Pos_Carduri_fk">
 <createdBy>mihaiadascalitei</createdBy>
 <createdTime>2026-11-20 20:08:02 UTC</createdTime>
 <generatorID>08F62156-8D04-7573-528B-282F94339EE6</generatorID>

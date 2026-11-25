@@ -18,6 +18,8 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="cont_id" id="83BA540A-0435-29D1-FC71-5EA02A746814">
@@ -125,6 +127,7 @@
 <checkConstraint>
 <implementationDef dbType="Generic Constraint" definition="status IN (&apos;ACTIVE&apos;, &apos;INACTIVE&apos;)"/>
 </checkConstraint>
+<defaultValue>&apos;ACTIVE&apos;</defaultValue>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -136,6 +139,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -187,4 +191,12 @@
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="card_expirare_CK" directorySegmentName="seg_0" id="A4D6CF79-D68F-911A-6020-9EDADA53E0CB">
+<createdBy>bruma</createdBy>
+<createdTime>2026-11-25 08:59:17 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<rule><![CDATA[data_expirare > data_emitere]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>
