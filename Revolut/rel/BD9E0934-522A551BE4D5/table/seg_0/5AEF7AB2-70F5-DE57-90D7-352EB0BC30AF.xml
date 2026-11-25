@@ -19,7 +19,10 @@
 <dataTypePrecision>1</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
 <associations>
 <colAssociation fkAssociation="A85AAA19-E422-60A4-A051-C210BCDB594A" referredColumn="5897949F-A362-31F2-1F96-E7B6FE3A69D5"/>
 </associations>
