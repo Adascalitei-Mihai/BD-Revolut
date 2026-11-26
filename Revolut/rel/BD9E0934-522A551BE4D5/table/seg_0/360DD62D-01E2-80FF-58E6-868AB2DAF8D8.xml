@@ -93,7 +93,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>64</dataTypeSize>
 <checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="status = &apos;SUCCESS&apos; AND motiv_esuare IS NULL) OR (status = &apos;FAIL&apos; AND motiv_esuare IS NOT NULL"/>
+<implementationDef dbType="Generic Constraint" definition="status = &apos;SUCCESS&apos; AND motiv_esuare IS NULL OR status = &apos;FAIL&apos; AND motiv_esuare IS NOT NULL"/>
 </checkConstraint>
 <ownDataTypeParameters>64,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -107,7 +107,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

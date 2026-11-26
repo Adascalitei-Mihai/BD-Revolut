@@ -3,6 +3,7 @@
 <createdBy>Roby</createdBy>
 <createdTime>2026-11-26 09:58:30 UTC</createdTime>
 <ownerDesignName>Revolut</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
 <body><![CDATA[BEGIN
   IF ( :new.data_tranzactie > SYSDATE ) THEN
     RAISE_APPLICATION_ERROR( -20012,
