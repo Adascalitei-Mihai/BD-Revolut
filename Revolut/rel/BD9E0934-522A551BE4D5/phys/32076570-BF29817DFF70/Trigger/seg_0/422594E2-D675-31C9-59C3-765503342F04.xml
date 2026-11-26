@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_depozite_BRIU" directorySegmentName="seg_0" id="422594E2-D675-31C9-59C3-765503342F04">
+<createdBy>Roby</createdBy>
+<createdTime>2026-11-26 09:58:30 UTC</createdTime>
+<ownerDesignName>Revolut</ownerDesignName>
+<body><![CDATA[BEGIN
+  IF ( :new.data_tranzactie > SYSDATE ) THEN
+    RAISE_APPLICATION_ERROR( -20012,
+      'Data invalida: ' || TO_CHAR( :new.data_tranzactie, 'DD.MM.YYYY HH24:MI:SS' ) || ' nu poate fi in viitor.' );
+  END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>360DD62D-01E2-80FF-58E6-868AB2DAF8D8</table>
+</TriggerOraclev10g>

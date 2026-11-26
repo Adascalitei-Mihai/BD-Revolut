@@ -190,7 +190,7 @@ invitații și recompense (acestea din urmă fiind legate direct de un anumit de
 | cont_id         |     NUMERIC(9) | NOT NULL, FOREIGN KEY REFERENCES Conturi_Curente(id) | contul curent în care intră banii; valuta depozitului este cea a contului                |
 | suma            | NUMERIC(10, 2) | NOT NULL, CHECK(suma > 0)                            | Revolut permite până la 10<sup>5</sup> EUR per tranzacție (SEPA instant); mereu pozitivă |
 | nume_sursa      |   VARCHAR(100) | NOT NULL, CHECK(length(nume_sursa) > 1)              | banca / expeditorul extern; bonusurile referral au sursa `Revolut Referral`              |
-| data_tranzactie |           DATE | NOT NULL                                             |                                                                                          |
+| data_tranzactie |           DATE | NOT NULL                                             | nu poate fi în viitor; verificat prin trigger-ul `trg_depozite_BRIU`                     |
 | status          |     VARCHAR(8) | NOT NULL, CHECK(status IN ('SUCCESS', 'FAIL'))       | `SUCCESS` \ `FAIL`                                                                       |
 | motiv_esuare    |    VARCHAR(64) | NULL                                                 | `NULL` dacă tranzacția a reușit; vezi constrângerea la nivel de tabel                    |
 
